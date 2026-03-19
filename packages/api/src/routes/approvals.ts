@@ -31,9 +31,9 @@ router.post(
 
     const svc = new ApprovalService(getDb());
     const approval = await svc.create({
-      companyId: companyId!,
-      requestingAgentId: req.auth.agentId,
-      runId: req.auth.runId ?? undefined,
+      companyId: String(companyId),
+      requestingAgentId: req.auth.agentId!,
+      runId: req.auth.runId,
       title: title ?? "",
       description,
       linkedIssueIds,
@@ -63,9 +63,9 @@ router.get(
 
     const svc = new ApprovalService(getDb());
     const result = await svc.list({
-      companyId: companyId!,
-      status,
-      requestingAgentId,
+      companyId: String(companyId),
+      status: status ?? undefined,
+      requestingAgentId: requestingAgentId ?? undefined,
     });
 
     res.json(result);
@@ -75,9 +75,9 @@ router.get(
 // ─── Get Single Approval ──────────────────────────────────────────────────────
 
 router.get("/approvals/:approvalId", requireAuth, async (req, res) => {
-  const { approvalId } = req.params;
+  const approvalId = String(req.params["approvalId"]);
   const svc = new ApprovalService(getDb());
-  const approval = await svc.get(approvalId!);
+  const approval = await svc.get(approvalId);
 
   if (approval.companyId !== req.auth.companyId) {
     res.status(403).json({ error: "Forbidden" });
@@ -93,16 +93,16 @@ router.get(
   "/approvals/:approvalId/issues",
   requireAuth,
   async (req, res) => {
-    const { approvalId } = req.params;
+    const approvalId = String(req.params["approvalId"]);
     const svc = new ApprovalService(getDb());
-    const approval = await svc.get(approvalId!);
+    const approval = await svc.get(approvalId);
 
     if (approval.companyId !== req.auth.companyId) {
       res.status(403).json({ error: "Forbidden" });
       return;
     }
 
-    const linked = await svc.getLinkedIssues(approvalId!);
+    const linked = await svc.getLinkedIssues(approvalId);
     res.json(linked);
   },
 );
@@ -110,7 +110,7 @@ router.get(
 // ─── Resolve Approval ─────────────────────────────────────────────────────────
 
 router.patch("/approvals/:approvalId", requireAuth, async (req, res) => {
-  const { approvalId } = req.params;
+  const approvalId = String(req.params["approvalId"]);
 
   // Only board users can resolve approvals
   const isUser = !!req.auth.userId;
@@ -130,11 +130,11 @@ router.patch("/approvals/:approvalId", requireAuth, async (req, res) => {
 
   const svc = new ApprovalService(getDb());
   const updated = await svc.resolve({
-    approvalId: approvalId!,
+    approvalId,
     companyId: req.auth.companyId,
     status,
-    resolvedByAgentId: req.auth.agentId ?? undefined,
-    resolvedByUserId: req.auth.userId ?? undefined,
+    resolvedByAgentId: req.auth.agentId,
+    resolvedByUserId: req.auth.userId,
   });
 
   res.json(updated);

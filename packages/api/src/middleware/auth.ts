@@ -3,10 +3,10 @@ import { jwtVerify } from "jose";
 import { UnauthorizedError } from "@agentic/core";
 
 export interface AuthContext {
-  agentId?: string;
-  userId?: string;
+  agentId?: string | undefined;
+  userId?: string | undefined;
   companyId: string;
-  runId?: string;
+  runId?: string | undefined;
 }
 
 declare global {

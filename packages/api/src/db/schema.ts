@@ -304,6 +304,27 @@ export const approvalIssueLinks = pgTable("approval_issue_links", {
   createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
+// ─── Webhooks ────────────────────────────────────────────────────────────────
+
+export const companyWebhooks = pgTable(
+  "company_webhooks",
+  {
+    id: text("id").primaryKey(),
+    companyId: text("company_id")
+      .notNull()
+      .references(() => companies.id),
+    url: text("url").notNull(),
+    events: jsonb("events").notNull().default([]),
+    secret: text("secret"),
+    enabled: boolean("enabled").notNull().default(true),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at").notNull().defaultNow(),
+  },
+  (t) => ({
+    companyIdIdx: index("webhooks_company_id_idx").on(t.companyId),
+  }),
+);
+
 // ─── Audit Log ───────────────────────────────────────────────────────────────
 
 export const auditLog = pgTable(

@@ -7,24 +7,24 @@ import { NotFoundError, ForbiddenError, ValidationError } from "@agentic/core";
 export interface CreateApprovalOptions {
   companyId: string;
   requestingAgentId: string;
-  runId?: string;
+  runId?: string | undefined;
   title: string;
-  description?: string;
-  linkedIssueIds?: string[];
+  description?: string | undefined;
+  linkedIssueIds?: string[] | undefined;
 }
 
 export interface ResolveApprovalOptions {
   approvalId: string;
   companyId: string;
   status: "approved" | "rejected";
-  resolvedByAgentId?: string;
-  resolvedByUserId?: string;
+  resolvedByAgentId?: string | undefined;
+  resolvedByUserId?: string | undefined;
 }
 
 export interface ListApprovalsOptions {
   companyId: string;
-  status?: "pending" | "approved" | "rejected";
-  requestingAgentId?: string;
+  status?: "pending" | "approved" | "rejected" | undefined;
+  requestingAgentId?: string | undefined;
 }
 
 export class ApprovalService {

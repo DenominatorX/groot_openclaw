@@ -19,49 +19,50 @@ import {
 
 export interface ListIssuesOptions {
   companyId: string;
-  status?: IssueStatus | IssueStatus[];
-  assigneeAgentId?: string;
-  projectId?: string;
-  goalId?: string;
-  parentId?: string;
-  q?: string;
-  limit?: number;
-  offset?: number;
+  status?: IssueStatus | IssueStatus[] | undefined;
+  assigneeAgentId?: string | undefined;
+  projectId?: string | undefined;
+  goalId?: string | undefined;
+  parentId?: string | undefined;
+  labelId?: string | undefined;
+  q?: string | undefined;
+  limit?: number | undefined;
+  offset?: number | undefined;
 }
 
 export interface CheckoutOptions {
   issueId: string;
   agentId: string;
   runId: string;
-  expectedStatuses?: IssueStatus[];
+  expectedStatuses?: IssueStatus[] | undefined;
 }
 
 export interface UpdateIssueOptions {
   issueId: string;
   companyId: string;
-  actorAgentId?: string;
-  actorUserId?: string;
-  runId?: string;
+  actorAgentId?: string | undefined;
+  actorUserId?: string | undefined;
+  runId?: string | undefined;
   fields: {
-    title?: string;
-    description?: string;
-    status?: IssueStatus;
-    priority?: string;
-    assigneeAgentId?: string | null;
-    assigneeUserId?: string | null;
-    projectId?: string;
-    goalId?: string;
-    parentId?: string | null;
-    billingCode?: string;
+    title?: string | undefined;
+    description?: string | null | undefined;
+    status?: IssueStatus | undefined;
+    priority?: string | undefined;
+    assigneeAgentId?: string | null | undefined;
+    assigneeUserId?: string | null | undefined;
+    projectId?: string | null | undefined;
+    goalId?: string | null | undefined;
+    parentId?: string | null | undefined;
+    billingCode?: string | null | undefined;
   };
-  comment?: string;
+  comment?: string | undefined;
 }
 
 export interface AddCommentOptions {
   issueId: string;
-  authorAgentId?: string;
-  authorUserId?: string;
-  runId?: string;
+  authorAgentId?: string | undefined;
+  authorUserId?: string | undefined;
+  runId?: string | undefined;
   body: string;
 }
 
@@ -86,6 +87,13 @@ export class IssueService {
     }
     if (opts.parentId) {
       conditions.push(eq(issues.parentId, opts.parentId));
+    }
+    if (opts.labelId) {
+      const labelledIssueIds = this.db
+        .select({ id: issueLabels.issueId })
+        .from(issueLabels)
+        .where(eq(issueLabels.labelId, opts.labelId));
+      conditions.push(inArray(issues.id, labelledIssueIds));
     }
     if (opts.q) {
       conditions.push(
@@ -148,17 +156,17 @@ export class IssueService {
   async create(opts: {
     companyId: string;
     title: string;
-    description?: string;
-    status?: IssueStatus;
-    priority?: string;
-    projectId?: string;
-    goalId?: string;
-    parentId?: string;
-    assigneeAgentId?: string;
-    assigneeUserId?: string;
-    billingCode?: string;
-    createdByAgentId?: string;
-    createdByUserId?: string;
+    description?: string | undefined;
+    status?: IssueStatus | undefined;
+    priority?: string | undefined;
+    projectId?: string | undefined;
+    goalId?: string | undefined;
+    parentId?: string | undefined;
+    assigneeAgentId?: string | undefined;
+    assigneeUserId?: string | undefined;
+    billingCode?: string | undefined;
+    createdByAgentId?: string | undefined;
+    createdByUserId?: string | undefined;
   }) {
     if (!opts.title?.trim()) {
       throw new ValidationError("title is required");
@@ -214,9 +222,10 @@ export class IssueService {
     // Use a transaction with row-level locking
     return await this.db.transaction(async (tx) => {
       // Lock the row
-      const [row] = await tx.execute(
+      const rows = await tx.execute(
         sql`SELECT * FROM issues WHERE id = ${issueId} FOR UPDATE`,
       );
+      const row = (rows as unknown as { rows?: unknown[] }).rows?.[0] ?? (Array.isArray(rows) ? rows[0] : undefined);
 
       if (!row) throw new NotFoundError("Issue", issueId);
 

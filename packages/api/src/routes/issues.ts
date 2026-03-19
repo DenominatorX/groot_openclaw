@@ -21,7 +21,7 @@ router.get(
       return;
     }
 
-    const { status, assigneeAgentId, projectId, goalId, q } = req.query;
+    const { status, assigneeAgentId, projectId, goalId, labelId, q, limit, offset } = req.query;
 
     const svc = new IssueService(getDb());
     const statusArr = status
@@ -34,7 +34,10 @@ router.get(
       assigneeAgentId: assigneeAgentId ? String(assigneeAgentId) : undefined,
       projectId: projectId ? String(projectId) : undefined,
       goalId: goalId ? String(goalId) : undefined,
+      labelId: labelId ? String(labelId) : undefined,
       q: q ? String(q) : undefined,
+      limit: limit ? parseInt(String(limit), 10) : undefined,
+      offset: offset ? parseInt(String(offset), 10) : undefined,
     });
 
     res.json(result);
@@ -78,8 +81,17 @@ router.post(
 
     const svc = new IssueService(getDb());
     const issue = await svc.create({
-      companyId,
-      ...parsed.data,
+      companyId: companyId!,
+      title: parsed.data.title,
+      description: parsed.data.description,
+      status: parsed.data.status,
+      priority: parsed.data.priority,
+      projectId: parsed.data.projectId,
+      goalId: parsed.data.goalId,
+      parentId: parsed.data.parentId,
+      assigneeAgentId: parsed.data.assigneeAgentId,
+      assigneeUserId: parsed.data.assigneeUserId,
+      billingCode: parsed.data.billingCode,
       createdByAgentId: req.auth.agentId,
       createdByUserId: req.auth.userId,
     });
@@ -92,7 +104,7 @@ router.post(
 
 router.get("/issues/:issueId", requireAuth, async (req, res) => {
   const svc = new IssueService(getDb());
-  const issue = await svc.get(req.params["issueId"]!);
+  const issue = await svc.get(String(req.params["issueId"]));
 
   if (issue.companyId !== req.auth.companyId) {
     res.status(403).json({ error: "Forbidden" });
@@ -132,7 +144,7 @@ router.post(
 
     const svc = new IssueService(getDb());
     const issue = await svc.checkout({
-      issueId: req.params["issueId"]!,
+      issueId: String(req.params["issueId"]),
       agentId: parsed.data.agentId,
       runId,
       expectedStatuses: parsed.data.expectedStatuses,
@@ -175,12 +187,23 @@ router.patch(
 
     const svc = new IssueService(getDb());
     const updated = await svc.update({
-      issueId: req.params["issueId"]!,
+      issueId: String(req.params["issueId"]),
       companyId: req.auth.companyId,
       actorAgentId: req.auth.agentId,
       actorUserId: req.auth.userId,
       runId: req.auth.runId,
-      fields,
+      fields: {
+        title: fields.title,
+        description: fields.description,
+        status: fields.status,
+        priority: fields.priority,
+        assigneeAgentId: fields.assigneeAgentId,
+        assigneeUserId: fields.assigneeUserId,
+        projectId: fields.projectId,
+        goalId: fields.goalId,
+        parentId: fields.parentId,
+        billingCode: fields.billingCode,
+      },
       comment,
     });
 
@@ -202,7 +225,7 @@ router.post(
     }
 
     const svc = new IssueService(getDb());
-    const released = await svc.release(req.params["issueId"]!, runId);
+    const released = await svc.release(String(req.params["issueId"]), runId);
     res.json(released);
   },
 );
@@ -211,7 +234,7 @@ router.post(
 
 router.get("/issues/:issueId/comments", requireAuth, async (req, res) => {
   const svc = new IssueService(getDb());
-  const comments = await svc.listComments(req.params["issueId"]!);
+  const comments = await svc.listComments(String(req.params["issueId"]));
   res.json(comments);
 });
 
@@ -229,7 +252,7 @@ router.post(
 
     const svc = new IssueService(getDb());
     const comment = await svc.addComment({
-      issueId: req.params["issueId"]!,
+      issueId: String(req.params["issueId"]),
       authorAgentId: req.auth.agentId,
       authorUserId: req.auth.userId,
       runId: req.auth.runId,

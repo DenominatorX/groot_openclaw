@@ -4,16 +4,16 @@ import { auditLog } from "../db/schema.js";
 
 export interface QueryAuditOptions {
   companyId: string;
-  entityType?: string;
-  entityId?: string;
-  agentId?: string;
-  userId?: string;
-  runId?: string;
-  action?: string;
-  from?: Date;
-  to?: Date;
-  limit?: number;
-  offset?: number;
+  entityType?: string | undefined;
+  entityId?: string | undefined;
+  agentId?: string | undefined;
+  userId?: string | undefined;
+  runId?: string | undefined;
+  action?: string | undefined;
+  from?: Date | undefined;
+  to?: Date | undefined;
+  limit?: number | undefined;
+  offset?: number | undefined;
 }
 
 export class AuditService {

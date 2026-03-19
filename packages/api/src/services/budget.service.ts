@@ -11,7 +11,7 @@ import {
 export interface SpendRecordOptions {
   agentId: string;
   companyId: string;
-  runId?: string;
+  runId?: string | undefined;
   amountCents: number;
 }
 

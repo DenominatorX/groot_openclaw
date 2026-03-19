@@ -4,6 +4,11 @@ import agentRoutes from "./routes/agents.js";
 import approvalRoutes from "./routes/approvals.js";
 import auditRoutes from "./routes/audit.js";
 import budgetRoutes from "./routes/budget.js";
+import projectRoutes from "./routes/projects.js";
+import goalRoutes from "./routes/goals.js";
+import labelRoutes from "./routes/labels.js";
+import dashboardRoutes from "./routes/dashboard.js";
+import webhookRoutes from "./routes/webhooks.js";
 import { errorHandler } from "./lib/error-handler.js";
 
 export function createApp() {
@@ -22,6 +27,11 @@ export function createApp() {
   app.use("/api", approvalRoutes);
   app.use("/api", auditRoutes);
   app.use("/api", budgetRoutes);
+  app.use("/api", projectRoutes);
+  app.use("/api", goalRoutes);
+  app.use("/api", labelRoutes);
+  app.use("/api", dashboardRoutes);
+  app.use("/api", webhookRoutes);
 
   // 404
   app.use((_req, res) => {
