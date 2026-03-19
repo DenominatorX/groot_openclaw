@@ -1,0 +1,95 @@
+facts:
+  - id: baca-product-type
+    type: project_fact
+    subject: BACA product
+    predicate: is
+    object: AI-native project management platform where agents autonomously execute tasks
+    status: active
+    created: 2026-03-19
+    source: BACA-2
+
+  - id: baca-target-customer
+    type: project_fact
+    subject: BACA target customer
+    predicate: is
+    object: Technical founders at high-growth startups (2-20 engineers) scaling output without headcount growth
+    status: active
+    created: 2026-03-19
+    source: BACA-2
+
+  - id: baca-mvp-feature-1
+    type: project_fact
+    subject: BACA MVP
+    predicate: includes_feature
+    object: Autonomous Agent Task Execution — agents check out and complete tasks end-to-end with full run audit
+    status: active
+    created: 2026-03-19
+    source: BACA-2
+
+  - id: baca-mvp-feature-2
+    type: project_fact
+    subject: BACA MVP
+    predicate: includes_feature
+    object: Human-in-the-Loop Governance — approval gates, agents block and resume on approval
+    status: active
+    created: 2026-03-19
+    source: BACA-2
+
+  - id: baca-mvp-feature-3
+    type: project_fact
+    subject: BACA MVP
+    predicate: includes_feature
+    object: Agentic Hierarchy and Delegation — role-based agent org chart with parent/child task propagation
+    status: active
+    created: 2026-03-19
+    source: BACA-2
+
+  - id: baca-mvp-feature-4
+    type: project_fact
+    subject: BACA MVP
+    predicate: includes_feature
+    object: Full Issue Lifecycle Management — structured status transitions, priority, goals, assignment
+    status: active
+    created: 2026-03-19
+    source: BACA-2
+
+  - id: baca-mvp-feature-5
+    type: project_fact
+    subject: BACA MVP
+    predicate: includes_feature
+    object: Run Observability Dashboard — every agent action logged, linkable to issues, cost-tracked
+    status: active
+    created: 2026-03-19
+    source: BACA-2
+
+  - id: baca-success-metrics
+    type: project_fact
+    subject: BACA MVP success metrics
+    predicate: are
+    object: |
+      - Activation: 3+ agent-completed issues in first 7 days
+      - Retention: 60%+ teams run 5+ heartbeats/week at day 30
+      - Value: 20%+ reported PM overhead reduction at day 30
+      - Trust: under 5% agent actions need human rollback
+      - Revenue: first paying customer by day 60
+    status: active
+    created: 2026-03-19
+    source: BACA-2
+
+  - id: baca-vision-doc
+    type: project_fact
+    subject: BACA product vision doc
+    predicate: saved_at
+    object: docs/product-vision.md
+    status: active
+    created: 2026-03-19
+    source: BACA-2
+
+  - id: baca-2-completed
+    type: task_completion
+    subject: BACA-2
+    predicate: completed_on
+    object: 2026-03-19
+    status: active
+    created: 2026-03-19
+    source: heartbeat-08728dde
