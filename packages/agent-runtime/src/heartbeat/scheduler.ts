@@ -1,5 +1,6 @@
 import { randomUUID } from "node:crypto";
 import type { Agent } from "@agentic/core";
+import { canRunHeartbeat, checkBudgetStatus } from "@agentic/governance";
 import { AdapterRunner } from "./adapter-runner.js";
 
 export interface SchedulerConfig {
@@ -89,10 +90,25 @@ export class HeartbeatScheduler {
 
     const all = (await res.json()) as Agent[];
 
-    // Filter to agents with heartbeat enabled and no active concurrent run
+    // Filter to agents with heartbeat enabled, not currently running, and within budget
     return all.filter((a) => {
       const rt = a.runtimeConfig as { heartbeat?: { enabled?: boolean } };
-      return rt?.heartbeat?.enabled === true && a.status !== "running";
+      if (rt?.heartbeat?.enabled !== true) return false;
+      if (a.status === "running" || a.status === "paused") return false;
+
+      // Budget enforcement: skip agents that have exceeded their budget
+      const budgetStatus = checkBudgetStatus(
+        a.spentMonthlyCents ?? 0,
+        a.budgetMonthlyCents ?? 0,
+      );
+      if (!canRunHeartbeat(budgetStatus)) {
+        console.warn(
+          `Agent ${a.id} (${a.name}) skipped: budget exceeded (${a.spentMonthlyCents}/${a.budgetMonthlyCents} cents)`,
+        );
+        return false;
+      }
+
+      return true;
     });
   }
 

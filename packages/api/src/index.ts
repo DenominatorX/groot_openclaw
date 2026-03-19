@@ -1,6 +1,9 @@
 import express from "express";
 import issueRoutes from "./routes/issues.js";
 import agentRoutes from "./routes/agents.js";
+import approvalRoutes from "./routes/approvals.js";
+import auditRoutes from "./routes/audit.js";
+import budgetRoutes from "./routes/budget.js";
 import { errorHandler } from "./lib/error-handler.js";
 
 export function createApp() {
@@ -16,6 +19,9 @@ export function createApp() {
   // Routes
   app.use("/api", issueRoutes);
   app.use("/api", agentRoutes);
+  app.use("/api", approvalRoutes);
+  app.use("/api", auditRoutes);
+  app.use("/api", budgetRoutes);
 
   // 404
   app.use((_req, res) => {
