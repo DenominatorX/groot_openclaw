@@ -1,0 +1,39 @@
+import express from "express";
+import issueRoutes from "./routes/issues.js";
+import agentRoutes from "./routes/agents.js";
+import { errorHandler } from "./lib/error-handler.js";
+
+export function createApp() {
+  const app = express();
+
+  app.use(express.json());
+
+  // Health check
+  app.get("/health", (_req, res) => {
+    res.json({ status: "ok", timestamp: new Date().toISOString() });
+  });
+
+  // Routes
+  app.use("/api", issueRoutes);
+  app.use("/api", agentRoutes);
+
+  // 404
+  app.use((_req, res) => {
+    res.status(404).json({ error: "API route not found" });
+  });
+
+  // Error handler (must be last)
+  app.use(errorHandler);
+
+  return app;
+}
+
+// Start server if run directly
+const port = parseInt(process.env["PORT"] ?? "3000", 10);
+const app = createApp();
+
+app.listen(port, () => {
+  console.log(`API server listening on port ${port}`);
+});
+
+export default app;
