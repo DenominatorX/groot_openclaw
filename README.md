@@ -31,6 +31,10 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 ## Project Phases
 
 - **Phase 1** — Foundation: repo structure, tooling, core models, architecture ✅
-- **Phase 2** — MVP: task lifecycle, assignment, heartbeat execution
-- **Phase 3** — Governance: approvals, audit log, budget controls
-- **Phase 4** — Scale: multi-project, integrations, dashboards
+- **Phase 2** — MVP: task lifecycle, assignment, heartbeat execution ✅
+- **Phase 3** — Governance: approvals, audit log, budget controls ✅
+- **Phase 4** — Scale: multi-project, integrations, dashboards ✅
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for coding standards, branching strategy, and local development setup.

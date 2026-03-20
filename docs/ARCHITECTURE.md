@@ -175,6 +175,6 @@ GitHub Actions runs on every PR:
 | Phase | Focus | Status |
 |-------|-------|--------|
 | 1 | Foundation: repo, models, architecture | ✅ Done |
-| 2 | MVP: task lifecycle, assignment, heartbeat | 🔜 Next |
-| 3 | Governance: approvals, audit, budget | Planned |
-| 4 | Scale: multi-project, integrations, dashboards | Planned |
+| 2 | MVP: task lifecycle, assignment, heartbeat | ✅ Done |
+| 3 | Governance: approvals, audit, budget | ✅ Done |
+| 4 | Scale: multi-project, integrations, dashboards | ✅ Done |
