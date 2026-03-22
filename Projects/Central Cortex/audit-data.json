@@ -1,20 +1,6 @@
 {
-  "metadata": {
-    "generated": "2026-03-22T15:14:08.562442Z",
-    "totalRequirements": 209,
-    "directoriesScanned": [
-      "/Users/DX-1/Documents/Projects",
-      "/Users/DX-1/Documents/dx-framework",
-      "/Volumes/ORICO (mounted)",
-      "/Volumes/ORICO/0.Admin",
-      "/Volumes/ORICO/1.Claws",
-      "/Volumes/ORICO/projects",
-      "/Volumes/ORICO/projects 2",
-      "/Volumes/2GBSSD_Sand"
-    ],
-    "notes": "Merged audit-requirements.html extraction with existing data. Deduplicated by requirement ID.",
-    "lastUpdated": "2026-03-22"
-  },
+  "version": 2,
+  "exportedAt": "2026-03-22T19:17:10.441068",
   "projects": [
     {
       "id": "PROJ-001",
@@ -67,6 +53,12 @@
     {
       "id": "PROJ-HC",
       "name": "Mission Control"
+    },
+    {
+      "id": "PROJ-INT-001",
+      "name": "Internal Team & Governance Requirements",
+      "description": "Requirements for organizational structure, governance, and team coordination",
+      "status": "active"
     }
   ],
   "requirements": [
@@ -3423,6 +3415,193 @@
         "code-quality",
         "security",
         "migration"
+      ]
+    },
+    {
+      "id": "REQ-0210",
+      "name": "Agent-Based Health Research Management",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "Dr. Al agent autonomously manages health research tasks including genetic variant research (AMPD1, AGK), rhabdomyolysis root cause analysis, supplement optimization, and CK monitoring protocol development with weekly health status reviews.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "agents",
+        "health-research",
+        "specialized-domain",
+        "continuous-operation"
+      ]
+    },
+    {
+      "id": "REQ-0211",
+      "name": "Multi-Specialist Coordination Framework",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "System enabling agent hierarchy with core sub-agents (Neurologist, Geneticist, Nutritionist) and on-demand specialist spawning (Cardiologist, Rheumatologist, Endocrinologist, Psychedelic Researcher, etc.) with coordinated briefing and reporting.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "agents",
+        "delegation",
+        "hierarchy",
+        "specialist-network"
+      ]
+    },
+    {
+      "id": "REQ-0212",
+      "name": "Evidence-Based Decision Making with Exploratory Options",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "Agent capability to balance evidence-based interventions when available with exploratory/unconventional approaches (alternative medicine, emerging treatments) based on user preferences.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "agents",
+        "decision-framework",
+        "evidence-synthesis",
+        "personalization"
+      ]
+    },
+    {
+      "id": "REQ-0213",
+      "name": "Legal Risk Assessment & Monitoring",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "Continuous monitoring for legal and compliance risks including contract review, regulatory changes, IP protection status, and malpractice threat detection with automated escalation.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "compliance",
+        "legal",
+        "risk-management",
+        "continuous-monitoring"
+      ]
+    },
+    {
+      "id": "REQ-0214",
+      "name": "Litigation & Evidence Management",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "Capability to handle complex litigation including trial evidence strategy, expert witness coordination, timeline reconstruction, and federal court procedures with documented audit trail.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "legal",
+        "litigation",
+        "evidence-management",
+        "expertise-coordination"
+      ]
+    },
+    {
+      "id": "REQ-0215",
+      "name": "Specialized Legal Sub-Agent Network",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "On-demand legal specialist coordination including IP attorneys, corporate law specialists, tech/crypto law experts, employment law, and malpractice monitoring with integrated knowledge base.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "legal",
+        "agents",
+        "delegation",
+        "specialization"
+      ]
+    },
+    {
+      "id": "REQ-0216",
+      "name": "Ethical & Compliance Posture Management",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "Governance documentation for agent permissions, ethical review of automation decisions, and compliance verification to ensure company meets trust commitments in regulated domains.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "compliance",
+        "governance",
+        "ethics",
+        "agent-permissions"
+      ]
+    },
+    {
+      "id": "REQ-0217",
+      "name": "Product Management & Feature Specification System",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "Dedicated product management capability for customer-to-roadmap pipeline including user research synthesis, feature prioritization, acceptance criteria definition, and roadmap sequencing to prevent escalation bottlenecks.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "product-management",
+        "roadmap",
+        "customer-research",
+        "specifications"
+      ]
+    },
+    {
+      "id": "REQ-0218",
+      "name": "Go-To-Market & First Customer Acquisition",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "GTM infrastructure for first customer acquisition including outbound targeting, demo scheduling, objection handling, initial onboarding, and pipeline management to meet Day 60 customer target.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "gtm",
+        "sales",
+        "customer-acquisition",
+        "pipeline"
+      ]
+    },
+    {
+      "id": "REQ-0219",
+      "name": "Observability Dashboard Design & UX",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "Trust-sensitive human interface for reading and understanding agent actions and rationale in the observability dashboard to establish first-impression credibility with customers.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "dashboard",
+        "ux-design",
+        "observability",
+        "trust-interface"
+      ]
+    },
+    {
+      "id": "REQ-0220",
+      "name": "Governance Documentation & Agent Permission Framework",
+      "project": "Internal Team & Governance Requirements",
+      "projectId": "PROJ-INT-001",
+      "description": "Structured governance documentation defining agent permissions, authorization boundaries, and escalation thresholds to establish ethical and legal compliance posture.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "Agent profiles and team assessment (2026-03-22)",
+      "tags": [
+        "governance",
+        "permissions",
+        "ethical-automation",
+        "compliance"
       ]
     }
   ]
