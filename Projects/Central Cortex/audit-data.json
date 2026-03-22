@@ -1,0 +1,2188 @@
+{
+  "metadata": {
+    "generated": "2026-03-22T00:00:00Z",
+    "totalRequirements": 136,
+    "directoriesScanned": [
+      "/Users/DX-1/Documents/Projects",
+      "/Users/DX-1/Documents/dx-framework",
+      "/Volumes/ORICO (unmounted)",
+      "/Volumes/2GBSSD_Sand (unmounted)"
+    ],
+    "notes": "Comprehensive requirements extraction from accessible legacy projects. External volumes (/Volumes/ORICO, /Volumes/2GBSSD_Sand) were not accessible during scan. All requirements extracted from current project documentation in /Users/DX-1/Documents/Projects."
+  },
+  "projects": [
+    {
+      "id": "PROJ-001",
+      "name": "BACA - Agentic Project Management Platform",
+      "description": "Efficient, ethical, and legal automation of project and program development lifecycle. An infrastructure layer for AI agents to autonomously manage software projects with governance workflows and audit trails.",
+      "status": "active",
+      "path": "/Users/DX-1/Documents/Projects"
+    },
+    {
+      "id": "PROJ-002",
+      "name": "DX Framework",
+      "description": "Complete agentic software delivery system combining GROOT lifecycle, Oracle data intelligence, Superpowers methodology, and OpenClaw agent network. Orchestrates projects from brief to deployment.",
+      "status": "active",
+      "path": "/Users/DX-1/Documents/dx-framework"
+    },
+    {
+      "id": "PROJ-003",
+      "name": "Kevin's Health Research Project",
+      "description": "Medical research and health optimization program leveraging AI agents for genetic variant analysis, supplement optimization, and rhabdomyolysis management.",
+      "status": "active",
+      "path": "/Users/DX-1/Documents/Projects/agents/dr-al"
+    },
+    {
+      "id": "PROJ-004",
+      "name": "Legal & Compliance Operations",
+      "description": "Legal counsel, compliance monitoring, risk management, and contract review powered by Dirty Bird agent with trial litigation and regulatory expertise.",
+      "status": "active",
+      "path": "/Users/DX-1/Documents/Projects/agents/dirty-bird"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "REQ-0001",
+      "name": "Autonomous Agent Task Execution",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "AI agents check out assigned tasks and execute them end-to-end (write code, conduct research, produce documents) with full run audit trail tracking.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "execution",
+        "agents",
+        "task-lifecycle",
+        "core-feature"
+      ]
+    },
+    {
+      "id": "REQ-0002",
+      "name": "Human-in-the-Loop Governance",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Approval gates for high-stakes actions. Humans can review, comment, approve, or reject before agents proceed. Agents block cleanly and resume on approval.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "governance",
+        "approval",
+        "human-control",
+        "core-feature"
+      ]
+    },
+    {
+      "id": "REQ-0003",
+      "name": "Agentic Hierarchy & Delegation",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Define agent roles (CEO, Engineer, PM). Managers delegate subtasks to reports with automatic parent-child linkage and budget propagation.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "hierarchy",
+        "delegation",
+        "org-structure",
+        "core-feature"
+      ]
+    },
+    {
+      "id": "REQ-0004",
+      "name": "Full Issue Lifecycle Management",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "CRUD on issues with structured status transitions (todo → in_progress → blocked → review → done), priority, assignment, and goal alignment.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "issue-management",
+        "lifecycle",
+        "status",
+        "core-feature"
+      ]
+    },
+    {
+      "id": "REQ-0005",
+      "name": "Run Observability Dashboard",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Every agent action is logged to a heartbeat run. Board members inspect what happened, why, what it cost, and link runs to issues for accountability.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "observability",
+        "dashboard",
+        "audit-log",
+        "core-feature"
+      ]
+    },
+    {
+      "id": "REQ-0006",
+      "name": "Stateless Agent Architecture",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Agents do not hold state between heartbeats. All state lives in platform DB. Makes agents interchangeable and failure-safe.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "architecture",
+        "stateless",
+        "resilience"
+      ]
+    },
+    {
+      "id": "REQ-0007",
+      "name": "Run-ID Tracing",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Every mutating API call includes X-Paperclip-Run-Id header. Links every change to auditable heartbeat run enabling full replay and forensic analysis.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "audit-trail",
+        "tracing",
+        "accountability",
+        "security"
+      ]
+    },
+    {
+      "id": "REQ-0008",
+      "name": "Chain of Command Escalation",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Agents have reportsTo hierarchy. When blocked, agent escalates to manager. Platform enforces this; cross-team delegation requires billingCode.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "escalation",
+        "hierarchy",
+        "governance"
+      ]
+    },
+    {
+      "id": "REQ-0009",
+      "name": "Budget Control & Enforcement",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Monthly spend tracked per agent in cents. Platform auto-pauses agents at 100% budget. Above 80%, only critical tasks execute.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "budget",
+        "cost-control",
+        "enforcement"
+      ]
+    },
+    {
+      "id": "REQ-0010",
+      "name": "Approval Gates for Irreversible Actions",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Actions with high blast radius (create agents, push to prod, delete data) must go through approval workflow. Approvals linked to issues for full context.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "approval",
+        "risk-management",
+        "governance"
+      ]
+    },
+    {
+      "id": "REQ-0011",
+      "name": "Adapter Abstraction Layer",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Agents are model-agnostic. Adapter is subprocess contract: receive env vars, do work, exit. claude_local spawns claude CLI; codex_local spawns codex. New adapters are additive.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "adapter",
+        "runtime",
+        "extensibility"
+      ]
+    },
+    {
+      "id": "REQ-0012",
+      "name": "REST API — Issues Management",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "GET/POST /api/companies/:id/issues for list and create. Full CRUD with status/field updates and inline comments.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "api",
+        "rest",
+        "issues"
+      ]
+    },
+    {
+      "id": "REQ-0013",
+      "name": "Atomic Checkout Protocol",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "POST /api/issues/:id/checkout implements compare-and-swap to prevent concurrent assignment. Returns 409 Conflict if already checked out.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "concurrency",
+        "checkout",
+        "api"
+      ]
+    },
+    {
+      "id": "REQ-0014",
+      "name": "Agent Service & Heartbeat Scheduling",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Agent runtime polls heartbeats, injects PAPERCLIP_* env vars, invokes adapter subprocess, tracks run lifecycle (queued → running → completed/failed).",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "runtime",
+        "scheduler",
+        "heartbeat"
+      ]
+    },
+    {
+      "id": "REQ-0015",
+      "name": "Governance Service — Approval Workflows",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Enforces company policy at runtime with approval gates for privileged actions and escalation chains derived from chainOfCommand.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "governance",
+        "approval",
+        "policy"
+      ]
+    },
+    {
+      "id": "REQ-0016",
+      "name": "Immutable Audit Log",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Append-only audit log for all state mutations. No DELETE endpoint exists for audit records.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "audit",
+        "immutable",
+        "compliance"
+      ]
+    },
+    {
+      "id": "REQ-0017",
+      "name": "PostgreSQL Data Model",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Core entities: Company, Agent, Issue, AgentRun, Project, Goal, Approval, AuditLog with structured schema and relationships.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "database",
+        "schema",
+        "data-model"
+      ]
+    },
+    {
+      "id": "REQ-0018",
+      "name": "JWT Authentication & Authorization",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "All API requests authenticated via JWT. Agents receive short-lived run JWTs scoped to single run. Board users have persistent JWTs with role-based permissions.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "auth",
+        "security",
+        "jwt"
+      ]
+    },
+    {
+      "id": "REQ-0019",
+      "name": "Row-Level Tenant Isolation",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "No agent can access another company's data. Enforced at database level.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "security",
+        "multi-tenant",
+        "isolation"
+      ]
+    },
+    {
+      "id": "REQ-0020",
+      "name": "Sensitive Data Protection",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Sensitive env vars (API keys, DB credentials) never logged.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "security",
+        "secrets"
+      ]
+    },
+    {
+      "id": "REQ-0021",
+      "name": "Core Package Architecture",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Four packages: @agentic/core (types, models, errors), @agentic/api (REST API), @agentic/agent-runtime (scheduler + adapter), @agentic/governance (approvals, audit, budget).",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/ARCHITECTURE.md",
+      "tags": [
+        "architecture",
+        "packages",
+        "modularity"
+      ]
+    },
+    {
+      "id": "REQ-0022",
+      "name": "TypeScript Strict Mode & ESM",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Strict TypeScript mode enforced with exactOptionalPropertyTypes and noUncheckedIndexedAccess. ESM modules only with .js extensions.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/CONTRIBUTING.md",
+      "tags": [
+        "quality",
+        "typescript",
+        "build"
+      ]
+    },
+    {
+      "id": "REQ-0023",
+      "name": "Co-located Unit Tests",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Tests live next to files they test (foo.test.ts beside foo.ts). Uses Node's built-in test runner. All new logic requires tests.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/CONTRIBUTING.md",
+      "tags": [
+        "testing",
+        "quality",
+        "tdd"
+      ]
+    },
+    {
+      "id": "REQ-0024",
+      "name": "Drizzle ORM & Migrations",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "All schema changes in packages/api/src/db/schema.ts. Migrations generated with npm run db:generate. Never raw SQL in application code.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/CONTRIBUTING.md",
+      "tags": [
+        "database",
+        "orm",
+        "migrations"
+      ]
+    },
+    {
+      "id": "REQ-0025",
+      "name": "Trunk-Based Git Workflow",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "main branch always deployable. Feature branches off main named <type>/<short-description>. Squash merge to keep history clean. Delete after merge.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/CONTRIBUTING.md",
+      "tags": [
+        "vcs",
+        "workflow",
+        "git"
+      ]
+    },
+    {
+      "id": "REQ-0026",
+      "name": "Conventional Commits",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Commit messages follow Conventional Commits: feat:, fix:, chore:, docs:, test:, refactor:. AI agents append Co-Authored-By: Paperclip.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/CONTRIBUTING.md",
+      "tags": [
+        "commits",
+        "vcs",
+        "standards"
+      ]
+    },
+    {
+      "id": "REQ-0027",
+      "name": "CI/CD Pipeline — GitHub Actions",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Every PR runs: npm run lint (TypeScript check), npm run build (compile), npm run test (tests), npm audit (vulnerability scan). Deploy to staging on main merge.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/CONTRIBUTING.md",
+      "tags": [
+        "ci-cd",
+        "automation",
+        "quality-gates"
+      ]
+    },
+    {
+      "id": "REQ-0028",
+      "name": "Product Vision & Market Positioning",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Target founding teams 2-20 engineers. Solve 30-40% PM overhead. AI agents execute autonomously with human governance and audit trails.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "product",
+        "strategy",
+        "market"
+      ]
+    },
+    {
+      "id": "REQ-0029",
+      "name": "MVP Success Metrics",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Activation: 3+ issues completed in 7 days. Retention: ≥60% run ≥5 heartbeats/week by day 30. Quality: <5% rollback rate. Revenue: first paying customer by day 60.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "metrics",
+        "success-criteria",
+        "product"
+      ]
+    },
+    {
+      "id": "REQ-0030",
+      "name": "Founding Engineer Hire",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Agent role to handle technical foundation, MVP build, governance implementation, and platform scaling. Status: pending board approval.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "hiring",
+        "team",
+        "engineering"
+      ]
+    },
+    {
+      "id": "REQ-0031",
+      "name": "Head of Product Hire",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Own product roadmap, customer feedback synthesis, and feature specs. High priority — unblocks roadmap after Founding Engineer onboarding.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "hiring",
+        "product",
+        "team"
+      ]
+    },
+    {
+      "id": "REQ-0032",
+      "name": "Head of Growth/GTM Hire",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Own first customer acquisition pipeline: outbound, demos, objection handling, onboarding. Medium priority — hire 3-4 weeks before MVP ship.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "hiring",
+        "growth",
+        "sales"
+      ]
+    },
+    {
+      "id": "REQ-0033",
+      "name": "Agent Budget Authorization",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Set per-role monthly budget caps for agents. Currently $0 — board must authorize before new hires approved.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "budget",
+        "governance",
+        "board"
+      ]
+    },
+    {
+      "id": "REQ-0034",
+      "name": "Phase 1 — Foundation & Architecture",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Repository structure, tooling, core data models, architecture design. Status: complete.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/README.md",
+      "tags": [
+        "phase",
+        "foundation",
+        "architecture"
+      ]
+    },
+    {
+      "id": "REQ-0035",
+      "name": "Phase 2 — MVP Task Lifecycle",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Task lifecycle, assignment, heartbeat execution. Status: complete.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/README.md",
+      "tags": [
+        "phase",
+        "mvp",
+        "execution"
+      ]
+    },
+    {
+      "id": "REQ-0036",
+      "name": "Phase 3 — Governance & Ethical Safeguards",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Approvals, audit log, budget controls. Status: complete.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/README.md",
+      "tags": [
+        "phase",
+        "governance",
+        "ethics"
+      ]
+    },
+    {
+      "id": "REQ-0037",
+      "name": "Phase 4 — Scale & Integrations",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Multi-project, integrations, dashboards. Status: complete.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/README.md",
+      "tags": [
+        "phase",
+        "scale",
+        "integrations"
+      ]
+    },
+    {
+      "id": "REQ-0038",
+      "name": "CEO Agent — Strategic Leadership",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "CEO agent manages P&L, strategy, team hiring, unblocking reports. Uses memory system (para-memory-files skill) for persistent knowledge and daily planning.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/AGENTS.md",
+      "tags": [
+        "agent",
+        "leadership",
+        "strategy"
+      ]
+    },
+    {
+      "id": "REQ-0039",
+      "name": "CEO Heartbeat Checklist",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Identity check, local planning, approval follow-up, work assignment, checkout, delegation, fact extraction, exit. Runs every heartbeat.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/HEARTBEAT.md",
+      "tags": [
+        "agent",
+        "heartbeat",
+        "operations"
+      ]
+    },
+    {
+      "id": "REQ-0040",
+      "name": "CEO Memory Management System",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Three-layer memory system: knowledge graph, daily notes, tacit knowledge. PARA folder structure (Projects, Areas, Resources, Archives). Uses para-memory-files skill.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/AGENTS.md",
+      "tags": [
+        "memory",
+        "knowledge",
+        "system"
+      ]
+    },
+    {
+      "id": "REQ-0041",
+      "name": "Dirty Bird — Legal & Compliance Agent",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Legal counsel with trial litigation, medical malpractice, whistleblower, federal systems expertise. Monitors contracts, compliance, risk. Reports to CEO.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "agent",
+        "legal",
+        "compliance"
+      ]
+    },
+    {
+      "id": "REQ-0042",
+      "name": "Dirty Bird — Core Specialties",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Trial & litigation, medical malpractice, rhabdomyolysis expertise, federal whistleblower, data breach/privacy, regulatory violations, evidence strategy, expert witness coordination, government defense.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "agent",
+        "legal",
+        "expertise"
+      ]
+    },
+    {
+      "id": "REQ-0043",
+      "name": "Dr. Al — Health Research Agent",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Medical research authority managing genetic variant analysis (AMPD1, AGK), rhabdomyolysis root cause, supplement optimization, CK monitoring, weekly health review.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "agent",
+        "health",
+        "research"
+      ]
+    },
+    {
+      "id": "REQ-0044",
+      "name": "Dr. Al — Medical Team Structure",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Core sub-agents: Neurologist, Geneticist, Nutritionist. On-demand specialists: Cardiologist, Rheumatologist, Naturopath, Acupuncturist, Psychedelic Researcher, Stem Cell Researcher, and more.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "agent",
+        "medical",
+        "specialization"
+      ]
+    },
+    {
+      "id": "REQ-0045",
+      "name": "Kevin's Genetic Variant Analysis",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Analyze AGK variants (c.445A>G, c.764C>T) and AMPD1 c.133C>T (pathogenic). Understand pathway implications for metabolism and muscle function.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "health",
+        "genetics",
+        "research"
+      ]
+    },
+    {
+      "id": "REQ-0046",
+      "name": "Rhabdomyolysis Root Cause Analysis",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Investigate root cause of two rhabdo events (Aug 2025 CK >22k, Jan 2024 CK ~10k). Develop prevention and risk assessment protocols.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "health",
+        "medical",
+        "research"
+      ]
+    },
+    {
+      "id": "REQ-0047",
+      "name": "Supplement Stack Optimization",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Research and optimize supplements for CK management, metabolic support, and chronic fatigue mitigation based on Kevin's unique variants.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "health",
+        "supplements",
+        "research"
+      ]
+    },
+    {
+      "id": "REQ-0048",
+      "name": "CK Monitoring Protocol",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Develop and track CK monitoring protocol with baseline, warning thresholds, and early warning indicators for muscle stress.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "health",
+        "monitoring",
+        "protocol"
+      ]
+    },
+    {
+      "id": "REQ-0049",
+      "name": "Mayo Clinic Follow-up Coordination",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Coordinate April 2026 Mayo Clinic appointment follow-up. Prepare comprehensive case summary from genetic testing (Feb 2026) and research findings.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "health",
+        "medical",
+        "coordination"
+      ]
+    },
+    {
+      "id": "REQ-0050",
+      "name": "DX Framework — Agentic Factory",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Complete software delivery system: feed idea, get shipped product. Orchestrates brief→PRD→architecture→code→deployment with governance and tracking.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "framework",
+        "delivery",
+        "automation"
+      ]
+    },
+    {
+      "id": "REQ-0051",
+      "name": "GROOT v3.1 Lifecycle Engine",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "7-phase lifecycle, 10 role archetypes, parallel tracks, worker packets (17 fields), model routing (3 tiers per task), handoff contracts, board gates, auto-heal mechanics.",
+      "date": "2026-03-18",
+      "version": "v3.1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "framework",
+        "lifecycle",
+        "automation"
+      ]
+    },
+    {
+      "id": "REQ-0052",
+      "name": "Oracle Layer — 3-Tier Intelligence",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Main Oracle (global), Project Oracle (per-project context), Data Guy (session intelligence). Agents query live context instead of carrying stale copies.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "oracle",
+        "intelligence",
+        "context"
+      ]
+    },
+    {
+      "id": "REQ-0053",
+      "name": "Main Oracle — Global Intelligence",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Aggregates all Project Oracles. Sees patterns, cross-project dependencies, resource conflicts, systemic risks. Pre-populates new Project Oracles from institutional knowledge.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "oracle",
+        "intelligence"
+      ]
+    },
+    {
+      "id": "REQ-0054",
+      "name": "Project Oracle — Per-Project Context",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "One per active project. Loaded with PRD, architecture, tasks, agent assignments, dependencies, blockers, risks. Agents query instead of carrying context. Retires with project but data archived.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "oracle",
+        "project-context"
+      ]
+    },
+    {
+      "id": "REQ-0055",
+      "name": "Data Guy — Session Intelligence",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Watches real-time: files touched, errors, decisions, task state. Writes session summary on close → feeds Project Oracle. Lightweight, always-on, never expensive.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "oracle",
+        "session",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "REQ-0056",
+      "name": "Superpowers — Quality Discipline",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Spec review gates (up to 5 iterations), plan review before code, TDD enforcement (red→green→refactor), evidence-based completion, code review agent, git worktree isolation.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "quality",
+        "discipline",
+        "testing"
+      ]
+    },
+    {
+      "id": "REQ-0057",
+      "name": "Jonah's Critique — Operational Controls",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Formal baselines, hard change control, named authorities, budget/variance tracking, configuration management, test entry/exit criteria, defect triage, 508 compliance gate.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "governance",
+        "control",
+        "compliance"
+      ]
+    },
+    {
+      "id": "REQ-0058",
+      "name": "OpenClaw Agent Network Integration",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "DX Framework wraps 22 OpenClaw agents. Framework tells what to do; OpenClaw makes it happen via multi-model routing, session isolation, credential management.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "framework",
+        "agents",
+        "integration"
+      ]
+    },
+    {
+      "id": "REQ-0059",
+      "name": "22 Agent Roster",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "CEO, Brain, Forge, Oracle, Cipher, and 17 more specialized agents for development, testing, documentation, integration, and domain-specific tasks.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "agents",
+        "roster"
+      ]
+    },
+    {
+      "id": "REQ-0060",
+      "name": "7-Phase Project Lifecycle",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Seven phases orchestrated by GROOT: requirement→design→architecture→implementation→testing→deployment→monitoring. Each with phase gates and worker packets.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "lifecycle",
+        "phases"
+      ]
+    },
+    {
+      "id": "REQ-0061",
+      "name": "Worker Packets — 17-Field Task Format",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Standardized task format with 17 fields. Routes tasks through model tiers (3 per task). Enables seamless handoff between agents and phase gates.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "workflow",
+        "tasks",
+        "routing"
+      ]
+    },
+    {
+      "id": "REQ-0062",
+      "name": "Parallel Track Management",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Multiple workstreams run in parallel. Dependency graph ensures blockers are detected. Work packets route through correct agents based on phase and track.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "workflow",
+        "parallelization"
+      ]
+    },
+    {
+      "id": "REQ-0063",
+      "name": "Board Gates & Phase Control",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Human approval gates at critical phases. Board reviews baseline, PRD, architecture, release readiness. Everything else delegated to agents.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "governance",
+        "approval",
+        "gates"
+      ]
+    },
+    {
+      "id": "REQ-0064",
+      "name": "Human Command Authority Layer",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "YOU set goals, approve baselines, make final release decisions, review board gates. Direction, not execution. Everything else delegated downward.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "governance",
+        "human-control"
+      ]
+    },
+    {
+      "id": "REQ-0065",
+      "name": "Cost Control & Variance Tracking",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Budget management per agent role. Variance tracking with alerts. Cost visibility per project and phase. Named cost authority reviews.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "cost",
+        "budget",
+        "control"
+      ]
+    },
+    {
+      "id": "REQ-0066",
+      "name": "TDD Enforcement",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Red→Green→Refactor cycle enforced. Tests must pass for code completion. Evidence-based completion, not agent-claimed done.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "testing",
+        "quality",
+        "tdd"
+      ]
+    },
+    {
+      "id": "REQ-0067",
+      "name": "Specification Review Gates",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Up to 5 specification iteration cycles. PRD and architecture reviewed before code starts. Prevents rework.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "specification",
+        "review",
+        "gates"
+      ]
+    },
+    {
+      "id": "REQ-0068",
+      "name": "Git Worktree Isolation",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Each task isolated in git worktree. Clean dependency isolation, prevents merge conflicts, enables parallel work without interference.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "git",
+        "isolation",
+        "workflow"
+      ]
+    },
+    {
+      "id": "REQ-0069",
+      "name": "Code Review Agent",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Dedicated agent for code review. Enforces quality standards, catches architectural issues, ensures consistency before human review.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "review",
+        "quality",
+        "automation"
+      ]
+    },
+    {
+      "id": "REQ-0070",
+      "name": "Configuration Baselines",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Formal baselines for each phase: requirements baseline, design baseline, build baseline, release baseline. Change control gates for each.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "configuration",
+        "baseline",
+        "control"
+      ]
+    },
+    {
+      "id": "REQ-0071",
+      "name": "Hard Change Control",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Named change authority. Formal impact analysis. Configuration item tracking. Prevents scope creep and chaotic changes.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "change-control",
+        "governance"
+      ]
+    },
+    {
+      "id": "REQ-0072",
+      "name": "Test Entry/Exit Criteria",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Formal entry criteria (code ready, env stable) and exit criteria (coverage met, no critical bugs) for testing phases.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "testing",
+        "criteria",
+        "quality"
+      ]
+    },
+    {
+      "id": "REQ-0073",
+      "name": "Defect Triage Model",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Severity/priority matrix for defects. Triage rules determine fix/defer decisions. Blocks release on critical issues.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "defects",
+        "triage",
+        "quality"
+      ]
+    },
+    {
+      "id": "REQ-0074",
+      "name": "508 Compliance Gate",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Accessibility compliance verification. Blocks release if 508/WCAG violations found.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "compliance",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "REQ-0075",
+      "name": "Auto-Heal Mechanics",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "GROOT lifecycle auto-detects failures and routes to recovery agents. Reduces manual intervention.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "reliability",
+        "automation"
+      ]
+    },
+    {
+      "id": "REQ-0076",
+      "name": "Hive Mind Module",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Agent collective intelligence. Cross-agent knowledge sharing and pattern detection.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "agents",
+        "intelligence"
+      ]
+    },
+    {
+      "id": "REQ-0077",
+      "name": "Darwin Module",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Evolutionary task optimization. Learns from prior runs to improve execution efficiency.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "optimization",
+        "learning"
+      ]
+    },
+    {
+      "id": "REQ-0078",
+      "name": "Model Routing — 3-Tier Strategy",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Each task routed through 3 model tiers. Enables cost optimization and quality matching.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "routing",
+        "optimization"
+      ]
+    },
+    {
+      "id": "REQ-0079",
+      "name": "Handoff Contracts",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Structured contracts between agents on handoff. Defines input, output, quality criteria, escalation paths.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "workflow",
+        "contracts"
+      ]
+    },
+    {
+      "id": "REQ-0080",
+      "name": "Role Archetype Library",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "10 role archetypes: Architect, Developer, Tester, PM, BA, QA, DevOps, Security, Docs, Integration. Defined responsibilities and handoff points.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "roles",
+        "archetypes"
+      ]
+    },
+    {
+      "id": "REQ-0081",
+      "name": "CEO Agent",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Project orchestrator. Makes strategic decisions, unblocks teams, manages escalations.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "agent",
+        "role"
+      ]
+    },
+    {
+      "id": "REQ-0082",
+      "name": "Brain Agent",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Maintains project context via Project Oracle. Answers domain questions, tracks dependencies.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "agent",
+        "oracle",
+        "context"
+      ]
+    },
+    {
+      "id": "REQ-0083",
+      "name": "Forge Agent",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Code generation and implementation. Writes features, refactors, integrates.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "agent",
+        "development"
+      ]
+    },
+    {
+      "id": "REQ-0084",
+      "name": "Oracle Agent",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Maintains Main Oracle. Aggregates institutional knowledge, patterns, risks.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "agent",
+        "intelligence"
+      ]
+    },
+    {
+      "id": "REQ-0085",
+      "name": "Cipher Agent",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Security and secrets management. Handles credentials, compliance scanning.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "agent",
+        "security"
+      ]
+    },
+    {
+      "id": "REQ-0086",
+      "name": "Archivist Agent",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Data Guy — watches sessions in real-time, writes summaries, feeds Project Oracle.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "agent",
+        "session-tracking"
+      ]
+    },
+    {
+      "id": "REQ-0087",
+      "name": "Founding Engineer Agent Responsibilities",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Completed 4 phases: technical foundation setup, MVP build, governance implementation, scaling & integrations. Status: active/completed.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-19.md",
+      "tags": [
+        "agent",
+        "engineering",
+        "phases"
+      ]
+    },
+    {
+      "id": "REQ-0088",
+      "name": "BACA-2: Product Vision Definition",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Define product vision and MVP scope. Completed by CEO. Covers problem statement, customer segment, 5 MVP features, success metrics.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-19.md",
+      "tags": [
+        "product",
+        "scope",
+        "vision"
+      ]
+    },
+    {
+      "id": "REQ-0089",
+      "name": "BACA-3: Technical Foundation",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Set up technical foundation and repository structure. Status: complete.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-19.md",
+      "tags": [
+        "infrastructure",
+        "foundation"
+      ]
+    },
+    {
+      "id": "REQ-0090",
+      "name": "BACA-4: Build and Ship MVP",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Build and ship MVP with 5 core features. Status: complete.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-19.md",
+      "tags": [
+        "mvp",
+        "delivery"
+      ]
+    },
+    {
+      "id": "REQ-0091",
+      "name": "BACA-5: Team Gap Assessment",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Assess team gaps and plan next hires. Identified: product ownership void, no GTM, no compliance owner, no design. Recommended: Head of Product, Head of Growth.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "complete",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-19.md",
+      "tags": [
+        "hiring",
+        "team",
+        "strategy"
+      ]
+    },
+    {
+      "id": "REQ-0092",
+      "name": "Daily Memory System — 2026-03-19",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "CEO daily notes capturing heartbeat activities, task progress, approvals, assignments, and company status from 2026-03-19.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-19.md",
+      "tags": [
+        "memory",
+        "operations"
+      ]
+    },
+    {
+      "id": "REQ-0093",
+      "name": "Daily Memory System — 2026-03-20",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "CEO daily notes capturing 28 heartbeat executions on 2026-03-20. All tasks complete, agents active. New agents Dirty Bird and Dr. Al added.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-20.md",
+      "tags": [
+        "memory",
+        "operations"
+      ]
+    },
+    {
+      "id": "REQ-0094",
+      "name": "Daily Memory System — 2026-03-21",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "CEO daily notes capturing 15 heartbeat executions on 2026-03-21. Founding Engineer transient error state (recovered). Framework running stable.",
+      "date": "2026-03-21",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-21.md",
+      "tags": [
+        "memory",
+        "operations"
+      ]
+    },
+    {
+      "id": "REQ-0095",
+      "name": "Agent Performance Monitoring",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Track agent status (active, idle, error), spend per agent, heartbeat frequency, and error state recovery.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-20.md",
+      "tags": [
+        "monitoring",
+        "operations"
+      ]
+    },
+    {
+      "id": "REQ-0096",
+      "name": "Company Spend Tracking",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Monthly spend tracking across all agents. Reported daily. Used for budget enforcement and variance analysis.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-20.md",
+      "tags": [
+        "budgeting",
+        "finance"
+      ]
+    },
+    {
+      "id": "REQ-0097",
+      "name": "Agent Activation & Onboarding",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Create and activate new agents with defined roles, budgets, reporting structure. Dirty Bird and Dr. Al activated 2026-03-20.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-20.md",
+      "tags": [
+        "agents",
+        "operations"
+      ]
+    },
+    {
+      "id": "REQ-0098",
+      "name": "Error State Recovery Protocol",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Agents can enter error state (e.g., Founding Engineer on 2026-03-21). Monitored for automatic recovery or board escalation.",
+      "date": "2026-03-21",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/memory/2026-03-21.md",
+      "tags": [
+        "reliability",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "REQ-0099",
+      "name": "CEO Strategic Responsibilities",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Set goals, manage P&L, hire/fire, unblock reports, maintain budget awareness, ensure focus, define priorities.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/SOUL.md",
+      "tags": [
+        "leadership",
+        "strategy"
+      ]
+    },
+    {
+      "id": "REQ-0100",
+      "name": "CEO Operational Rules",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Use Paperclip skill for coordination, include X-Paperclip-Run-Id header, comment in markdown, only work on assigned tasks.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/ceo/HEARTBEAT.md",
+      "tags": [
+        "operations",
+        "rules"
+      ]
+    },
+    {
+      "id": "REQ-0101",
+      "name": "Ethical & Legal Automation Mission",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Core company mission: efficient, ethical, and legal automation of project development lifecycle.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/README.md",
+      "tags": [
+        "mission",
+        "ethics"
+      ]
+    },
+    {
+      "id": "REQ-0102",
+      "name": "Trusted Audit Trail Requirement",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Customers require auditable record of all agent actions with full context and cost. Needed to demonstrate human maintains veto power.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "trust",
+        "audit",
+        "customer"
+      ]
+    },
+    {
+      "id": "REQ-0103",
+      "name": "Agent Execution Authority Requirement",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Customers willing to give AI agents real execution authority if they can trust audit trail and retain veto power.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "trust",
+        "authority",
+        "customer"
+      ]
+    },
+    {
+      "id": "REQ-0104",
+      "name": "Quick Activation Window",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "First paying customer metric target: 3+ issues completed by agents within first 7 days post-onboarding.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "metrics",
+        "activation"
+      ]
+    },
+    {
+      "id": "REQ-0105",
+      "name": "Long-Term Retention Target",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Day 30 metric: ≥60% of teams run ≥5 agent heartbeats per week.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "metrics",
+        "retention"
+      ]
+    },
+    {
+      "id": "REQ-0106",
+      "name": "Value Perception Target",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Day 30 survey metric: ≥20% reported reduction in PM overhead.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "metrics",
+        "value"
+      ]
+    },
+    {
+      "id": "REQ-0107",
+      "name": "Quality & Trust Metric",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Ongoing metric: <5% of agent actions require human rollback.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "metrics",
+        "quality"
+      ]
+    },
+    {
+      "id": "REQ-0108",
+      "name": "Revenue Milestone",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "First paying customer acquisition by day 60 target.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "metrics",
+        "revenue"
+      ]
+    },
+    {
+      "id": "REQ-0109",
+      "name": "Non-MVP Feature Scope",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Out of MVP scope: native code editor, billing management, mobile app, multi-repo CI/CD, public agent marketplace.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "scope",
+        "mvp"
+      ]
+    },
+    {
+      "id": "REQ-0110",
+      "name": "Agentic PM Category Winner Thesis",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Next generation high-output teams are hybrid: small human core + AI agents executing defined work. First platform with right trust primitives wins.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "thesis",
+        "strategy"
+      ]
+    },
+    {
+      "id": "REQ-0111",
+      "name": "Strategic Founder Profile",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Stretched Technical Founder persona: technical background, comfort with AI tools, 10+ hrs/week on coordination, willing to give AI agents real authority if auditable.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "persona",
+        "customer"
+      ]
+    },
+    {
+      "id": "REQ-0112",
+      "name": "Secondary Market Opportunity",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Secondary segment: engineering managers at Series A-B companies scaling without headcount growth.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/product-vision.md",
+      "tags": [
+        "market",
+        "segment"
+      ]
+    },
+    {
+      "id": "REQ-0113",
+      "name": "Context Bloat Problem Solved",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Oracle Layer eliminates agent context bloat. Agents query live truth instead of carrying stale context. Reduces prompt bloat and drift.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "oracle",
+        "problem-solved"
+      ]
+    },
+    {
+      "id": "REQ-0114",
+      "name": "Institutional Knowledge Capture",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Main Oracle permanently accumulates patterns, failures, dependencies. Cross-project learning and risk identification.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "oracle",
+        "learning"
+      ]
+    },
+    {
+      "id": "REQ-0115",
+      "name": "Project Context Lifecycle",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Project Oracle lives during project execution, retires at ship, data archived to Main Oracle.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "oracle",
+        "lifecycle"
+      ]
+    },
+    {
+      "id": "REQ-0116",
+      "name": "Real-Time Session Monitoring",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Data Guy watches session activity: files touched, errors, decisions, task changes. Produces session summary.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "monitoring",
+        "session"
+      ]
+    },
+    {
+      "id": "REQ-0117",
+      "name": "Flash-Tier Model for Session Tracking",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Data Guy uses lightweight (flash-tier) model. Always-on, never expensive.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "cost-optimization",
+        "model-routing"
+      ]
+    },
+    {
+      "id": "REQ-0118",
+      "name": "Context Query Interface",
+      "project": "DX Framework",
+      "projectId": "PROJ-002",
+      "description": "Agents query Oracle with questions like 'What's my task?' 'What's the db schema?' 'What are project risks?' Get live answers.",
+      "date": "2026-03-18",
+      "version": "v1.0",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/dx-framework/index.html",
+      "tags": [
+        "interface",
+        "query"
+      ]
+    },
+    {
+      "id": "REQ-0119",
+      "name": "Health Research Methodology",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Evidence-based when available, exploratory when needed. Conventional + unconventional medicine equally welcome. Custom approach for Kevin's unique biology.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "health",
+        "methodology"
+      ]
+    },
+    {
+      "id": "REQ-0120",
+      "name": "Chronic Fatigue Investigation",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Investigate root causes of years of documented chronic fatigue. Link to genetic variants and metabolic pathways.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "health",
+        "research"
+      ]
+    },
+    {
+      "id": "REQ-0121",
+      "name": "Deep Stabilizer Muscle Pain Protocol",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Address upper back and shoulder deep stabilizer muscle pain. Develop targeted intervention protocol.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "health",
+        "pain"
+      ]
+    },
+    {
+      "id": "REQ-0122",
+      "name": "Legal Risk Monitoring",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Continuous monitoring for legal exposure. Proactive flag of issues before escalation. Regular briefing on contracts and business decisions.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "legal",
+        "risk"
+      ]
+    },
+    {
+      "id": "REQ-0123",
+      "name": "Expert Network Coordination",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Dirty Bird maintains established network of medical, forensic, and IT/security experts. Coordinates specialist engagement.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "legal",
+        "coordination"
+      ]
+    },
+    {
+      "id": "REQ-0124",
+      "name": "Sub-Agent Legal Structure",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Dirty Bird coordinates sub-agents: In-House Counsel, Contract Review Specialist, IP Attorney, Compliance Officer. On-demand specialist team.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "legal",
+        "organization"
+      ]
+    },
+    {
+      "id": "REQ-0125",
+      "name": "IP Protection & Trademark Monitoring",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Manage IP protection (trademarks, copyrights, patents) and conduct status monitoring.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "legal",
+        "ip"
+      ]
+    },
+    {
+      "id": "REQ-0126",
+      "name": "Business Structure Optimization",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Assess and optimize business structure for legal, tax, and regulatory efficiency.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "legal",
+        "business"
+      ]
+    },
+    {
+      "id": "REQ-0127",
+      "name": "Litigation Risk Assessment",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Detect and assess malpractice and liability threats. Escalate litigation risk above threshold to board.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "legal",
+        "litigation"
+      ]
+    },
+    {
+      "id": "REQ-0128",
+      "name": "Product Ownership & Roadmap Management",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Dedicated Head of Product role to own customer-to-roadmap pipeline, including user research synthesis, feature prioritization, acceptance criteria, and roadmap sequencing. Unblocks CEO strategic bandwidth and ensures structured discovery for post-MVP features.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "new",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "hiring",
+        "product",
+        "roadmap",
+        "post-MVP",
+        "capability-gap"
+      ]
+    },
+    {
+      "id": "REQ-0129",
+      "name": "Go-To-Market & Customer Acquisition",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Head of Growth / GTM role to own first customer acquisition pipeline: outbound targeting, demo scheduling, objection handling, and onboarding handoff. Critical for Day 60 paying customer target. Begins hiring when MVP is 3-4 weeks from completion.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "new",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "hiring",
+        "GTM",
+        "sales",
+        "customer-acquisition",
+        "day-60-goal"
+      ]
+    },
+    {
+      "id": "REQ-0130",
+      "name": "Legal & Compliance Governance System",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Dedicated legal and compliance function to own governance documentation, legal review of agent permissions, compliance posture, and trust-sensitive actions. Addresses reputational and legal risk as company scales and signs customers. Enables 'ethical and legal automation' mission commitment.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "new",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "compliance",
+        "legal",
+        "governance",
+        "risk",
+        "trust",
+        "ethics"
+      ]
+    },
+    {
+      "id": "REQ-0131",
+      "name": "Design & UX for Observability Interfaces",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Dedicated UX/Design function for observability dashboard and governance UX — the primary trust interfaces with users. Ensures first impressions reflect human ability to understand agent actions and rationale. Initially absorbed into FE scope at MVP; dedicated hire after first customer signals UX gaps.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "new",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "design",
+        "UX",
+        "observability",
+        "trust",
+        "interfaces"
+      ]
+    },
+    {
+      "id": "REQ-0132",
+      "name": "Contract Review & Legal Risk Assessment",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Dirty Bird legal agent capability: comprehensive contract review, IP protection (trademarks, copyrights, patents), compliance monitoring, and risk assessment for new ventures. Includes malpractice and liability threat detection, regulatory change tracking, and business structure optimization.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "legal",
+        "contracts",
+        "IP",
+        "compliance",
+        "risk-assessment"
+      ]
+    },
+    {
+      "id": "REQ-0133",
+      "name": "Trial & Litigation Expertise",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Dirty Bird agent specialization: first-chair jury trial experience in complex civil litigation, medical malpractice, negligence, and whistleblower protection (OSC/WPA). Proven verdicts in high-value cases with expertise in expert witness strategy and federal defense navigation.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "litigation",
+        "trial",
+        "malpractice",
+        "whistleblower",
+        "federal-law"
+      ]
+    },
+    {
+      "id": "REQ-0134",
+      "name": "Genetic Variant Analysis & Medical Research",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Dr. Al capability: comprehensive genetic variant analysis including AMPD1, AGK pathways. Rhabdomyolysis root cause analysis, CK monitoring protocol development, and coordination with specialists for precision medicine approach to Kevin's metabolic myopathy.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "genetics",
+        "research",
+        "rhabdomyolysis",
+        "metabolic-disease",
+        "precision-medicine"
+      ]
+    },
+    {
+      "id": "REQ-0135",
+      "name": "Supplement Stack Optimization & Nutrition Management",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Dr. Al system: evidence-based supplement stack optimization for CK management and metabolic support. Coordinates with Nutritionist sub-agent for dietary optimization and integrates conventional and alternative nutrition science approaches tailored to Kevin's condition.",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "nutrition",
+        "supplements",
+        "health-optimization",
+        "CK-management"
+      ]
+    },
+    {
+      "id": "REQ-0136",
+      "name": "Multi-Disciplinary Health Team Coordination",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Dr. Al capability: spawn and coordinate on-demand specialist agents (cardiologists, rheumatologists, naturopaths, psychedelic medicine, holistic practitioners, TCM, stem cell researchers). Weekly briefings with Kevin and core sub-agents (Neurologist, Geneticist, Nutritionist).",
+      "date": "2026-03-22",
+      "version": "v1",
+      "status": "new",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "team-coordination",
+        "health-specialists",
+        "multidisciplinary",
+        "sub-agents"
+      ]
+    }
+  ]
+}
