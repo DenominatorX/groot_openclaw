@@ -1,14 +1,15 @@
 {
   "metadata": {
     "generated": "2026-03-22T00:00:00Z",
-    "totalRequirements": 136,
+    "totalRequirements": 177,
     "directoriesScanned": [
       "/Users/DX-1/Documents/Projects",
       "/Users/DX-1/Documents/dx-framework",
       "/Volumes/ORICO (unmounted)",
       "/Volumes/2GBSSD_Sand (unmounted)"
     ],
-    "notes": "Comprehensive requirements extraction from accessible legacy projects. External volumes (/Volumes/ORICO, /Volumes/2GBSSD_Sand) were not accessible during scan. All requirements extracted from current project documentation in /Users/DX-1/Documents/Projects."
+    "notes": "Comprehensive requirements extraction from accessible legacy projects. External volumes (/Volumes/ORICO, /Volumes/2GBSSD_Sand) were not accessible during scan. All requirements extracted from current project documentation in /Users/DX-1/Documents/Projects.",
+    "lastUpdated": "2026-03-22"
   },
   "projects": [
     {
@@ -38,6 +39,30 @@
       "description": "Legal counsel, compliance monitoring, risk management, and contract review powered by Dirty Bird agent with trial litigation and regulatory expertise.",
       "status": "active",
       "path": "/Users/DX-1/Documents/Projects/agents/dirty-bird"
+    },
+    {
+      "id": "PROJ-CC",
+      "name": "Central Command"
+    },
+    {
+      "id": "PROJ-DXD",
+      "name": "DX Dashboard"
+    },
+    {
+      "id": "PROJ-AW",
+      "name": "Agent World"
+    },
+    {
+      "id": "PROJ-DB",
+      "name": "Discord Brain"
+    },
+    {
+      "id": "PROJ-API",
+      "name": "AAPIMP"
+    },
+    {
+      "id": "PROJ-HC",
+      "name": "Mission Control"
     }
   ],
   "requirements": [
@@ -97,7 +122,7 @@
       "name": "Full Issue Lifecycle Management",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
-      "description": "CRUD on issues with structured status transitions (todo → in_progress → blocked → review → done), priority, assignment, and goal alignment.",
+      "description": "CRUD on issues with structured status transitions (todo \u2192 in_progress \u2192 blocked \u2192 review \u2192 done), priority, assignment, and goal alignment.",
       "date": "2026-03-19",
       "version": "v1",
       "status": "complete",
@@ -225,7 +250,7 @@
     },
     {
       "id": "REQ-0012",
-      "name": "REST API — Issues Management",
+      "name": "REST API \u2014 Issues Management",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "GET/POST /api/companies/:id/issues for list and create. Full CRUD with status/field updates and inline comments.",
@@ -260,7 +285,7 @@
       "name": "Agent Service & Heartbeat Scheduling",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
-      "description": "Agent runtime polls heartbeats, injects PAPERCLIP_* env vars, invokes adapter subprocess, tracks run lifecycle (queued → running → completed/failed).",
+      "description": "Agent runtime polls heartbeats, injects PAPERCLIP_* env vars, invokes adapter subprocess, tracks run lifecycle (queued \u2192 running \u2192 completed/failed).",
       "date": "2026-03-19",
       "version": "v1",
       "status": "complete",
@@ -273,7 +298,7 @@
     },
     {
       "id": "REQ-0015",
-      "name": "Governance Service — Approval Workflows",
+      "name": "Governance Service \u2014 Approval Workflows",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "Enforces company policy at runtime with approval gates for privileged actions and escalation chains derived from chainOfCommand.",
@@ -464,7 +489,7 @@
     },
     {
       "id": "REQ-0027",
-      "name": "CI/CD Pipeline — GitHub Actions",
+      "name": "CI/CD Pipeline \u2014 GitHub Actions",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "Every PR runs: npm run lint (TypeScript check), npm run build (compile), npm run test (tests), npm audit (vulnerability scan). Deploy to staging on main merge.",
@@ -499,7 +524,7 @@
       "name": "MVP Success Metrics",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
-      "description": "Activation: 3+ issues completed in 7 days. Retention: ≥60% run ≥5 heartbeats/week by day 30. Quality: <5% rollback rate. Revenue: first paying customer by day 60.",
+      "description": "Activation: 3+ issues completed in 7 days. Retention: \u226560% run \u22655 heartbeats/week by day 30. Quality: <5% rollback rate. Revenue: first paying customer by day 60.",
       "date": "2026-03-19",
       "version": "v1",
       "status": "complete",
@@ -531,7 +556,7 @@
       "name": "Head of Product Hire",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
-      "description": "Own product roadmap, customer feedback synthesis, and feature specs. High priority — unblocks roadmap after Founding Engineer onboarding.",
+      "description": "Own product roadmap, customer feedback synthesis, and feature specs. High priority \u2014 unblocks roadmap after Founding Engineer onboarding.",
       "date": "2026-03-19",
       "version": "v1",
       "status": "active",
@@ -547,7 +572,7 @@
       "name": "Head of Growth/GTM Hire",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
-      "description": "Own first customer acquisition pipeline: outbound, demos, objection handling, onboarding. Medium priority — hire 3-4 weeks before MVP ship.",
+      "description": "Own first customer acquisition pipeline: outbound, demos, objection handling, onboarding. Medium priority \u2014 hire 3-4 weeks before MVP ship.",
       "date": "2026-03-19",
       "version": "v1",
       "status": "active",
@@ -563,7 +588,7 @@
       "name": "Agent Budget Authorization",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
-      "description": "Set per-role monthly budget caps for agents. Currently $0 — board must authorize before new hires approved.",
+      "description": "Set per-role monthly budget caps for agents. Currently $0 \u2014 board must authorize before new hires approved.",
       "date": "2026-03-19",
       "version": "v1",
       "status": "active",
@@ -576,7 +601,7 @@
     },
     {
       "id": "REQ-0034",
-      "name": "Phase 1 — Foundation & Architecture",
+      "name": "Phase 1 \u2014 Foundation & Architecture",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "Repository structure, tooling, core data models, architecture design. Status: complete.",
@@ -592,7 +617,7 @@
     },
     {
       "id": "REQ-0035",
-      "name": "Phase 2 — MVP Task Lifecycle",
+      "name": "Phase 2 \u2014 MVP Task Lifecycle",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "Task lifecycle, assignment, heartbeat execution. Status: complete.",
@@ -608,7 +633,7 @@
     },
     {
       "id": "REQ-0036",
-      "name": "Phase 3 — Governance & Ethical Safeguards",
+      "name": "Phase 3 \u2014 Governance & Ethical Safeguards",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "Approvals, audit log, budget controls. Status: complete.",
@@ -624,7 +649,7 @@
     },
     {
       "id": "REQ-0037",
-      "name": "Phase 4 — Scale & Integrations",
+      "name": "Phase 4 \u2014 Scale & Integrations",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "Multi-project, integrations, dashboards. Status: complete.",
@@ -640,7 +665,7 @@
     },
     {
       "id": "REQ-0038",
-      "name": "CEO Agent — Strategic Leadership",
+      "name": "CEO Agent \u2014 Strategic Leadership",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "CEO agent manages P&L, strategy, team hiring, unblocking reports. Uses memory system (para-memory-files skill) for persistent knowledge and daily planning.",
@@ -688,7 +713,7 @@
     },
     {
       "id": "REQ-0041",
-      "name": "Dirty Bird — Legal & Compliance Agent",
+      "name": "Dirty Bird \u2014 Legal & Compliance Agent",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "Legal counsel with trial litigation, medical malpractice, whistleblower, federal systems expertise. Monitors contracts, compliance, risk. Reports to CEO.",
@@ -704,7 +729,7 @@
     },
     {
       "id": "REQ-0042",
-      "name": "Dirty Bird — Core Specialties",
+      "name": "Dirty Bird \u2014 Core Specialties",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "Trial & litigation, medical malpractice, rhabdomyolysis expertise, federal whistleblower, data breach/privacy, regulatory violations, evidence strategy, expert witness coordination, government defense.",
@@ -720,7 +745,7 @@
     },
     {
       "id": "REQ-0043",
-      "name": "Dr. Al — Health Research Agent",
+      "name": "Dr. Al \u2014 Health Research Agent",
       "project": "Kevin's Health Research Project",
       "projectId": "PROJ-003",
       "description": "Medical research authority managing genetic variant analysis (AMPD1, AGK), rhabdomyolysis root cause, supplement optimization, CK monitoring, weekly health review.",
@@ -736,7 +761,7 @@
     },
     {
       "id": "REQ-0044",
-      "name": "Dr. Al — Medical Team Structure",
+      "name": "Dr. Al \u2014 Medical Team Structure",
       "project": "Kevin's Health Research Project",
       "projectId": "PROJ-003",
       "description": "Core sub-agents: Neurologist, Geneticist, Nutritionist. On-demand specialists: Cardiologist, Rheumatologist, Naturopath, Acupuncturist, Psychedelic Researcher, Stem Cell Researcher, and more.",
@@ -832,10 +857,10 @@
     },
     {
       "id": "REQ-0050",
-      "name": "DX Framework — Agentic Factory",
+      "name": "DX Framework \u2014 Agentic Factory",
       "project": "DX Framework",
       "projectId": "PROJ-002",
-      "description": "Complete software delivery system: feed idea, get shipped product. Orchestrates brief→PRD→architecture→code→deployment with governance and tracking.",
+      "description": "Complete software delivery system: feed idea, get shipped product. Orchestrates brief\u2192PRD\u2192architecture\u2192code\u2192deployment with governance and tracking.",
       "date": "2026-03-18",
       "version": "v1.0",
       "status": "active",
@@ -864,7 +889,7 @@
     },
     {
       "id": "REQ-0052",
-      "name": "Oracle Layer — 3-Tier Intelligence",
+      "name": "Oracle Layer \u2014 3-Tier Intelligence",
       "project": "DX Framework",
       "projectId": "PROJ-002",
       "description": "Main Oracle (global), Project Oracle (per-project context), Data Guy (session intelligence). Agents query live context instead of carrying stale copies.",
@@ -880,7 +905,7 @@
     },
     {
       "id": "REQ-0053",
-      "name": "Main Oracle — Global Intelligence",
+      "name": "Main Oracle \u2014 Global Intelligence",
       "project": "DX Framework",
       "projectId": "PROJ-002",
       "description": "Aggregates all Project Oracles. Sees patterns, cross-project dependencies, resource conflicts, systemic risks. Pre-populates new Project Oracles from institutional knowledge.",
@@ -895,7 +920,7 @@
     },
     {
       "id": "REQ-0054",
-      "name": "Project Oracle — Per-Project Context",
+      "name": "Project Oracle \u2014 Per-Project Context",
       "project": "DX Framework",
       "projectId": "PROJ-002",
       "description": "One per active project. Loaded with PRD, architecture, tasks, agent assignments, dependencies, blockers, risks. Agents query instead of carrying context. Retires with project but data archived.",
@@ -910,10 +935,10 @@
     },
     {
       "id": "REQ-0055",
-      "name": "Data Guy — Session Intelligence",
+      "name": "Data Guy \u2014 Session Intelligence",
       "project": "DX Framework",
       "projectId": "PROJ-002",
-      "description": "Watches real-time: files touched, errors, decisions, task state. Writes session summary on close → feeds Project Oracle. Lightweight, always-on, never expensive.",
+      "description": "Watches real-time: files touched, errors, decisions, task state. Writes session summary on close \u2192 feeds Project Oracle. Lightweight, always-on, never expensive.",
       "date": "2026-03-18",
       "version": "v1.0",
       "status": "active",
@@ -926,10 +951,10 @@
     },
     {
       "id": "REQ-0056",
-      "name": "Superpowers — Quality Discipline",
+      "name": "Superpowers \u2014 Quality Discipline",
       "project": "DX Framework",
       "projectId": "PROJ-002",
-      "description": "Spec review gates (up to 5 iterations), plan review before code, TDD enforcement (red→green→refactor), evidence-based completion, code review agent, git worktree isolation.",
+      "description": "Spec review gates (up to 5 iterations), plan review before code, TDD enforcement (red\u2192green\u2192refactor), evidence-based completion, code review agent, git worktree isolation.",
       "date": "2026-03-18",
       "version": "v1.0",
       "status": "active",
@@ -942,7 +967,7 @@
     },
     {
       "id": "REQ-0057",
-      "name": "Jonah's Critique — Operational Controls",
+      "name": "Jonah's Critique \u2014 Operational Controls",
       "project": "DX Framework",
       "projectId": "PROJ-002",
       "description": "Formal baselines, hard change control, named authorities, budget/variance tracking, configuration management, test entry/exit criteria, defect triage, 508 compliance gate.",
@@ -992,7 +1017,7 @@
       "name": "7-Phase Project Lifecycle",
       "project": "DX Framework",
       "projectId": "PROJ-002",
-      "description": "Seven phases orchestrated by GROOT: requirement→design→architecture→implementation→testing→deployment→monitoring. Each with phase gates and worker packets.",
+      "description": "Seven phases orchestrated by GROOT: requirement\u2192design\u2192architecture\u2192implementation\u2192testing\u2192deployment\u2192monitoring. Each with phase gates and worker packets.",
       "date": "2026-03-18",
       "version": "v1.0",
       "status": "active",
@@ -1004,7 +1029,7 @@
     },
     {
       "id": "REQ-0061",
-      "name": "Worker Packets — 17-Field Task Format",
+      "name": "Worker Packets \u2014 17-Field Task Format",
       "project": "DX Framework",
       "projectId": "PROJ-002",
       "description": "Standardized task format with 17 fields. Routes tasks through model tiers (3 per task). Enables seamless handoff between agents and phase gates.",
@@ -1085,7 +1110,7 @@
       "name": "TDD Enforcement",
       "project": "DX Framework",
       "projectId": "PROJ-002",
-      "description": "Red→Green→Refactor cycle enforced. Tests must pass for code completion. Evidence-based completion, not agent-claimed done.",
+      "description": "Red\u2192Green\u2192Refactor cycle enforced. Tests must pass for code completion. Evidence-based completion, not agent-claimed done.",
       "date": "2026-03-18",
       "version": "v1.0",
       "status": "active",
@@ -1269,7 +1294,7 @@
     },
     {
       "id": "REQ-0078",
-      "name": "Model Routing — 3-Tier Strategy",
+      "name": "Model Routing \u2014 3-Tier Strategy",
       "project": "DX Framework",
       "projectId": "PROJ-002",
       "description": "Each task routed through 3 model tiers. Enables cost optimization and quality matching.",
@@ -1393,7 +1418,7 @@
       "name": "Archivist Agent",
       "project": "DX Framework",
       "projectId": "PROJ-002",
-      "description": "Data Guy — watches sessions in real-time, writes summaries, feeds Project Oracle.",
+      "description": "Data Guy \u2014 watches sessions in real-time, writes summaries, feeds Project Oracle.",
       "date": "2026-03-18",
       "version": "v1.0",
       "status": "active",
@@ -1483,7 +1508,7 @@
     },
     {
       "id": "REQ-0092",
-      "name": "Daily Memory System — 2026-03-19",
+      "name": "Daily Memory System \u2014 2026-03-19",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "CEO daily notes capturing heartbeat activities, task progress, approvals, assignments, and company status from 2026-03-19.",
@@ -1498,7 +1523,7 @@
     },
     {
       "id": "REQ-0093",
-      "name": "Daily Memory System — 2026-03-20",
+      "name": "Daily Memory System \u2014 2026-03-20",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "CEO daily notes capturing 28 heartbeat executions on 2026-03-20. All tasks complete, agents active. New agents Dirty Bird and Dr. Al added.",
@@ -1513,7 +1538,7 @@
     },
     {
       "id": "REQ-0094",
-      "name": "Daily Memory System — 2026-03-21",
+      "name": "Daily Memory System \u2014 2026-03-21",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
       "description": "CEO daily notes capturing 15 heartbeat executions on 2026-03-21. Founding Engineer transient error state (recovered). Framework running stable.",
@@ -1683,7 +1708,7 @@
       "name": "Long-Term Retention Target",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
-      "description": "Day 30 metric: ≥60% of teams run ≥5 agent heartbeats per week.",
+      "description": "Day 30 metric: \u226560% of teams run \u22655 agent heartbeats per week.",
       "date": "2026-03-19",
       "version": "v1",
       "status": "active",
@@ -1698,7 +1723,7 @@
       "name": "Value Perception Target",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
-      "description": "Day 30 survey metric: ≥20% reported reduction in PM overhead.",
+      "description": "Day 30 survey metric: \u226520% reported reduction in PM overhead.",
       "date": "2026-03-19",
       "version": "v1",
       "status": "active",
@@ -2083,7 +2108,7 @@
       "name": "Design & UX for Observability Interfaces",
       "project": "BACA - Agentic Project Management Platform",
       "projectId": "PROJ-001",
-      "description": "Dedicated UX/Design function for observability dashboard and governance UX — the primary trust interfaces with users. Ensures first impressions reflect human ability to understand agent actions and rationale. Initially absorbed into FE scope at MVP; dedicated hire after first customer signals UX gaps.",
+      "description": "Dedicated UX/Design function for observability dashboard and governance UX \u2014 the primary trust interfaces with users. Ensures first impressions reflect human ability to understand agent actions and rationale. Initially absorbed into FE scope at MVP; dedicated hire after first customer signals UX gaps.",
       "date": "2026-03-19",
       "version": "v1",
       "status": "new",
@@ -2182,6 +2207,670 @@
         "health-specialists",
         "multidisciplinary",
         "sub-agents"
+      ]
+    },
+    {
+      "id": "REQ-0137",
+      "name": "Real-time Agent Status Dashboard",
+      "project": "Mission Control",
+      "projectId": "PROJ-HC",
+      "description": "Display live status for all active agents including uptime, task queue depth, memory usage, and last heartbeat timestamp. Auto-refreshes every 5 seconds without full page reload.",
+      "date": "2025-01-10",
+      "version": "1.2",
+      "status": "active",
+      "tags": [
+        "ui",
+        "real-time",
+        "monitoring"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0138",
+      "name": "Agent Lifecycle Management",
+      "project": "Mission Control",
+      "projectId": "PROJ-HC",
+      "description": "Ability to start, stop, pause, and restart agents from the control panel. Includes graceful shutdown with queue drain and emergency kill switch. Audit log for all lifecycle events.",
+      "date": "2025-01-08",
+      "version": "1.0",
+      "status": "complete",
+      "tags": [
+        "core",
+        "agents",
+        "ops"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0139",
+      "name": "Task Queue Visualization",
+      "project": "Mission Control",
+      "projectId": "PROJ-HC",
+      "description": "Visual representation of pending, in-progress, and completed tasks across all agents. Drag-and-drop prioritization. Filter by agent, status, priority, and time range.",
+      "date": "2025-01-15",
+      "version": "1.1",
+      "status": "active",
+      "tags": [
+        "ui",
+        "queue",
+        "drag-drop"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0140",
+      "name": "System Health Alerts",
+      "project": "Mission Control",
+      "projectId": "PROJ-HC",
+      "description": "Configurable alert thresholds for CPU, memory, queue depth, and error rates. Supports email, Slack, and in-app notifications. Alert history with snooze/acknowledge functionality.",
+      "date": "2025-02-01",
+      "version": "1.0",
+      "status": "new",
+      "tags": [
+        "alerts",
+        "monitoring",
+        "notifications"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0141",
+      "name": "Agent Performance Analytics",
+      "project": "Mission Control",
+      "projectId": "PROJ-HC",
+      "description": "Historical performance metrics per agent including task completion rates, average duration, error frequency, and cost per task. Exportable as CSV or PDF report.",
+      "date": "2025-02-10",
+      "version": "1.0",
+      "status": "new",
+      "tags": [
+        "analytics",
+        "reporting",
+        "metrics"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0142",
+      "name": "Multi-environment Support",
+      "project": "Mission Control",
+      "projectId": "PROJ-HC",
+      "description": "Switch between development, staging, and production environments from a single interface. Environment-specific configurations with guardrails preventing accidental prod actions.",
+      "date": "2024-12-20",
+      "version": "0.5",
+      "status": "abandoned",
+      "tags": [
+        "env",
+        "ops"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0143",
+      "name": "Unified Activity Feed",
+      "project": "DX Dashboard",
+      "projectId": "PROJ-DXD",
+      "description": "Aggregated chronological feed showing all agent actions, code commits, deployments, and system events. Filterable by source, type, and time. Deep-link to individual events.",
+      "date": "2025-01-20",
+      "version": "2.0",
+      "status": "complete",
+      "tags": [
+        "feed",
+        "ui",
+        "core"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0144",
+      "name": "Cost Attribution Dashboard",
+      "project": "DX Dashboard",
+      "projectId": "PROJ-DXD",
+      "description": "Break down API costs, compute costs, and token usage by project, agent, and task. Month-over-month comparison with budget forecasting. CSV export.",
+      "date": "2025-01-25",
+      "version": "1.3",
+      "status": "active",
+      "tags": [
+        "costs",
+        "analytics",
+        "budget"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0145",
+      "name": "Codebase Intelligence Panel",
+      "project": "DX Dashboard",
+      "projectId": "PROJ-DXD",
+      "description": "Visual map of codebase health: test coverage, tech debt score, dependency age, security audit status. Drill-down to file-level detail with change history.",
+      "date": "2025-02-15",
+      "version": "1.0",
+      "status": "new",
+      "tags": [
+        "code",
+        "intelligence",
+        "quality"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0146",
+      "name": "Developer Velocity Metrics",
+      "project": "DX Dashboard",
+      "projectId": "PROJ-DXD",
+      "description": "Track lines changed, PRs merged, review turnaround, and deployment frequency. Team and individual views with customizable date ranges. Integration with GitHub.",
+      "date": "2025-01-28",
+      "version": "1.1",
+      "status": "active",
+      "tags": [
+        "metrics",
+        "github",
+        "velocity"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0147",
+      "name": "Onboarding Flow",
+      "project": "DX Dashboard",
+      "projectId": "PROJ-DXD",
+      "description": "Step-by-step onboarding for new team members. Auto-detects tools, configures integrations, and generates a personalized setup checklist. Progress persistence.",
+      "date": "2025-01-05",
+      "version": "1.0",
+      "status": "merged",
+      "tags": [
+        "onboarding",
+        "ux"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0148",
+      "name": "Notification Preferences",
+      "project": "DX Dashboard",
+      "projectId": "PROJ-DXD",
+      "description": "Granular notification settings per event type, per channel (email, Slack, SMS, push). Quiet hours, digest mode, and per-project overrides.",
+      "date": "2025-02-20",
+      "version": "1.0",
+      "status": "new",
+      "tags": [
+        "notifications",
+        "settings",
+        "ux"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0149",
+      "name": "Orchestration Engine",
+      "project": "Central Command",
+      "projectId": "PROJ-CC",
+      "description": "DAG-based task orchestration supporting parallel and sequential workflows. Visual workflow builder with conditional branching, retry logic, and timeout handling.",
+      "date": "2025-01-12",
+      "version": "2.1",
+      "status": "active",
+      "tags": [
+        "core",
+        "orchestration",
+        "engine"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0150",
+      "name": "Command History & Replay",
+      "project": "Central Command",
+      "projectId": "PROJ-CC",
+      "description": "Full audit trail of all commands issued through the system. Point-in-time replay capability for debugging. Searchable with full-text and filter support.",
+      "date": "2024-12-15",
+      "version": "1.0",
+      "status": "complete",
+      "tags": [
+        "history",
+        "audit",
+        "debug"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0151",
+      "name": "Permission Governance Layer",
+      "project": "Central Command",
+      "projectId": "PROJ-CC",
+      "description": "Role-based access control for command execution. Approval workflows for high-impact operations. Temporary elevated access with automatic expiry. SSO integration.",
+      "date": "2025-01-18",
+      "version": "1.5",
+      "status": "active",
+      "tags": [
+        "rbac",
+        "security",
+        "governance"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0152",
+      "name": "Cross-Agent Communication Bus",
+      "project": "Central Command",
+      "projectId": "PROJ-CC",
+      "description": "Message broker enabling reliable inter-agent communication. Pub/sub and request/reply patterns. Message persistence, dead-letter queue, and replay.",
+      "date": "2025-01-22",
+      "version": "1.2",
+      "status": "active",
+      "tags": [
+        "messaging",
+        "core",
+        "agents"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0153",
+      "name": "Scenario Simulation Mode",
+      "project": "Central Command",
+      "projectId": "PROJ-CC",
+      "description": "Run commands in a sandboxed dry-run mode that predicts outcomes without executing. Shows diff of what would change. Critical for testing complex orchestrations.",
+      "date": "2025-02-05",
+      "version": "1.0",
+      "status": "new",
+      "tags": [
+        "simulation",
+        "testing",
+        "dry-run"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0154",
+      "name": "Agent SDK Core",
+      "project": "Agent World",
+      "projectId": "PROJ-AW",
+      "description": "Base SDK providing lifecycle hooks, memory interfaces, tool registration, and communication primitives. TypeScript and Python. Comprehensive documentation with examples.",
+      "date": "2024-11-20",
+      "version": "3.0",
+      "status": "complete",
+      "tags": [
+        "sdk",
+        "core",
+        "typescript",
+        "python"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0155",
+      "name": "Memory Management System",
+      "project": "Agent World",
+      "projectId": "PROJ-AW",
+      "description": "Tiered memory: short-term (context window), working (session), long-term (persistent). Automatic summarization and compression. Vector search for semantic recall.",
+      "date": "2025-01-14",
+      "version": "2.2",
+      "status": "active",
+      "tags": [
+        "memory",
+        "vector",
+        "core"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0156",
+      "name": "Tool Plugin Architecture",
+      "project": "Agent World",
+      "projectId": "PROJ-AW",
+      "description": "Extensible tool system allowing agents to discover and use external capabilities. Tool versioning, capability declarations, and sandboxed execution. Marketplace for sharing.",
+      "date": "2025-01-16",
+      "version": "1.8",
+      "status": "active",
+      "tags": [
+        "tools",
+        "plugins",
+        "marketplace"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0157",
+      "name": "Agent Testing Framework",
+      "project": "Agent World",
+      "projectId": "PROJ-AW",
+      "description": "Unit and integration testing for agent behaviors. Mock tool responses, scenario injection, and behavioral assertions. CI/CD integration with GitHub Actions.",
+      "date": "2024-12-10",
+      "version": "1.0",
+      "status": "complete",
+      "tags": [
+        "testing",
+        "ci-cd",
+        "quality"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0158",
+      "name": "Multi-Modal Input Support",
+      "project": "Agent World",
+      "projectId": "PROJ-AW",
+      "description": "Enable agents to process images, audio, and documents alongside text. Standardized input adapters with preprocessing pipelines. Format conversion utilities.",
+      "date": "2025-02-18",
+      "version": "1.0",
+      "status": "new",
+      "tags": [
+        "multi-modal",
+        "vision",
+        "audio"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0159",
+      "name": "Agent Marketplace",
+      "project": "Agent World",
+      "projectId": "PROJ-AW",
+      "description": "Publish, discover, and deploy pre-built agents. Versioning, ratings, usage stats. One-click deployment with configuration templates.",
+      "date": "2025-03-01",
+      "version": "0.1",
+      "status": "new",
+      "tags": [
+        "marketplace",
+        "distribution",
+        "community"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0160",
+      "name": "Contextual Conversation Memory",
+      "project": "Discord Brain",
+      "projectId": "PROJ-DB",
+      "description": "Remember user preferences, ongoing projects, and past conversations per Discord user/server. Context persists across sessions with configurable retention periods.",
+      "date": "2025-01-03",
+      "version": "2.0",
+      "status": "complete",
+      "tags": [
+        "memory",
+        "conversation",
+        "context"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0161",
+      "name": "Slash Command Framework",
+      "project": "Discord Brain",
+      "projectId": "PROJ-DB",
+      "description": "Extensible slash command system with auto-complete, parameter validation, and ephemeral/public responses. Command groups, permissions, and usage analytics.",
+      "date": "2024-12-01",
+      "version": "1.5",
+      "status": "complete",
+      "tags": [
+        "slash-commands",
+        "discord",
+        "ux"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0162",
+      "name": "Knowledge Base Integration",
+      "project": "Discord Brain",
+      "projectId": "PROJ-DB",
+      "description": "Index and query internal documentation, Notion pages, and GitHub wikis. RAG pipeline for accurate, cited responses. Auto-sync on document updates.",
+      "date": "2025-01-26",
+      "version": "1.1",
+      "status": "active",
+      "tags": [
+        "rag",
+        "knowledge",
+        "search"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0163",
+      "name": "Automated Meeting Summaries",
+      "project": "Discord Brain",
+      "projectId": "PROJ-DB",
+      "description": "Join voice channels, transcribe conversations, and post structured summaries with action items and decisions to designated channels. Speaker identification.",
+      "date": "2025-02-12",
+      "version": "1.0",
+      "status": "new",
+      "tags": [
+        "voice",
+        "transcription",
+        "meetings"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0164",
+      "name": "Multi-Server Governance",
+      "project": "Discord Brain",
+      "projectId": "PROJ-DB",
+      "description": "Manage bot permissions and behaviors across multiple Discord servers from a single admin interface. Per-server feature flags and usage quotas.",
+      "date": "2024-11-15",
+      "version": "0.3",
+      "status": "abandoned",
+      "tags": [
+        "governance",
+        "admin",
+        "multi-server"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0165",
+      "name": "API Gateway Core",
+      "project": "AAPIMP",
+      "projectId": "PROJ-API",
+      "description": "Central gateway for routing, rate limiting, authentication, and caching external API calls. Circuit breakers, retry logic, and failover. OpenAPI spec auto-import.",
+      "date": "2024-12-20",
+      "version": "2.5",
+      "status": "complete",
+      "tags": [
+        "gateway",
+        "core",
+        "routing"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0166",
+      "name": "Credential Vault",
+      "project": "AAPIMP",
+      "projectId": "PROJ-API",
+      "description": "Secure storage for API keys, OAuth tokens, and secrets. Automatic rotation policies, expiry alerts, and audit trail. Envelope encryption with KMS.",
+      "date": "2025-01-07",
+      "version": "1.3",
+      "status": "active",
+      "tags": [
+        "security",
+        "vault",
+        "credentials"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0167",
+      "name": "Webhook Manager",
+      "project": "AAPIMP",
+      "projectId": "PROJ-API",
+      "description": "Register, test, and monitor inbound webhooks. Payload validation, retry with exponential backoff, dead-letter queue. Visual event inspector.",
+      "date": "2025-01-19",
+      "version": "1.2",
+      "status": "active",
+      "tags": [
+        "webhooks",
+        "events",
+        "integration"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0168",
+      "name": "API Transformation Pipeline",
+      "project": "AAPIMP",
+      "projectId": "PROJ-API",
+      "description": "Visual pipeline builder for transforming request/response payloads. JSONata expressions, field mapping, and conditional routing. Reusable transformation templates.",
+      "date": "2025-02-08",
+      "version": "1.0",
+      "status": "new",
+      "tags": [
+        "transformation",
+        "pipeline",
+        "no-code"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0169",
+      "name": "Usage Analytics & Billing",
+      "project": "AAPIMP",
+      "projectId": "PROJ-API",
+      "description": "Detailed API usage metrics per endpoint, consumer, and time period. Cost attribution, anomaly detection, and quota enforcement with soft and hard limits.",
+      "date": "2025-02-22",
+      "version": "1.0",
+      "status": "new",
+      "tags": [
+        "analytics",
+        "billing",
+        "quota"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0170",
+      "name": "API Version Management",
+      "project": "AAPIMP",
+      "projectId": "PROJ-API",
+      "description": "Manage multiple API versions with deprecation timelines and migration guides. Automated compatibility checks between versions. Consumer notification system.",
+      "date": "2025-01-02",
+      "version": "1.0",
+      "status": "merged",
+      "tags": [
+        "versioning",
+        "deprecation"
+      ],
+      "source": "/Users/DX-1/Documents/Projects/Projects/Central Cortex/audit-requirements.html"
+    },
+    {
+      "id": "REQ-0171",
+      "name": "Head of Product Role",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Hire a product-minded analyst to own the product roadmap, customer feedback synthesis, and feature specifications. Will own the full sales assist and demo story from a product perspective. Responsible for structured discovery post-MVP, customer interview synthesis, acceptance criteria, and competitive intelligence.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "hiring",
+        "product-management",
+        "roadmap",
+        "strategic-gap",
+        "high-priority"
+      ]
+    },
+    {
+      "id": "REQ-0172",
+      "name": "Head of Growth/GTM Role",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Hire SDR/AE hybrid to own first customer acquisition pipeline: outbound targeting, demo scheduling, objection handling, and initial onboarding handoff. Must start before MVP completion to build pipeline for Day 60 paying customer target. Hands deals to CEO for final close.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "hiring",
+        "go-to-market",
+        "sales",
+        "customer-acquisition",
+        "medium-priority"
+      ]
+    },
+    {
+      "id": "REQ-0173",
+      "name": "Product Ownership Void Gap",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Current gap: no one owns customer-to-roadmap pipeline. CEO handles strategy; FE handles execution. Missing: user research synthesis, feature prioritization, acceptance criteria, roadmap sequencing. Every product decision escalates to CEO, creating ~40% strategic bandwidth bottleneck.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "gap-analysis",
+        "product-management",
+        "organizational-structure",
+        "blocker"
+      ]
+    },
+    {
+      "id": "REQ-0174",
+      "name": "No GTM / First Customer Path Gap",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Success metric is a paying customer by Day 60, but company has zero GTM capacity: no outbound, no demos, no pipeline. Pipeline takes 4-6 weeks to build. Starting GTM hire after MVP launch is too late. Must begin hiring before MVP completion.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "gap-analysis",
+        "go-to-market",
+        "sales",
+        "timeline-critical"
+      ]
+    },
+    {
+      "id": "REQ-0175",
+      "name": "Ethical & Legal Compliance Unowned Gap",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Company mission explicitly names 'ethical and legal automation' but no one owns governance documentation, legal review of agent permissions, or compliance posture. AI agents taking real actions is trust-sensitive. Missing governance creates reputational and legal risk as company signs first customers.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "gap-analysis",
+        "governance",
+        "legal-compliance",
+        "risk",
+        "trust"
+      ]
+    },
+    {
+      "id": "REQ-0176",
+      "name": "No Design/UX Voice Gap",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Observability dashboard and governance UX are primary trust interfaces with users. First impressions set by how well humans can read agent actions and reasoning. Design quality currently depends entirely on FE shipping; no dedicated UX function.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "gap-analysis",
+        "ux-design",
+        "observability",
+        "user-experience"
+      ]
+    },
+    {
+      "id": "REQ-0177",
+      "name": "Agent Budget Allocation Policy",
+      "project": "BACA - Agentic Project Management Platform",
+      "projectId": "PROJ-001",
+      "description": "Agent monthly budgets currently set to $0. Board must establish per-role budget caps before approving Head of Product and Head of Growth hires. Both new roles will require model budget to operate.",
+      "date": "2026-03-19",
+      "version": "v1",
+      "status": "blocked",
+      "source": "/Users/DX-1/Documents/Projects/docs/team-gap-assessment.md",
+      "tags": [
+        "budget",
+        "policy",
+        "governance",
+        "open-question"
       ]
     }
   ]
