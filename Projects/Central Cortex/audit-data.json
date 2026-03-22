@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated": "2026-03-22T00:00:00Z",
-    "totalRequirements": 177,
+    "generated": "2026-03-22T13:05:18.039783Z",
+    "totalRequirements": 195,
     "directoriesScanned": [
       "/Users/DX-1/Documents/Projects",
       "/Users/DX-1/Documents/dx-framework",
@@ -2871,6 +2871,302 @@
         "policy",
         "governance",
         "open-question"
+      ]
+    },
+    {
+      "id": "REQ-0178",
+      "name": "Rhabdomyolysis Root Cause Analysis",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Dr. Al must conduct comprehensive analysis of Kevin's rhabdomyolysis episodes (Aug 2025 CK >22,000, Jan 2024 CK ~10,000) including risk assessment, prevention strategies, and connection to genetic variants (AGK c.445A>G, AGK c.764C>T, AMPD1 c.133C>T).",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "medical-research",
+        "rhabdomyolysis",
+        "genetic-analysis",
+        "health-optimization"
+      ]
+    },
+    {
+      "id": "REQ-0179",
+      "name": "Genetic Variant Analysis - AMPD1 & AGK",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Deep genomic research into Kevin's pathogenic variants (AGK c.445A>G p.Ile149Val, AGK c.764C>T p.Thr255Met, AMPD1 c.133C>T p.Gln45*) including metabolic myopathy implications, inheritance patterns, and pathogenic mechanisms.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "genetic-research",
+        "genomics",
+        "metabolic-disease",
+        "variant-analysis"
+      ]
+    },
+    {
+      "id": "REQ-0180",
+      "name": "Supplement Stack Optimization",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Identify and optimize supplement protocols to support Kevin's metabolic condition, manage CK elevation, support energy metabolism, and complement medical interventions.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "supplements",
+        "nutrition",
+        "health-optimization",
+        "metabolic-support"
+      ]
+    },
+    {
+      "id": "REQ-0181",
+      "name": "CK Monitoring Protocol Development",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Create comprehensive CK (creatine kinase) monitoring and management protocol including test frequency, threshold triggers, interventions, and integration with supplement/lifestyle protocols.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "biomarker-monitoring",
+        "clinical-protocol",
+        "preventive-medicine"
+      ]
+    },
+    {
+      "id": "REQ-0182",
+      "name": "Weekly Health Status Review",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Conduct weekly health briefings with Kevin covering research findings, biomarker trends, supplement efficacy, symptom patterns, and treatment recommendations.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "patient-engagement",
+        "health-monitoring",
+        "ongoing-care"
+      ]
+    },
+    {
+      "id": "REQ-0183",
+      "name": "Multi-Specialist Health Team Coordination",
+      "project": "Kevin's Health Research Project",
+      "projectId": "PROJ-003",
+      "description": "Coordinate specialist consultations including core team (Neurologist, Geneticist, Nutritionist) and on-demand specialists (Cardiologist, Rheumatologist, Endocrinologist, etc.) with holistic and emerging medicine options.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dr-al/AGENTS.md",
+      "tags": [
+        "specialist-coordination",
+        "multidisciplinary-care",
+        "care-management"
+      ]
+    },
+    {
+      "id": "REQ-0184",
+      "name": "Medical Malpractice & Negligence Litigation Support",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Provide litigation support for medical malpractice cases including standards of care analysis, deviation identification, causation proof, and expert witness coordination. Dirty Bird has first-chair jury trial experience in complex medical cases.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "litigation",
+        "medical-law",
+        "legal-defense",
+        "trial-expertise"
+      ]
+    },
+    {
+      "id": "REQ-0185",
+      "name": "Federal Whistleblower Protection & OSC Complaint Support",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Handle Whistleblower Protection Act (WPA) and Office of Special Counsel (OSC) complaint processes, federal retaliation claims, protected disclosure linkage, and agency defense navigation.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "whistleblower-law",
+        "federal-compliance",
+        "retaliation-protection",
+        "regulatory-advocacy"
+      ]
+    },
+    {
+      "id": "REQ-0186",
+      "name": "Data Breach & Privacy Litigation",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Manage data breach and privacy litigation involving FISMA, Privacy Act, federal data protection standards, unauthorized access claims, and system-level evidence reconstruction.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "data-privacy",
+        "federal-law",
+        "cybersecurity-litigation",
+        "compliance"
+      ]
+    },
+    {
+      "id": "REQ-0187",
+      "name": "Regulatory & Compliance Violation Analysis",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Analyze regulatory compliance violations including IRM, Treasury regulations, internal control frameworks, systemic failures vs. isolated incidents, and TIGTA escalation pathways.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "regulatory-compliance",
+        "government-regulation",
+        "compliance-monitoring"
+      ]
+    },
+    {
+      "id": "REQ-0188",
+      "name": "Evidence Preservation & Case Timeline Reconstruction",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Manage evidence preservation, spoliation arguments, timeline reconstruction across systems/emails/personnel, and documentation strategy for airtight case narratives.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "evidence-management",
+        "litigation-support",
+        "case-preparation"
+      ]
+    },
+    {
+      "id": "REQ-0189",
+      "name": "Expert Witness Strategy & Network",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Coordinate expert witness strategy including established network of medical, forensic, and IT/security experts; dismantling opposing expert opinions; and case strength optimization.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "expert-witnesses",
+        "litigation-strategy",
+        "case-management"
+      ]
+    },
+    {
+      "id": "REQ-0190",
+      "name": "Government Defense & Federal Court Navigation",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Navigate federal court procedures, sovereign immunity limitations, jurisdictional strategy, and litigation against federal agencies and institutional defendants.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "federal-litigation",
+        "government-law",
+        "administrative-law"
+      ]
+    },
+    {
+      "id": "REQ-0191",
+      "name": "Contract Review & Drafting",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Comprehensive contract review, drafting, risk mitigation, and negotiation support across all business agreements.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "contract-law",
+        "risk-management",
+        "legal-drafting"
+      ]
+    },
+    {
+      "id": "REQ-0192",
+      "name": "Intellectual Property Protection",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "IP protection strategy including trademarks, copyrights, patents, licensing agreements, and enforcement actions.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "intellectual-property",
+        "ip-law",
+        "trademark-patent",
+        "licensing"
+      ]
+    },
+    {
+      "id": "REQ-0193",
+      "name": "Continuous Compliance Monitoring",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Ongoing monitoring of regulatory changes, compliance gaps, tax obligations, labor law updates, and business license/permit requirements with proactive issue flagging.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "compliance-monitoring",
+        "regulatory-watch",
+        "risk-assessment"
+      ]
+    },
+    {
+      "id": "REQ-0194",
+      "name": "Legal Risk Assessment & Threat Detection",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Identify malpractice liability threats, legal exposure from business decisions, litigation risk assessment, and proactive risk mitigation recommendations.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "risk-management",
+        "legal-strategy",
+        "threat-detection"
+      ]
+    },
+    {
+      "id": "REQ-0195",
+      "name": "Business Structure Optimization",
+      "project": "Legal & Compliance Operations",
+      "projectId": "PROJ-004",
+      "description": "Provide recommendations for business entity structure, tax optimization, liability protection, governance setup, and organizational changes to support growth.",
+      "date": "2026-03-20",
+      "version": "v1",
+      "status": "active",
+      "source": "/Users/DX-1/Documents/Projects/agents/dirty-bird/AGENTS.md",
+      "tags": [
+        "business-structure",
+        "tax-planning",
+        "governance",
+        "liability-protection"
       ]
     }
   ]
