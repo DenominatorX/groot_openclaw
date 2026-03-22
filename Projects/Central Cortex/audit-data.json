@@ -1,14 +1,18 @@
 {
   "metadata": {
-    "generated": "2026-03-22T13:05:18.039783Z",
-    "totalRequirements": 195,
+    "generated": "2026-03-22T15:14:08.562442Z",
+    "totalRequirements": 209,
     "directoriesScanned": [
       "/Users/DX-1/Documents/Projects",
       "/Users/DX-1/Documents/dx-framework",
-      "/Volumes/ORICO (unmounted)",
-      "/Volumes/2GBSSD_Sand (unmounted)"
+      "/Volumes/ORICO (mounted)",
+      "/Volumes/ORICO/0.Admin",
+      "/Volumes/ORICO/1.Claws",
+      "/Volumes/ORICO/projects",
+      "/Volumes/ORICO/projects 2",
+      "/Volumes/2GBSSD_Sand"
     ],
-    "notes": "Comprehensive requirements extraction from accessible legacy projects. External volumes (/Volumes/ORICO, /Volumes/2GBSSD_Sand) were not accessible during scan. All requirements extracted from current project documentation in /Users/DX-1/Documents/Projects.",
+    "notes": "Merged audit-requirements.html extraction with existing data. Deduplicated by requirement ID.",
     "lastUpdated": "2026-03-22"
   },
   "projects": [
@@ -3167,6 +3171,258 @@
         "tax-planning",
         "governance",
         "liability-protection"
+      ]
+    },
+    {
+      "id": "REQ-0196",
+      "name": "OpenClaw Migration Framework Documentation",
+      "project": "OpenClaw Migration",
+      "projectId": "PROJ-OCM",
+      "description": "Comprehensive guide for migrating OpenClaw setup from existing user account to new user account on Mac Mini. Includes phases for preparation, data transfer, and target account setup with launchd service configuration.",
+      "date": "2026-03-15",
+      "version": "v1",
+      "status": "active",
+      "source": "/Volumes/ORICO/0.Admin/OpenClaw_Migration_Guide.md",
+      "tags": [
+        "openclaw",
+        "migration",
+        "infrastructure",
+        "deployment",
+        "setup"
+      ]
+    },
+    {
+      "id": "REQ-0197",
+      "name": "GROOT Agentic Project Lifecycle Framework - Modular v3.1",
+      "project": "GROOT Design System",
+      "projectId": "PROJ-GROOT",
+      "description": "Fully namespaced, OpenClaw-compatible HTML framework for agentic project lifecycle management with comprehensive theme system (dark-command, dark-void, mid-slate, mid-espresso, light-arctic, light-parchment), spectarget themes, and design tokens. Includes modular components and CSS system.",
+      "date": "2026-03-15",
+      "version": "v3.1",
+      "status": "active",
+      "source": "/Volumes/ORICO/0.Admin/agentic-pm-framework.html",
+      "tags": [
+        "design-system",
+        "groot",
+        "framework",
+        "ui-components",
+        "theme-system"
+      ]
+    },
+    {
+      "id": "REQ-0198",
+      "name": "GROOT Design System Template",
+      "project": "GROOT Design System",
+      "projectId": "PROJ-GROOT",
+      "description": "Reusable design system template v3.1 for building GROOT-compatible applications. Includes comprehensive theme definitions, typography scale, component library templates, and CSS reset utilities for drop-in component development.",
+      "date": "2026-03-15",
+      "version": "v3.1",
+      "status": "active",
+      "source": "/Volumes/ORICO/0.Admin/groot-template.html",
+      "tags": [
+        "design-system",
+        "groot",
+        "templates",
+        "ui-library",
+        "css-framework"
+      ]
+    },
+    {
+      "id": "REQ-0199",
+      "name": "Mission Control v3 - Kanban Board (2D Dashboard)",
+      "project": "Mission Control v3",
+      "projectId": "PROJ-MC3",
+      "description": "Primary work surface for Kevin's AI Command Center. Features Kanban board with columns (Inbox, Assigned, In Progress, Review, Complete), drag-and-drop, task cards with assignee/priority/due date/tags, filtering, quick-add, and local JSON persistence.",
+      "date": "2026-02-10",
+      "version": "v3.0",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/mission-control-v3/PRD.md",
+      "tags": [
+        "mission-control",
+        "dashboard",
+        "kanban",
+        "task-management",
+        "core-feature"
+      ]
+    },
+    {
+      "id": "REQ-0200",
+      "name": "Mission Control v3 - 3D Isometric Visualization (Agent World)",
+      "project": "Mission Control v3",
+      "projectId": "PROJ-MC3",
+      "description": "Three.js-powered isometric visualization of Kevin's virtual HQ where agents appear as voxel characters. Includes agent positioning, state visualization (idle/working/reporting/waiting), clickable agent profiles, task direction, sub-agent visualization, and ambient animation.",
+      "date": "2026-02-10",
+      "version": "v3.0",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/mission-control-v3/PRD.md",
+      "tags": [
+        "mission-control",
+        "3d-visualization",
+        "agent-world",
+        "three-js",
+        "ui"
+      ]
+    },
+    {
+      "id": "REQ-0201",
+      "name": "Mission Control v3 - Health Monitoring Integration",
+      "project": "Mission Control v3",
+      "projectId": "PROJ-MC3",
+      "description": "Integrated health monitoring panel for Kevin's wearables and genetic context. Integrates Oura Ring (sleep/readiness/HRV), OMI Device (voice/memory), supplement tracking, exercise logging with 48h recovery, genetic context (AMPD1/AGK variants), and CK trending alerts.",
+      "date": "2026-02-10",
+      "version": "v3.0",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/mission-control-v3/PRD.md",
+      "tags": [
+        "mission-control",
+        "health",
+        "wearables",
+        "oura-ring",
+        "omi-device",
+        "integration"
+      ]
+    },
+    {
+      "id": "REQ-0202",
+      "name": "Mission Control v3 - Agent Activity Feed",
+      "project": "Mission Control v3",
+      "projectId": "PROJ-MC3",
+      "description": "Real-time feed showing agent activity with live logs, session links, per-agent cost tracking, total API spend monitoring, sub-agent tree visualization, and filtering by agent/time-range/cost-threshold.",
+      "date": "2026-02-10",
+      "version": "v3.0",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/mission-control-v3/PRD.md",
+      "tags": [
+        "mission-control",
+        "agent-activity",
+        "monitoring",
+        "cost-tracking",
+        "logging"
+      ]
+    },
+    {
+      "id": "REQ-0203",
+      "name": "Mission Control v3 - Agent Profile System",
+      "project": "Mission Control v3",
+      "projectId": "PROJ-MC3",
+      "description": "Foundational agent identity system with full profile data model (name, bio, role, tier, model, character type, voice, color, avatar). Includes Kevin's special owner profile, Executive Board (Groot, Jimmy T, CEO, Dr. Al, Dirty Bird), and sub-agent auto-creation with persistence.",
+      "date": "2026-02-11",
+      "version": "v3.0",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/mission-control-v3/MASTER_PLAN.md",
+      "tags": [
+        "mission-control",
+        "agent-profiles",
+        "identity",
+        "data-model",
+        "foundation"
+      ]
+    },
+    {
+      "id": "REQ-0204",
+      "name": "Mission Control v3 - Rooms & Locations System",
+      "project": "Mission Control v3",
+      "projectId": "PROJ-MC3",
+      "description": "Room system for 3D Agent World with named locations, boundaries, labels, and agent navigation. Agents walk to rooms when assigned work, supporting hierarchical organization and location-based task assignment.",
+      "date": "2026-02-11",
+      "version": "v3.0",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/mission-control-v3/MASTER_PLAN.md",
+      "tags": [
+        "mission-control",
+        "agent-world",
+        "rooms",
+        "locations",
+        "3d-space"
+      ]
+    },
+    {
+      "id": "REQ-0205",
+      "name": "DX Dashboard - Shell v2 Visual Polish & Routing",
+      "project": "DX Dashboard",
+      "projectId": "PROJ-DXD",
+      "description": "Shell v2 build phase with visual polish and routing infrastructure. Includes custom icon integration (8 platform icons with theme-aware swapping), leather texture header effect, saddle stitching, dropdown glass morphism, fade-slide animations, 'Coming Soon' badges, instant theme switching, and page routing with 23 page stubs.",
+      "date": "2026-03-15",
+      "version": "v2",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/dx-dashboard/BUILD_LOG.md",
+      "tags": [
+        "dx-dashboard",
+        "ui-polish",
+        "routing",
+        "theme-system",
+        "navigation"
+      ]
+    },
+    {
+      "id": "REQ-0206",
+      "name": "DX1 Home - Personal Hub Interface",
+      "project": "DX1 Home",
+      "projectId": "PROJ-DX1H",
+      "description": "Personal hub interface for DX1 platform providing navigation, theme switching, and connected services. Serves as landing page with groot-nav.js integration and responsive design.",
+      "date": "2026-03-15",
+      "version": "v1",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/dx1-home/",
+      "tags": [
+        "dx1-home",
+        "hub",
+        "navigation",
+        "ui",
+        "personal-dashboard"
+      ]
+    },
+    {
+      "id": "REQ-0207",
+      "name": "Agent Roster - Agent Registration & Management Service",
+      "project": "Agent Roster",
+      "projectId": "PROJ-AR",
+      "description": "Node.js service for managing agent registration and roster. Provides API endpoints for agent lifecycle management, profile storage, and agent directory services supporting Mission Control v3 architecture.",
+      "date": "2026-03-15",
+      "version": "v1",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/agent-roster/",
+      "tags": [
+        "agent-roster",
+        "agent-management",
+        "api",
+        "service",
+        "backend"
+      ]
+    },
+    {
+      "id": "REQ-0208",
+      "name": "Clipboard Manager - Shared Data Exchange Service",
+      "project": "Clipboard Manager",
+      "projectId": "PROJ-CB",
+      "description": "Service for managing shared clipboard data across agents and services. Enables inter-agent data exchange and temporary data storage for agent-to-agent communication.",
+      "date": "2026-03-15",
+      "version": "v1",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/clipboard/",
+      "tags": [
+        "clipboard",
+        "data-exchange",
+        "inter-agent-communication",
+        "service"
+      ]
+    },
+    {
+      "id": "REQ-0209",
+      "name": "Central Command & Mission Control v3 - Code Audit & Quality",
+      "project": "Mission Control v3",
+      "projectId": "PROJ-MC3",
+      "description": "Comprehensive code quality audit identifying NextAuth/iron-session migration tasks, SQL injection review, dead import detection, and cross-codebase consistency verification. Includes build test results and deprecation recommendations.",
+      "date": "2026-02-14",
+      "version": "v1",
+      "status": "active",
+      "source": "/Volumes/ORICO/projects 2/CODE_AUDIT_REPORT.md",
+      "tags": [
+        "mission-control",
+        "audit",
+        "code-quality",
+        "security",
+        "migration"
       ]
     }
   ]
