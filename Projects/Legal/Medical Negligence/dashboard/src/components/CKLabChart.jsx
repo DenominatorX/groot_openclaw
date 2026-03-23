@@ -5,11 +5,17 @@ import {
 } from 'recharts'
 import ckData from '../data/ck-labs.json'
 
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+function fmtDate(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00Z')
+  return `${MONTHS[d.getUTCMonth()]} '${String(d.getUTCFullYear()).slice(2)}`
+}
+
 const PROCEDURES = ckData.keyProcedures || []
 const VALUES = ckData.values.map(v => ({
   ...v,
   dateObj: new Date(v.date),
-  displayDate: new Date(v.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: "'yy" }),
+  displayDate: fmtDate(v.date),
   valueNum: v.value,
   isCrisis: v.value >= 10000,
   isDanger: v.value >= 1000 && v.value < 10000,
@@ -176,9 +182,9 @@ export default function CKLabChart() {
             <ReferenceLine y={10000} stroke="#ef4444" strokeDasharray="4 4" strokeWidth={1}
               label={{ value: '10K (Crisis)', fill: '#ef444480', fontSize: 9, position: 'insideRight' }} />
 
-            {/* RFA procedure vertical marker */}
+            {/* RFA procedure vertical marker — from keyProcedures date */}
             <ReferenceLine
-              x={VALUES.find(v => v.note?.includes('RFA'))?.displayDate || "Jul 18, '25"}
+              x={PROCEDURES[0] ? fmtDate(PROCEDURES[0].date) : "Jul '25"}
               stroke="#f97316" strokeDasharray="6 3" strokeWidth={1.5}
               label={{ value: 'RFA', fill: '#f97316', fontSize: 11, position: 'top' }}
             />
