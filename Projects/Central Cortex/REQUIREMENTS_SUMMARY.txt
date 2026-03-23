@@ -1,0 +1,2425 @@
+================================================================================
+REQUIREMENTS AUDIT SUMMARY
+================================================================================
+
+Generated: 2026-03-22
+Total Requirements: 195
+
+================================================================================
+OVERVIEW BY STATUS
+================================================================================
+ABANDONED    :   2 requirements (  1.0%)
+ACTIVE       : 125 requirements ( 64.1%)
+BLOCKED      :   1 requirements (  0.5%)
+COMPLETE     :  46 requirements ( 23.6%)
+MERGED       :   2 requirements (  1.0%)
+NEW          :  19 requirements (  9.7%)
+
+================================================================================
+OVERVIEW BY PROJECT
+================================================================================
+BACA - Agentic Project Management Platform    :  79 requirements ( 40.5%)
+DX Framework                                  :  43 requirements ( 22.1%)
+Kevin's Health Research Project               :  19 requirements (  9.7%)
+Legal & Compliance Operations                 :  20 requirements ( 10.3%)
+AAPIMP                                        :   6 requirements (  3.1%)
+Agent World                                   :   6 requirements (  3.1%)
+Central Command                               :   5 requirements (  2.6%)
+Discord Brain                                 :   5 requirements (  2.6%)
+DX Dashboard                                  :   6 requirements (  3.1%)
+Mission Control                               :   6 requirements (  3.1%)
+
+================================================================================
+TOP 25 TAGS BY FREQUENCY
+================================================================================
+ 1. governance           :  16 requirements (  8.2%)
+ 2. agent                :  13 requirements (  6.7%)
+ 3. quality              :  10 requirements (  5.1%)
+ 4. legal                :  10 requirements (  5.1%)
+ 5. health               :   9 requirements (  4.6%)
+ 6. metrics              :   8 requirements (  4.1%)
+ 7. hiring               :   8 requirements (  4.1%)
+ 8. oracle               :   8 requirements (  4.1%)
+ 9. agents               :   7 requirements (  3.6%)
+10. security             :   7 requirements (  3.6%)
+11. compliance           :   7 requirements (  3.6%)
+12. operations           :   7 requirements (  3.6%)
+13. monitoring           :   7 requirements (  3.6%)
+14. core                 :   7 requirements (  3.6%)
+15. testing              :   6 requirements (  3.1%)
+16. memory               :   6 requirements (  3.1%)
+17. research             :   6 requirements (  3.1%)
+18. core-feature         :   5 requirements (  2.6%)
+19. budget               :   5 requirements (  2.6%)
+20. workflow             :   5 requirements (  2.6%)
+21. automation           :   5 requirements (  2.6%)
+22. product              :   5 requirements (  2.6%)
+23. strategy             :   5 requirements (  2.6%)
+24. intelligence         :   5 requirements (  2.6%)
+25. trust                :   5 requirements (  2.6%)
+
+================================================================================
+REQUIREMENTS BY STATUS - DETAILED LIST
+================================================================================
+
+ABANDONED (2 requirements)
+--------------------------------------------------------------------------------
+  REQ-0142 | Multi-environment Support
+    Project: Mission Control
+    Tags: env, ops
+
+  REQ-0164 | Multi-Server Governance
+    Project: Discord Brain
+    Tags: governance, admin, multi-server
+
+
+ACTIVE (125 requirements)
+--------------------------------------------------------------------------------
+  REQ-0030 | Founding Engineer Hire
+    Project: BACA - Agentic Project Management Platform
+    Tags: hiring, team, engineering
+
+  REQ-0031 | Head of Product Hire
+    Project: BACA - Agentic Project Management Platform
+    Tags: hiring, product, team
+
+  REQ-0032 | Head of Growth/GTM Hire
+    Project: BACA - Agentic Project Management Platform
+    Tags: hiring, growth, sales
+
+  REQ-0033 | Agent Budget Authorization
+    Project: BACA - Agentic Project Management Platform
+    Tags: budget, governance, board
+
+  REQ-0038 | CEO Agent \u2014 Strategic Leadership
+    Project: BACA - Agentic Project Management Platform
+    Tags: agent, leadership, strategy
+
+  REQ-0039 | CEO Heartbeat Checklist
+    Project: BACA - Agentic Project Management Platform
+    Tags: agent, heartbeat, operations
+
+  REQ-0040 | CEO Memory Management System
+    Project: BACA - Agentic Project Management Platform
+    Tags: memory, knowledge, system
+
+  REQ-0041 | Dirty Bird \u2014 Legal & Compliance Agent
+    Project: BACA - Agentic Project Management Platform
+    Tags: agent, legal, compliance
+
+  REQ-0042 | Dirty Bird \u2014 Core Specialties
+    Project: BACA - Agentic Project Management Platform
+    Tags: agent, legal, expertise
+
+  REQ-0043 | Dr. Al \u2014 Health Research Agent
+    Project: Kevin's Health Research Project
+    Tags: agent, health, research
+
+  REQ-0044 | Dr. Al \u2014 Medical Team Structure
+    Project: Kevin's Health Research Project
+    Tags: agent, medical, specialization
+
+  REQ-0045 | Kevin's Genetic Variant Analysis
+    Project: Kevin's Health Research Project
+    Tags: health, genetics, research
+
+  REQ-0046 | Rhabdomyolysis Root Cause Analysis
+    Project: Kevin's Health Research Project
+    Tags: health, medical, research
+
+  REQ-0047 | Supplement Stack Optimization
+    Project: Kevin's Health Research Project
+    Tags: health, supplements, research
+
+  REQ-0048 | CK Monitoring Protocol
+    Project: Kevin's Health Research Project
+    Tags: health, monitoring, protocol
+
+  REQ-0049 | Mayo Clinic Follow-up Coordination
+    Project: Kevin's Health Research Project
+    Tags: health, medical, coordination
+
+  REQ-0050 | DX Framework \u2014 Agentic Factory
+    Project: DX Framework
+    Tags: framework, delivery, automation
+
+  REQ-0051 | GROOT v3.1 Lifecycle Engine
+    Project: DX Framework
+    Tags: framework, lifecycle, automation
+
+  REQ-0052 | Oracle Layer \u2014 3-Tier Intelligence
+    Project: DX Framework
+    Tags: oracle, intelligence, context
+
+  REQ-0053 | Main Oracle \u2014 Global Intelligence
+    Project: DX Framework
+    Tags: oracle, intelligence
+
+  REQ-0054 | Project Oracle \u2014 Per-Project Context
+    Project: DX Framework
+    Tags: oracle, project-context
+
+  REQ-0055 | Data Guy \u2014 Session Intelligence
+    Project: DX Framework
+    Tags: oracle, session, monitoring
+
+  REQ-0056 | Superpowers \u2014 Quality Discipline
+    Project: DX Framework
+    Tags: quality, discipline, testing
+
+  REQ-0057 | Jonah's Critique \u2014 Operational Controls
+    Project: DX Framework
+    Tags: governance, control, compliance
+
+  REQ-0058 | OpenClaw Agent Network Integration
+    Project: DX Framework
+    Tags: framework, agents, integration
+
+  REQ-0059 | 22 Agent Roster
+    Project: DX Framework
+    Tags: agents, roster
+
+  REQ-0060 | 7-Phase Project Lifecycle
+    Project: DX Framework
+    Tags: lifecycle, phases
+
+  REQ-0061 | Worker Packets \u2014 17-Field Task Format
+    Project: DX Framework
+    Tags: workflow, tasks, routing
+
+  REQ-0062 | Parallel Track Management
+    Project: DX Framework
+    Tags: workflow, parallelization
+
+  REQ-0063 | Board Gates & Phase Control
+    Project: DX Framework
+    Tags: governance, approval, gates
+
+  REQ-0064 | Human Command Authority Layer
+    Project: DX Framework
+    Tags: governance, human-control
+
+  REQ-0065 | Cost Control & Variance Tracking
+    Project: DX Framework
+    Tags: cost, budget, control
+
+  REQ-0066 | TDD Enforcement
+    Project: DX Framework
+    Tags: testing, quality, tdd
+
+  REQ-0067 | Specification Review Gates
+    Project: DX Framework
+    Tags: specification, review, gates
+
+  REQ-0068 | Git Worktree Isolation
+    Project: DX Framework
+    Tags: git, isolation, workflow
+
+  REQ-0069 | Code Review Agent
+    Project: DX Framework
+    Tags: review, quality, automation
+
+  REQ-0070 | Configuration Baselines
+    Project: DX Framework
+    Tags: configuration, baseline, control
+
+  REQ-0071 | Hard Change Control
+    Project: DX Framework
+    Tags: change-control, governance
+
+  REQ-0072 | Test Entry/Exit Criteria
+    Project: DX Framework
+    Tags: testing, criteria, quality
+
+  REQ-0073 | Defect Triage Model
+    Project: DX Framework
+    Tags: defects, triage, quality
+
+  REQ-0074 | 508 Compliance Gate
+    Project: DX Framework
+    Tags: compliance, accessibility
+
+  REQ-0075 | Auto-Heal Mechanics
+    Project: DX Framework
+    Tags: reliability, automation
+
+  REQ-0076 | Hive Mind Module
+    Project: DX Framework
+    Tags: agents, intelligence
+
+  REQ-0077 | Darwin Module
+    Project: DX Framework
+    Tags: optimization, learning
+
+  REQ-0078 | Model Routing \u2014 3-Tier Strategy
+    Project: DX Framework
+    Tags: routing, optimization
+
+  REQ-0079 | Handoff Contracts
+    Project: DX Framework
+    Tags: workflow, contracts
+
+  REQ-0080 | Role Archetype Library
+    Project: DX Framework
+    Tags: roles, archetypes
+
+  REQ-0081 | CEO Agent
+    Project: DX Framework
+    Tags: agent, role
+
+  REQ-0082 | Brain Agent
+    Project: DX Framework
+    Tags: agent, oracle, context
+
+  REQ-0083 | Forge Agent
+    Project: DX Framework
+    Tags: agent, development
+
+  REQ-0084 | Oracle Agent
+    Project: DX Framework
+    Tags: agent, intelligence
+
+  REQ-0085 | Cipher Agent
+    Project: DX Framework
+    Tags: agent, security
+
+  REQ-0086 | Archivist Agent
+    Project: DX Framework
+    Tags: agent, session-tracking
+
+  REQ-0092 | Daily Memory System \u2014 2026-03-19
+    Project: BACA - Agentic Project Management Platform
+    Tags: memory, operations
+
+  REQ-0093 | Daily Memory System \u2014 2026-03-20
+    Project: BACA - Agentic Project Management Platform
+    Tags: memory, operations
+
+  REQ-0094 | Daily Memory System \u2014 2026-03-21
+    Project: BACA - Agentic Project Management Platform
+    Tags: memory, operations
+
+  REQ-0095 | Agent Performance Monitoring
+    Project: BACA - Agentic Project Management Platform
+    Tags: monitoring, operations
+
+  REQ-0096 | Company Spend Tracking
+    Project: BACA - Agentic Project Management Platform
+    Tags: budgeting, finance
+
+  REQ-0097 | Agent Activation & Onboarding
+    Project: BACA - Agentic Project Management Platform
+    Tags: agents, operations
+
+  REQ-0098 | Error State Recovery Protocol
+    Project: BACA - Agentic Project Management Platform
+    Tags: reliability, monitoring
+
+  REQ-0099 | CEO Strategic Responsibilities
+    Project: BACA - Agentic Project Management Platform
+    Tags: leadership, strategy
+
+  REQ-0100 | CEO Operational Rules
+    Project: BACA - Agentic Project Management Platform
+    Tags: operations, rules
+
+  REQ-0101 | Ethical & Legal Automation Mission
+    Project: BACA - Agentic Project Management Platform
+    Tags: mission, ethics
+
+  REQ-0102 | Trusted Audit Trail Requirement
+    Project: BACA - Agentic Project Management Platform
+    Tags: trust, audit, customer
+
+  REQ-0103 | Agent Execution Authority Requirement
+    Project: BACA - Agentic Project Management Platform
+    Tags: trust, authority, customer
+
+  REQ-0104 | Quick Activation Window
+    Project: BACA - Agentic Project Management Platform
+    Tags: metrics, activation
+
+  REQ-0105 | Long-Term Retention Target
+    Project: BACA - Agentic Project Management Platform
+    Tags: metrics, retention
+
+  REQ-0106 | Value Perception Target
+    Project: BACA - Agentic Project Management Platform
+    Tags: metrics, value
+
+  REQ-0107 | Quality & Trust Metric
+    Project: BACA - Agentic Project Management Platform
+    Tags: metrics, quality
+
+  REQ-0108 | Revenue Milestone
+    Project: BACA - Agentic Project Management Platform
+    Tags: metrics, revenue
+
+  REQ-0109 | Non-MVP Feature Scope
+    Project: BACA - Agentic Project Management Platform
+    Tags: scope, mvp
+
+  REQ-0110 | Agentic PM Category Winner Thesis
+    Project: BACA - Agentic Project Management Platform
+    Tags: thesis, strategy
+
+  REQ-0111 | Strategic Founder Profile
+    Project: BACA - Agentic Project Management Platform
+    Tags: persona, customer
+
+  REQ-0112 | Secondary Market Opportunity
+    Project: BACA - Agentic Project Management Platform
+    Tags: market, segment
+
+  REQ-0113 | Context Bloat Problem Solved
+    Project: DX Framework
+    Tags: oracle, problem-solved
+
+  REQ-0114 | Institutional Knowledge Capture
+    Project: DX Framework
+    Tags: oracle, learning
+
+  REQ-0115 | Project Context Lifecycle
+    Project: DX Framework
+    Tags: oracle, lifecycle
+
+  REQ-0116 | Real-Time Session Monitoring
+    Project: DX Framework
+    Tags: monitoring, session
+
+  REQ-0117 | Flash-Tier Model for Session Tracking
+    Project: DX Framework
+    Tags: cost-optimization, model-routing
+
+  REQ-0118 | Context Query Interface
+    Project: DX Framework
+    Tags: interface, query
+
+  REQ-0119 | Health Research Methodology
+    Project: Kevin's Health Research Project
+    Tags: health, methodology
+
+  REQ-0120 | Chronic Fatigue Investigation
+    Project: Kevin's Health Research Project
+    Tags: health, research
+
+  REQ-0121 | Deep Stabilizer Muscle Pain Protocol
+    Project: Kevin's Health Research Project
+    Tags: health, pain
+
+  REQ-0122 | Legal Risk Monitoring
+    Project: Legal & Compliance Operations
+    Tags: legal, risk
+
+  REQ-0123 | Expert Network Coordination
+    Project: Legal & Compliance Operations
+    Tags: legal, coordination
+
+  REQ-0124 | Sub-Agent Legal Structure
+    Project: Legal & Compliance Operations
+    Tags: legal, organization
+
+  REQ-0125 | IP Protection & Trademark Monitoring
+    Project: Legal & Compliance Operations
+    Tags: legal, ip
+
+  REQ-0126 | Business Structure Optimization
+    Project: Legal & Compliance Operations
+    Tags: legal, business
+
+  REQ-0127 | Litigation Risk Assessment
+    Project: Legal & Compliance Operations
+    Tags: legal, litigation
+
+  REQ-0137 | Real-time Agent Status Dashboard
+    Project: Mission Control
+    Tags: ui, real-time, monitoring
+
+  REQ-0139 | Task Queue Visualization
+    Project: Mission Control
+    Tags: ui, queue, drag-drop
+
+  REQ-0144 | Cost Attribution Dashboard
+    Project: DX Dashboard
+    Tags: costs, analytics, budget
+
+  REQ-0146 | Developer Velocity Metrics
+    Project: DX Dashboard
+    Tags: metrics, github, velocity
+
+  REQ-0149 | Orchestration Engine
+    Project: Central Command
+    Tags: core, orchestration, engine
+
+  REQ-0151 | Permission Governance Layer
+    Project: Central Command
+    Tags: rbac, security, governance
+
+  REQ-0152 | Cross-Agent Communication Bus
+    Project: Central Command
+    Tags: messaging, core, agents
+
+  REQ-0155 | Memory Management System
+    Project: Agent World
+    Tags: memory, vector, core
+
+  REQ-0156 | Tool Plugin Architecture
+    Project: Agent World
+    Tags: tools, plugins, marketplace
+
+  REQ-0162 | Knowledge Base Integration
+    Project: Discord Brain
+    Tags: rag, knowledge, search
+
+  REQ-0166 | Credential Vault
+    Project: AAPIMP
+    Tags: security, vault, credentials
+
+  REQ-0167 | Webhook Manager
+    Project: AAPIMP
+    Tags: webhooks, events, integration
+
+  REQ-0171 | Head of Product Role
+    Project: BACA - Agentic Project Management Platform
+    Tags: hiring, product-management, roadmap, strategic-gap, high-priority
+
+  REQ-0172 | Head of Growth/GTM Role
+    Project: BACA - Agentic Project Management Platform
+    Tags: hiring, go-to-market, sales, customer-acquisition, medium-priority
+
+  REQ-0173 | Product Ownership Void Gap
+    Project: BACA - Agentic Project Management Platform
+    Tags: gap-analysis, product-management, organizational-structure, blocker
+
+  REQ-0174 | No GTM / First Customer Path Gap
+    Project: BACA - Agentic Project Management Platform
+    Tags: gap-analysis, go-to-market, sales, timeline-critical
+
+  REQ-0175 | Ethical & Legal Compliance Unowned Gap
+    Project: BACA - Agentic Project Management Platform
+    Tags: gap-analysis, governance, legal-compliance, risk, trust
+
+  REQ-0176 | No Design/UX Voice Gap
+    Project: BACA - Agentic Project Management Platform
+    Tags: gap-analysis, ux-design, observability, user-experience
+
+  REQ-0178 | Rhabdomyolysis Root Cause Analysis
+    Project: Kevin's Health Research Project
+    Tags: medical-research, rhabdomyolysis, genetic-analysis, health-optimization
+
+  REQ-0179 | Genetic Variant Analysis - AMPD1 & AGK
+    Project: Kevin's Health Research Project
+    Tags: genetic-research, genomics, metabolic-disease, variant-analysis
+
+  REQ-0180 | Supplement Stack Optimization
+    Project: Kevin's Health Research Project
+    Tags: supplements, nutrition, health-optimization, metabolic-support
+
+  REQ-0181 | CK Monitoring Protocol Development
+    Project: Kevin's Health Research Project
+    Tags: biomarker-monitoring, clinical-protocol, preventive-medicine
+
+  REQ-0182 | Weekly Health Status Review
+    Project: Kevin's Health Research Project
+    Tags: patient-engagement, health-monitoring, ongoing-care
+
+  REQ-0183 | Multi-Specialist Health Team Coordination
+    Project: Kevin's Health Research Project
+    Tags: specialist-coordination, multidisciplinary-care, care-management
+
+  REQ-0184 | Medical Malpractice & Negligence Litigation Support
+    Project: Legal & Compliance Operations
+    Tags: litigation, medical-law, legal-defense, trial-expertise
+
+  REQ-0185 | Federal Whistleblower Protection & OSC Complaint Support
+    Project: Legal & Compliance Operations
+    Tags: whistleblower-law, federal-compliance, retaliation-protection, regulatory-advocacy
+
+  REQ-0186 | Data Breach & Privacy Litigation
+    Project: Legal & Compliance Operations
+    Tags: data-privacy, federal-law, cybersecurity-litigation, compliance
+
+  REQ-0187 | Regulatory & Compliance Violation Analysis
+    Project: Legal & Compliance Operations
+    Tags: regulatory-compliance, government-regulation, compliance-monitoring
+
+  REQ-0188 | Evidence Preservation & Case Timeline Reconstruction
+    Project: Legal & Compliance Operations
+    Tags: evidence-management, litigation-support, case-preparation
+
+  REQ-0189 | Expert Witness Strategy & Network
+    Project: Legal & Compliance Operations
+    Tags: expert-witnesses, litigation-strategy, case-management
+
+  REQ-0190 | Government Defense & Federal Court Navigation
+    Project: Legal & Compliance Operations
+    Tags: federal-litigation, government-law, administrative-law
+
+  REQ-0191 | Contract Review & Drafting
+    Project: Legal & Compliance Operations
+    Tags: contract-law, risk-management, legal-drafting
+
+  REQ-0192 | Intellectual Property Protection
+    Project: Legal & Compliance Operations
+    Tags: intellectual-property, ip-law, trademark-patent, licensing
+
+  REQ-0193 | Continuous Compliance Monitoring
+    Project: Legal & Compliance Operations
+    Tags: compliance-monitoring, regulatory-watch, risk-assessment
+
+  REQ-0194 | Legal Risk Assessment & Threat Detection
+    Project: Legal & Compliance Operations
+    Tags: risk-management, legal-strategy, threat-detection
+
+  REQ-0195 | Business Structure Optimization
+    Project: Legal & Compliance Operations
+    Tags: business-structure, tax-planning, governance, liability-protection
+
+
+BLOCKED (1 requirements)
+--------------------------------------------------------------------------------
+  REQ-0177 | Agent Budget Allocation Policy
+    Project: BACA - Agentic Project Management Platform
+    Tags: budget, policy, governance, open-question
+
+
+COMPLETE (46 requirements)
+--------------------------------------------------------------------------------
+  REQ-0001 | Autonomous Agent Task Execution
+    Project: BACA - Agentic Project Management Platform
+    Tags: execution, agents, task-lifecycle, core-feature
+
+  REQ-0002 | Human-in-the-Loop Governance
+    Project: BACA - Agentic Project Management Platform
+    Tags: governance, approval, human-control, core-feature
+
+  REQ-0003 | Agentic Hierarchy & Delegation
+    Project: BACA - Agentic Project Management Platform
+    Tags: hierarchy, delegation, org-structure, core-feature
+
+  REQ-0004 | Full Issue Lifecycle Management
+    Project: BACA - Agentic Project Management Platform
+    Tags: issue-management, lifecycle, status, core-feature
+
+  REQ-0005 | Run Observability Dashboard
+    Project: BACA - Agentic Project Management Platform
+    Tags: observability, dashboard, audit-log, core-feature
+
+  REQ-0006 | Stateless Agent Architecture
+    Project: BACA - Agentic Project Management Platform
+    Tags: architecture, stateless, resilience
+
+  REQ-0007 | Run-ID Tracing
+    Project: BACA - Agentic Project Management Platform
+    Tags: audit-trail, tracing, accountability, security
+
+  REQ-0008 | Chain of Command Escalation
+    Project: BACA - Agentic Project Management Platform
+    Tags: escalation, hierarchy, governance
+
+  REQ-0009 | Budget Control & Enforcement
+    Project: BACA - Agentic Project Management Platform
+    Tags: budget, cost-control, enforcement
+
+  REQ-0010 | Approval Gates for Irreversible Actions
+    Project: BACA - Agentic Project Management Platform
+    Tags: approval, risk-management, governance
+
+  REQ-0011 | Adapter Abstraction Layer
+    Project: BACA - Agentic Project Management Platform
+    Tags: adapter, runtime, extensibility
+
+  REQ-0012 | REST API \u2014 Issues Management
+    Project: BACA - Agentic Project Management Platform
+    Tags: api, rest, issues
+
+  REQ-0013 | Atomic Checkout Protocol
+    Project: BACA - Agentic Project Management Platform
+    Tags: concurrency, checkout, api
+
+  REQ-0014 | Agent Service & Heartbeat Scheduling
+    Project: BACA - Agentic Project Management Platform
+    Tags: runtime, scheduler, heartbeat
+
+  REQ-0015 | Governance Service \u2014 Approval Workflows
+    Project: BACA - Agentic Project Management Platform
+    Tags: governance, approval, policy
+
+  REQ-0016 | Immutable Audit Log
+    Project: BACA - Agentic Project Management Platform
+    Tags: audit, immutable, compliance
+
+  REQ-0017 | PostgreSQL Data Model
+    Project: BACA - Agentic Project Management Platform
+    Tags: database, schema, data-model
+
+  REQ-0018 | JWT Authentication & Authorization
+    Project: BACA - Agentic Project Management Platform
+    Tags: auth, security, jwt
+
+  REQ-0019 | Row-Level Tenant Isolation
+    Project: BACA - Agentic Project Management Platform
+    Tags: security, multi-tenant, isolation
+
+  REQ-0020 | Sensitive Data Protection
+    Project: BACA - Agentic Project Management Platform
+    Tags: security, secrets
+
+  REQ-0021 | Core Package Architecture
+    Project: BACA - Agentic Project Management Platform
+    Tags: architecture, packages, modularity
+
+  REQ-0022 | TypeScript Strict Mode & ESM
+    Project: BACA - Agentic Project Management Platform
+    Tags: quality, typescript, build
+
+  REQ-0023 | Co-located Unit Tests
+    Project: BACA - Agentic Project Management Platform
+    Tags: testing, quality, tdd
+
+  REQ-0024 | Drizzle ORM & Migrations
+    Project: BACA - Agentic Project Management Platform
+    Tags: database, orm, migrations
+
+  REQ-0025 | Trunk-Based Git Workflow
+    Project: BACA - Agentic Project Management Platform
+    Tags: vcs, workflow, git
+
+  REQ-0026 | Conventional Commits
+    Project: BACA - Agentic Project Management Platform
+    Tags: commits, vcs, standards
+
+  REQ-0027 | CI/CD Pipeline \u2014 GitHub Actions
+    Project: BACA - Agentic Project Management Platform
+    Tags: ci-cd, automation, quality-gates
+
+  REQ-0028 | Product Vision & Market Positioning
+    Project: BACA - Agentic Project Management Platform
+    Tags: product, strategy, market
+
+  REQ-0029 | MVP Success Metrics
+    Project: BACA - Agentic Project Management Platform
+    Tags: metrics, success-criteria, product
+
+  REQ-0034 | Phase 1 \u2014 Foundation & Architecture
+    Project: BACA - Agentic Project Management Platform
+    Tags: phase, foundation, architecture
+
+  REQ-0035 | Phase 2 \u2014 MVP Task Lifecycle
+    Project: BACA - Agentic Project Management Platform
+    Tags: phase, mvp, execution
+
+  REQ-0036 | Phase 3 \u2014 Governance & Ethical Safeguards
+    Project: BACA - Agentic Project Management Platform
+    Tags: phase, governance, ethics
+
+  REQ-0037 | Phase 4 \u2014 Scale & Integrations
+    Project: BACA - Agentic Project Management Platform
+    Tags: phase, scale, integrations
+
+  REQ-0087 | Founding Engineer Agent Responsibilities
+    Project: BACA - Agentic Project Management Platform
+    Tags: agent, engineering, phases
+
+  REQ-0088 | BACA-2: Product Vision Definition
+    Project: BACA - Agentic Project Management Platform
+    Tags: product, scope, vision
+
+  REQ-0089 | BACA-3: Technical Foundation
+    Project: BACA - Agentic Project Management Platform
+    Tags: infrastructure, foundation
+
+  REQ-0090 | BACA-4: Build and Ship MVP
+    Project: BACA - Agentic Project Management Platform
+    Tags: mvp, delivery
+
+  REQ-0091 | BACA-5: Team Gap Assessment
+    Project: BACA - Agentic Project Management Platform
+    Tags: hiring, team, strategy
+
+  REQ-0138 | Agent Lifecycle Management
+    Project: Mission Control
+    Tags: core, agents, ops
+
+  REQ-0143 | Unified Activity Feed
+    Project: DX Dashboard
+    Tags: feed, ui, core
+
+  REQ-0150 | Command History & Replay
+    Project: Central Command
+    Tags: history, audit, debug
+
+  REQ-0154 | Agent SDK Core
+    Project: Agent World
+    Tags: sdk, core, typescript, python
+
+  REQ-0157 | Agent Testing Framework
+    Project: Agent World
+    Tags: testing, ci-cd, quality
+
+  REQ-0160 | Contextual Conversation Memory
+    Project: Discord Brain
+    Tags: memory, conversation, context
+
+  REQ-0161 | Slash Command Framework
+    Project: Discord Brain
+    Tags: slash-commands, discord, ux
+
+  REQ-0165 | API Gateway Core
+    Project: AAPIMP
+    Tags: gateway, core, routing
+
+
+MERGED (2 requirements)
+--------------------------------------------------------------------------------
+  REQ-0147 | Onboarding Flow
+    Project: DX Dashboard
+    Tags: onboarding, ux
+
+  REQ-0170 | API Version Management
+    Project: AAPIMP
+    Tags: versioning, deprecation
+
+
+NEW (19 requirements)
+--------------------------------------------------------------------------------
+  REQ-0128 | Product Ownership & Roadmap Management
+    Project: BACA - Agentic Project Management Platform
+    Tags: hiring, product, roadmap, post-MVP, capability-gap
+
+  REQ-0129 | Go-To-Market & Customer Acquisition
+    Project: BACA - Agentic Project Management Platform
+    Tags: hiring, GTM, sales, customer-acquisition, day-60-goal
+
+  REQ-0130 | Legal & Compliance Governance System
+    Project: BACA - Agentic Project Management Platform
+    Tags: compliance, legal, governance, risk, trust, ethics
+
+  REQ-0131 | Design & UX for Observability Interfaces
+    Project: BACA - Agentic Project Management Platform
+    Tags: design, UX, observability, trust, interfaces
+
+  REQ-0132 | Contract Review & Legal Risk Assessment
+    Project: Legal & Compliance Operations
+    Tags: legal, contracts, IP, compliance, risk-assessment
+
+  REQ-0133 | Trial & Litigation Expertise
+    Project: Legal & Compliance Operations
+    Tags: litigation, trial, malpractice, whistleblower, federal-law
+
+  REQ-0134 | Genetic Variant Analysis & Medical Research
+    Project: Kevin's Health Research Project
+    Tags: genetics, research, rhabdomyolysis, metabolic-disease, precision-medicine
+
+  REQ-0135 | Supplement Stack Optimization & Nutrition Management
+    Project: Kevin's Health Research Project
+    Tags: nutrition, supplements, health-optimization, CK-management
+
+  REQ-0136 | Multi-Disciplinary Health Team Coordination
+    Project: Kevin's Health Research Project
+    Tags: team-coordination, health-specialists, multidisciplinary, sub-agents
+
+  REQ-0140 | System Health Alerts
+    Project: Mission Control
+    Tags: alerts, monitoring, notifications
+
+  REQ-0141 | Agent Performance Analytics
+    Project: Mission Control
+    Tags: analytics, reporting, metrics
+
+  REQ-0145 | Codebase Intelligence Panel
+    Project: DX Dashboard
+    Tags: code, intelligence, quality
+
+  REQ-0148 | Notification Preferences
+    Project: DX Dashboard
+    Tags: notifications, settings, ux
+
+  REQ-0153 | Scenario Simulation Mode
+    Project: Central Command
+    Tags: simulation, testing, dry-run
+
+  REQ-0158 | Multi-Modal Input Support
+    Project: Agent World
+    Tags: multi-modal, vision, audio
+
+  REQ-0159 | Agent Marketplace
+    Project: Agent World
+    Tags: marketplace, distribution, community
+
+  REQ-0163 | Automated Meeting Summaries
+    Project: Discord Brain
+    Tags: voice, transcription, meetings
+
+  REQ-0168 | API Transformation Pipeline
+    Project: AAPIMP
+    Tags: transformation, pipeline, no-code
+
+  REQ-0169 | Usage Analytics & Billing
+    Project: AAPIMP
+    Tags: analytics, billing, quota
+
+
+================================================================================
+FULL REQUIREMENTS INDEX
+================================================================================
+
+REQ-0001
+Name: Autonomous Agent Task Execution
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: AI agents check out assigned tasks and execute them end-to-end (write code, conduct research, produce documents) with full run audit trail tracking.
+Tags: execution, agents, task-lifecycle, core-feature
+--------------------------------------------------------------------------------
+
+REQ-0002
+Name: Human-in-the-Loop Governance
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Approval gates for high-stakes actions. Humans can review, comment, approve, or reject before agents proceed. Agents block cleanly and resume on appro...
+Tags: governance, approval, human-control, core-feature
+--------------------------------------------------------------------------------
+
+REQ-0003
+Name: Agentic Hierarchy & Delegation
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Define agent roles (CEO, Engineer, PM). Managers delegate subtasks to reports with automatic parent-child linkage and budget propagation.
+Tags: hierarchy, delegation, org-structure, core-feature
+--------------------------------------------------------------------------------
+
+REQ-0004
+Name: Full Issue Lifecycle Management
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: CRUD on issues with structured status transitions (todo \u2192 in_progress \u2192 blocked \u2192 review \u2192 done), priority, assignment, and goal a...
+Tags: issue-management, lifecycle, status, core-feature
+--------------------------------------------------------------------------------
+
+REQ-0005
+Name: Run Observability Dashboard
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Every agent action is logged to a heartbeat run. Board members inspect what happened, why, what it cost, and link runs to issues for accountability.
+Tags: observability, dashboard, audit-log, core-feature
+--------------------------------------------------------------------------------
+
+REQ-0006
+Name: Stateless Agent Architecture
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Agents do not hold state between heartbeats. All state lives in platform DB. Makes agents interchangeable and failure-safe.
+Tags: architecture, stateless, resilience
+--------------------------------------------------------------------------------
+
+REQ-0007
+Name: Run-ID Tracing
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Every mutating API call includes X-Paperclip-Run-Id header. Links every change to auditable heartbeat run enabling full replay and forensic analysis.
+Tags: audit-trail, tracing, accountability, security
+--------------------------------------------------------------------------------
+
+REQ-0008
+Name: Chain of Command Escalation
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Agents have reportsTo hierarchy. When blocked, agent escalates to manager. Platform enforces this; cross-team delegation requires billingCode.
+Tags: escalation, hierarchy, governance
+--------------------------------------------------------------------------------
+
+REQ-0009
+Name: Budget Control & Enforcement
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Monthly spend tracked per agent in cents. Platform auto-pauses agents at 100% budget. Above 80%, only critical tasks execute.
+Tags: budget, cost-control, enforcement
+--------------------------------------------------------------------------------
+
+REQ-0010
+Name: Approval Gates for Irreversible Actions
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Actions with high blast radius (create agents, push to prod, delete data) must go through approval workflow. Approvals linked to issues for full conte...
+Tags: approval, risk-management, governance
+--------------------------------------------------------------------------------
+
+REQ-0011
+Name: Adapter Abstraction Layer
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Agents are model-agnostic. Adapter is subprocess contract: receive env vars, do work, exit. claude_local spawns claude CLI; codex_local spawns codex. ...
+Tags: adapter, runtime, extensibility
+--------------------------------------------------------------------------------
+
+REQ-0012
+Name: REST API \u2014 Issues Management
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: GET/POST /api/companies/:id/issues for list and create. Full CRUD with status/field updates and inline comments.
+Tags: api, rest, issues
+--------------------------------------------------------------------------------
+
+REQ-0013
+Name: Atomic Checkout Protocol
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: POST /api/issues/:id/checkout implements compare-and-swap to prevent concurrent assignment. Returns 409 Conflict if already checked out.
+Tags: concurrency, checkout, api
+--------------------------------------------------------------------------------
+
+REQ-0014
+Name: Agent Service & Heartbeat Scheduling
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Agent runtime polls heartbeats, injects PAPERCLIP_* env vars, invokes adapter subprocess, tracks run lifecycle (queued \u2192 running \u2192 completed...
+Tags: runtime, scheduler, heartbeat
+--------------------------------------------------------------------------------
+
+REQ-0015
+Name: Governance Service \u2014 Approval Workflows
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Enforces company policy at runtime with approval gates for privileged actions and escalation chains derived from chainOfCommand.
+Tags: governance, approval, policy
+--------------------------------------------------------------------------------
+
+REQ-0016
+Name: Immutable Audit Log
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Append-only audit log for all state mutations. No DELETE endpoint exists for audit records.
+Tags: audit, immutable, compliance
+--------------------------------------------------------------------------------
+
+REQ-0017
+Name: PostgreSQL Data Model
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Core entities: Company, Agent, Issue, AgentRun, Project, Goal, Approval, AuditLog with structured schema and relationships.
+Tags: database, schema, data-model
+--------------------------------------------------------------------------------
+
+REQ-0018
+Name: JWT Authentication & Authorization
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: All API requests authenticated via JWT. Agents receive short-lived run JWTs scoped to single run. Board users have persistent JWTs with role-based per...
+Tags: auth, security, jwt
+--------------------------------------------------------------------------------
+
+REQ-0019
+Name: Row-Level Tenant Isolation
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: No agent can access another company's data. Enforced at database level.
+Tags: security, multi-tenant, isolation
+--------------------------------------------------------------------------------
+
+REQ-0020
+Name: Sensitive Data Protection
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Sensitive env vars (API keys, DB credentials) never logged.
+Tags: security, secrets
+--------------------------------------------------------------------------------
+
+REQ-0021
+Name: Core Package Architecture
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Four packages: @agentic/core (types, models, errors), @agentic/api (REST API), @agentic/agent-runtime (scheduler + adapter), @agentic/governance (appr...
+Tags: architecture, packages, modularity
+--------------------------------------------------------------------------------
+
+REQ-0022
+Name: TypeScript Strict Mode & ESM
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Strict TypeScript mode enforced with exactOptionalPropertyTypes and noUncheckedIndexedAccess. ESM modules only with .js extensions.
+Tags: quality, typescript, build
+--------------------------------------------------------------------------------
+
+REQ-0023
+Name: Co-located Unit Tests
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Tests live next to files they test (foo.test.ts beside foo.ts). Uses Node's built-in test runner. All new logic requires tests.
+Tags: testing, quality, tdd
+--------------------------------------------------------------------------------
+
+REQ-0024
+Name: Drizzle ORM & Migrations
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: All schema changes in packages/api/src/db/schema.ts. Migrations generated with npm run db:generate. Never raw SQL in application code.
+Tags: database, orm, migrations
+--------------------------------------------------------------------------------
+
+REQ-0025
+Name: Trunk-Based Git Workflow
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: main branch always deployable. Feature branches off main named <type>/<short-description>. Squash merge to keep history clean. Delete after merge.
+Tags: vcs, workflow, git
+--------------------------------------------------------------------------------
+
+REQ-0026
+Name: Conventional Commits
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Commit messages follow Conventional Commits: feat:, fix:, chore:, docs:, test:, refactor:. AI agents append Co-Authored-By: Paperclip.
+Tags: commits, vcs, standards
+--------------------------------------------------------------------------------
+
+REQ-0027
+Name: CI/CD Pipeline \u2014 GitHub Actions
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Every PR runs: npm run lint (TypeScript check), npm run build (compile), npm run test (tests), npm audit (vulnerability scan). Deploy to staging on ma...
+Tags: ci-cd, automation, quality-gates
+--------------------------------------------------------------------------------
+
+REQ-0028
+Name: Product Vision & Market Positioning
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Target founding teams 2-20 engineers. Solve 30-40% PM overhead. AI agents execute autonomously with human governance and audit trails.
+Tags: product, strategy, market
+--------------------------------------------------------------------------------
+
+REQ-0029
+Name: MVP Success Metrics
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Activation: 3+ issues completed in 7 days. Retention: \u226560% run \u22655 heartbeats/week by day 30. Quality: <5% rollback rate. Revenue: first payi...
+Tags: metrics, success-criteria, product
+--------------------------------------------------------------------------------
+
+REQ-0030
+Name: Founding Engineer Hire
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Agent role to handle technical foundation, MVP build, governance implementation, and platform scaling. Status: pending board approval.
+Tags: hiring, team, engineering
+--------------------------------------------------------------------------------
+
+REQ-0031
+Name: Head of Product Hire
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Own product roadmap, customer feedback synthesis, and feature specs. High priority \u2014 unblocks roadmap after Founding Engineer onboarding.
+Tags: hiring, product, team
+--------------------------------------------------------------------------------
+
+REQ-0032
+Name: Head of Growth/GTM Hire
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Own first customer acquisition pipeline: outbound, demos, objection handling, onboarding. Medium priority \u2014 hire 3-4 weeks before MVP ship.
+Tags: hiring, growth, sales
+--------------------------------------------------------------------------------
+
+REQ-0033
+Name: Agent Budget Authorization
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Set per-role monthly budget caps for agents. Currently $0 \u2014 board must authorize before new hires approved.
+Tags: budget, governance, board
+--------------------------------------------------------------------------------
+
+REQ-0034
+Name: Phase 1 \u2014 Foundation & Architecture
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Repository structure, tooling, core data models, architecture design. Status: complete.
+Tags: phase, foundation, architecture
+--------------------------------------------------------------------------------
+
+REQ-0035
+Name: Phase 2 \u2014 MVP Task Lifecycle
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Task lifecycle, assignment, heartbeat execution. Status: complete.
+Tags: phase, mvp, execution
+--------------------------------------------------------------------------------
+
+REQ-0036
+Name: Phase 3 \u2014 Governance & Ethical Safeguards
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Approvals, audit log, budget controls. Status: complete.
+Tags: phase, governance, ethics
+--------------------------------------------------------------------------------
+
+REQ-0037
+Name: Phase 4 \u2014 Scale & Integrations
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Multi-project, integrations, dashboards. Status: complete.
+Tags: phase, scale, integrations
+--------------------------------------------------------------------------------
+
+REQ-0038
+Name: CEO Agent \u2014 Strategic Leadership
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: CEO agent manages P&L, strategy, team hiring, unblocking reports. Uses memory system (para-memory-files skill) for persistent knowledge and daily plan...
+Tags: agent, leadership, strategy
+--------------------------------------------------------------------------------
+
+REQ-0039
+Name: CEO Heartbeat Checklist
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Identity check, local planning, approval follow-up, work assignment, checkout, delegation, fact extraction, exit. Runs every heartbeat.
+Tags: agent, heartbeat, operations
+--------------------------------------------------------------------------------
+
+REQ-0040
+Name: CEO Memory Management System
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Three-layer memory system: knowledge graph, daily notes, tacit knowledge. PARA folder structure (Projects, Areas, Resources, Archives). Uses para-memo...
+Tags: memory, knowledge, system
+--------------------------------------------------------------------------------
+
+REQ-0041
+Name: Dirty Bird \u2014 Legal & Compliance Agent
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Legal counsel with trial litigation, medical malpractice, whistleblower, federal systems expertise. Monitors contracts, compliance, risk. Reports to C...
+Tags: agent, legal, compliance
+--------------------------------------------------------------------------------
+
+REQ-0042
+Name: Dirty Bird \u2014 Core Specialties
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Trial & litigation, medical malpractice, rhabdomyolysis expertise, federal whistleblower, data breach/privacy, regulatory violations, evidence strateg...
+Tags: agent, legal, expertise
+--------------------------------------------------------------------------------
+
+REQ-0043
+Name: Dr. Al \u2014 Health Research Agent
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Medical research authority managing genetic variant analysis (AMPD1, AGK), rhabdomyolysis root cause, supplement optimization, CK monitoring, weekly h...
+Tags: agent, health, research
+--------------------------------------------------------------------------------
+
+REQ-0044
+Name: Dr. Al \u2014 Medical Team Structure
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Core sub-agents: Neurologist, Geneticist, Nutritionist. On-demand specialists: Cardiologist, Rheumatologist, Naturopath, Acupuncturist, Psychedelic Re...
+Tags: agent, medical, specialization
+--------------------------------------------------------------------------------
+
+REQ-0045
+Name: Kevin's Genetic Variant Analysis
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Analyze AGK variants (c.445A>G, c.764C>T) and AMPD1 c.133C>T (pathogenic). Understand pathway implications for metabolism and muscle function.
+Tags: health, genetics, research
+--------------------------------------------------------------------------------
+
+REQ-0046
+Name: Rhabdomyolysis Root Cause Analysis
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Investigate root cause of two rhabdo events (Aug 2025 CK >22k, Jan 2024 CK ~10k). Develop prevention and risk assessment protocols.
+Tags: health, medical, research
+--------------------------------------------------------------------------------
+
+REQ-0047
+Name: Supplement Stack Optimization
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Research and optimize supplements for CK management, metabolic support, and chronic fatigue mitigation based on Kevin's unique variants.
+Tags: health, supplements, research
+--------------------------------------------------------------------------------
+
+REQ-0048
+Name: CK Monitoring Protocol
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Develop and track CK monitoring protocol with baseline, warning thresholds, and early warning indicators for muscle stress.
+Tags: health, monitoring, protocol
+--------------------------------------------------------------------------------
+
+REQ-0049
+Name: Mayo Clinic Follow-up Coordination
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Coordinate April 2026 Mayo Clinic appointment follow-up. Prepare comprehensive case summary from genetic testing (Feb 2026) and research findings.
+Tags: health, medical, coordination
+--------------------------------------------------------------------------------
+
+REQ-0050
+Name: DX Framework \u2014 Agentic Factory
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Complete software delivery system: feed idea, get shipped product. Orchestrates brief\u2192PRD\u2192architecture\u2192code\u2192deployment with govern...
+Tags: framework, delivery, automation
+--------------------------------------------------------------------------------
+
+REQ-0051
+Name: GROOT v3.1 Lifecycle Engine
+Project: DX Framework (PROJ-002)
+Status: active
+Description: 7-phase lifecycle, 10 role archetypes, parallel tracks, worker packets (17 fields), model routing (3 tiers per task), handoff contracts, board gates, ...
+Tags: framework, lifecycle, automation
+--------------------------------------------------------------------------------
+
+REQ-0052
+Name: Oracle Layer \u2014 3-Tier Intelligence
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Main Oracle (global), Project Oracle (per-project context), Data Guy (session intelligence). Agents query live context instead of carrying stale copie...
+Tags: oracle, intelligence, context
+--------------------------------------------------------------------------------
+
+REQ-0053
+Name: Main Oracle \u2014 Global Intelligence
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Aggregates all Project Oracles. Sees patterns, cross-project dependencies, resource conflicts, systemic risks. Pre-populates new Project Oracles from ...
+Tags: oracle, intelligence
+--------------------------------------------------------------------------------
+
+REQ-0054
+Name: Project Oracle \u2014 Per-Project Context
+Project: DX Framework (PROJ-002)
+Status: active
+Description: One per active project. Loaded with PRD, architecture, tasks, agent assignments, dependencies, blockers, risks. Agents query instead of carrying conte...
+Tags: oracle, project-context
+--------------------------------------------------------------------------------
+
+REQ-0055
+Name: Data Guy \u2014 Session Intelligence
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Watches real-time: files touched, errors, decisions, task state. Writes session summary on close \u2192 feeds Project Oracle. Lightweight, always-on, ...
+Tags: oracle, session, monitoring
+--------------------------------------------------------------------------------
+
+REQ-0056
+Name: Superpowers \u2014 Quality Discipline
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Spec review gates (up to 5 iterations), plan review before code, TDD enforcement (red\u2192green\u2192refactor), evidence-based completion, code revie...
+Tags: quality, discipline, testing
+--------------------------------------------------------------------------------
+
+REQ-0057
+Name: Jonah's Critique \u2014 Operational Controls
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Formal baselines, hard change control, named authorities, budget/variance tracking, configuration management, test entry/exit criteria, defect triage,...
+Tags: governance, control, compliance
+--------------------------------------------------------------------------------
+
+REQ-0058
+Name: OpenClaw Agent Network Integration
+Project: DX Framework (PROJ-002)
+Status: active
+Description: DX Framework wraps 22 OpenClaw agents. Framework tells what to do; OpenClaw makes it happen via multi-model routing, session isolation, credential man...
+Tags: framework, agents, integration
+--------------------------------------------------------------------------------
+
+REQ-0059
+Name: 22 Agent Roster
+Project: DX Framework (PROJ-002)
+Status: active
+Description: CEO, Brain, Forge, Oracle, Cipher, and 17 more specialized agents for development, testing, documentation, integration, and domain-specific tasks.
+Tags: agents, roster
+--------------------------------------------------------------------------------
+
+REQ-0060
+Name: 7-Phase Project Lifecycle
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Seven phases orchestrated by GROOT: requirement\u2192design\u2192architecture\u2192implementation\u2192testing\u2192deployment\u2192monitoring. Each w...
+Tags: lifecycle, phases
+--------------------------------------------------------------------------------
+
+REQ-0061
+Name: Worker Packets \u2014 17-Field Task Format
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Standardized task format with 17 fields. Routes tasks through model tiers (3 per task). Enables seamless handoff between agents and phase gates.
+Tags: workflow, tasks, routing
+--------------------------------------------------------------------------------
+
+REQ-0062
+Name: Parallel Track Management
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Multiple workstreams run in parallel. Dependency graph ensures blockers are detected. Work packets route through correct agents based on phase and tra...
+Tags: workflow, parallelization
+--------------------------------------------------------------------------------
+
+REQ-0063
+Name: Board Gates & Phase Control
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Human approval gates at critical phases. Board reviews baseline, PRD, architecture, release readiness. Everything else delegated to agents.
+Tags: governance, approval, gates
+--------------------------------------------------------------------------------
+
+REQ-0064
+Name: Human Command Authority Layer
+Project: DX Framework (PROJ-002)
+Status: active
+Description: YOU set goals, approve baselines, make final release decisions, review board gates. Direction, not execution. Everything else delegated downward.
+Tags: governance, human-control
+--------------------------------------------------------------------------------
+
+REQ-0065
+Name: Cost Control & Variance Tracking
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Budget management per agent role. Variance tracking with alerts. Cost visibility per project and phase. Named cost authority reviews.
+Tags: cost, budget, control
+--------------------------------------------------------------------------------
+
+REQ-0066
+Name: TDD Enforcement
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Red\u2192Green\u2192Refactor cycle enforced. Tests must pass for code completion. Evidence-based completion, not agent-claimed done.
+Tags: testing, quality, tdd
+--------------------------------------------------------------------------------
+
+REQ-0067
+Name: Specification Review Gates
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Up to 5 specification iteration cycles. PRD and architecture reviewed before code starts. Prevents rework.
+Tags: specification, review, gates
+--------------------------------------------------------------------------------
+
+REQ-0068
+Name: Git Worktree Isolation
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Each task isolated in git worktree. Clean dependency isolation, prevents merge conflicts, enables parallel work without interference.
+Tags: git, isolation, workflow
+--------------------------------------------------------------------------------
+
+REQ-0069
+Name: Code Review Agent
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Dedicated agent for code review. Enforces quality standards, catches architectural issues, ensures consistency before human review.
+Tags: review, quality, automation
+--------------------------------------------------------------------------------
+
+REQ-0070
+Name: Configuration Baselines
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Formal baselines for each phase: requirements baseline, design baseline, build baseline, release baseline. Change control gates for each.
+Tags: configuration, baseline, control
+--------------------------------------------------------------------------------
+
+REQ-0071
+Name: Hard Change Control
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Named change authority. Formal impact analysis. Configuration item tracking. Prevents scope creep and chaotic changes.
+Tags: change-control, governance
+--------------------------------------------------------------------------------
+
+REQ-0072
+Name: Test Entry/Exit Criteria
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Formal entry criteria (code ready, env stable) and exit criteria (coverage met, no critical bugs) for testing phases.
+Tags: testing, criteria, quality
+--------------------------------------------------------------------------------
+
+REQ-0073
+Name: Defect Triage Model
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Severity/priority matrix for defects. Triage rules determine fix/defer decisions. Blocks release on critical issues.
+Tags: defects, triage, quality
+--------------------------------------------------------------------------------
+
+REQ-0074
+Name: 508 Compliance Gate
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Accessibility compliance verification. Blocks release if 508/WCAG violations found.
+Tags: compliance, accessibility
+--------------------------------------------------------------------------------
+
+REQ-0075
+Name: Auto-Heal Mechanics
+Project: DX Framework (PROJ-002)
+Status: active
+Description: GROOT lifecycle auto-detects failures and routes to recovery agents. Reduces manual intervention.
+Tags: reliability, automation
+--------------------------------------------------------------------------------
+
+REQ-0076
+Name: Hive Mind Module
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Agent collective intelligence. Cross-agent knowledge sharing and pattern detection.
+Tags: agents, intelligence
+--------------------------------------------------------------------------------
+
+REQ-0077
+Name: Darwin Module
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Evolutionary task optimization. Learns from prior runs to improve execution efficiency.
+Tags: optimization, learning
+--------------------------------------------------------------------------------
+
+REQ-0078
+Name: Model Routing \u2014 3-Tier Strategy
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Each task routed through 3 model tiers. Enables cost optimization and quality matching.
+Tags: routing, optimization
+--------------------------------------------------------------------------------
+
+REQ-0079
+Name: Handoff Contracts
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Structured contracts between agents on handoff. Defines input, output, quality criteria, escalation paths.
+Tags: workflow, contracts
+--------------------------------------------------------------------------------
+
+REQ-0080
+Name: Role Archetype Library
+Project: DX Framework (PROJ-002)
+Status: active
+Description: 10 role archetypes: Architect, Developer, Tester, PM, BA, QA, DevOps, Security, Docs, Integration. Defined responsibilities and handoff points.
+Tags: roles, archetypes
+--------------------------------------------------------------------------------
+
+REQ-0081
+Name: CEO Agent
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Project orchestrator. Makes strategic decisions, unblocks teams, manages escalations.
+Tags: agent, role
+--------------------------------------------------------------------------------
+
+REQ-0082
+Name: Brain Agent
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Maintains project context via Project Oracle. Answers domain questions, tracks dependencies.
+Tags: agent, oracle, context
+--------------------------------------------------------------------------------
+
+REQ-0083
+Name: Forge Agent
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Code generation and implementation. Writes features, refactors, integrates.
+Tags: agent, development
+--------------------------------------------------------------------------------
+
+REQ-0084
+Name: Oracle Agent
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Maintains Main Oracle. Aggregates institutional knowledge, patterns, risks.
+Tags: agent, intelligence
+--------------------------------------------------------------------------------
+
+REQ-0085
+Name: Cipher Agent
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Security and secrets management. Handles credentials, compliance scanning.
+Tags: agent, security
+--------------------------------------------------------------------------------
+
+REQ-0086
+Name: Archivist Agent
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Data Guy \u2014 watches sessions in real-time, writes summaries, feeds Project Oracle.
+Tags: agent, session-tracking
+--------------------------------------------------------------------------------
+
+REQ-0087
+Name: Founding Engineer Agent Responsibilities
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Completed 4 phases: technical foundation setup, MVP build, governance implementation, scaling & integrations. Status: active/completed.
+Tags: agent, engineering, phases
+--------------------------------------------------------------------------------
+
+REQ-0088
+Name: BACA-2: Product Vision Definition
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Define product vision and MVP scope. Completed by CEO. Covers problem statement, customer segment, 5 MVP features, success metrics.
+Tags: product, scope, vision
+--------------------------------------------------------------------------------
+
+REQ-0089
+Name: BACA-3: Technical Foundation
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Set up technical foundation and repository structure. Status: complete.
+Tags: infrastructure, foundation
+--------------------------------------------------------------------------------
+
+REQ-0090
+Name: BACA-4: Build and Ship MVP
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Build and ship MVP with 5 core features. Status: complete.
+Tags: mvp, delivery
+--------------------------------------------------------------------------------
+
+REQ-0091
+Name: BACA-5: Team Gap Assessment
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: complete
+Description: Assess team gaps and plan next hires. Identified: product ownership void, no GTM, no compliance owner, no design. Recommended: Head of Product, Head o...
+Tags: hiring, team, strategy
+--------------------------------------------------------------------------------
+
+REQ-0092
+Name: Daily Memory System \u2014 2026-03-19
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: CEO daily notes capturing heartbeat activities, task progress, approvals, assignments, and company status from 2026-03-19.
+Tags: memory, operations
+--------------------------------------------------------------------------------
+
+REQ-0093
+Name: Daily Memory System \u2014 2026-03-20
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: CEO daily notes capturing 28 heartbeat executions on 2026-03-20. All tasks complete, agents active. New agents Dirty Bird and Dr. Al added.
+Tags: memory, operations
+--------------------------------------------------------------------------------
+
+REQ-0094
+Name: Daily Memory System \u2014 2026-03-21
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: CEO daily notes capturing 15 heartbeat executions on 2026-03-21. Founding Engineer transient error state (recovered). Framework running stable.
+Tags: memory, operations
+--------------------------------------------------------------------------------
+
+REQ-0095
+Name: Agent Performance Monitoring
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Track agent status (active, idle, error), spend per agent, heartbeat frequency, and error state recovery.
+Tags: monitoring, operations
+--------------------------------------------------------------------------------
+
+REQ-0096
+Name: Company Spend Tracking
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Monthly spend tracking across all agents. Reported daily. Used for budget enforcement and variance analysis.
+Tags: budgeting, finance
+--------------------------------------------------------------------------------
+
+REQ-0097
+Name: Agent Activation & Onboarding
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Create and activate new agents with defined roles, budgets, reporting structure. Dirty Bird and Dr. Al activated 2026-03-20.
+Tags: agents, operations
+--------------------------------------------------------------------------------
+
+REQ-0098
+Name: Error State Recovery Protocol
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Agents can enter error state (e.g., Founding Engineer on 2026-03-21). Monitored for automatic recovery or board escalation.
+Tags: reliability, monitoring
+--------------------------------------------------------------------------------
+
+REQ-0099
+Name: CEO Strategic Responsibilities
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Set goals, manage P&L, hire/fire, unblock reports, maintain budget awareness, ensure focus, define priorities.
+Tags: leadership, strategy
+--------------------------------------------------------------------------------
+
+REQ-0100
+Name: CEO Operational Rules
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Use Paperclip skill for coordination, include X-Paperclip-Run-Id header, comment in markdown, only work on assigned tasks.
+Tags: operations, rules
+--------------------------------------------------------------------------------
+
+REQ-0101
+Name: Ethical & Legal Automation Mission
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Core company mission: efficient, ethical, and legal automation of project development lifecycle.
+Tags: mission, ethics
+--------------------------------------------------------------------------------
+
+REQ-0102
+Name: Trusted Audit Trail Requirement
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Customers require auditable record of all agent actions with full context and cost. Needed to demonstrate human maintains veto power.
+Tags: trust, audit, customer
+--------------------------------------------------------------------------------
+
+REQ-0103
+Name: Agent Execution Authority Requirement
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Customers willing to give AI agents real execution authority if they can trust audit trail and retain veto power.
+Tags: trust, authority, customer
+--------------------------------------------------------------------------------
+
+REQ-0104
+Name: Quick Activation Window
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: First paying customer metric target: 3+ issues completed by agents within first 7 days post-onboarding.
+Tags: metrics, activation
+--------------------------------------------------------------------------------
+
+REQ-0105
+Name: Long-Term Retention Target
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Day 30 metric: \u226560% of teams run \u22655 agent heartbeats per week.
+Tags: metrics, retention
+--------------------------------------------------------------------------------
+
+REQ-0106
+Name: Value Perception Target
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Day 30 survey metric: \u226520% reported reduction in PM overhead.
+Tags: metrics, value
+--------------------------------------------------------------------------------
+
+REQ-0107
+Name: Quality & Trust Metric
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Ongoing metric: <5% of agent actions require human rollback.
+Tags: metrics, quality
+--------------------------------------------------------------------------------
+
+REQ-0108
+Name: Revenue Milestone
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: First paying customer acquisition by day 60 target.
+Tags: metrics, revenue
+--------------------------------------------------------------------------------
+
+REQ-0109
+Name: Non-MVP Feature Scope
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Out of MVP scope: native code editor, billing management, mobile app, multi-repo CI/CD, public agent marketplace.
+Tags: scope, mvp
+--------------------------------------------------------------------------------
+
+REQ-0110
+Name: Agentic PM Category Winner Thesis
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Next generation high-output teams are hybrid: small human core + AI agents executing defined work. First platform with right trust primitives wins.
+Tags: thesis, strategy
+--------------------------------------------------------------------------------
+
+REQ-0111
+Name: Strategic Founder Profile
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Stretched Technical Founder persona: technical background, comfort with AI tools, 10+ hrs/week on coordination, willing to give AI agents real authori...
+Tags: persona, customer
+--------------------------------------------------------------------------------
+
+REQ-0112
+Name: Secondary Market Opportunity
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Secondary segment: engineering managers at Series A-B companies scaling without headcount growth.
+Tags: market, segment
+--------------------------------------------------------------------------------
+
+REQ-0113
+Name: Context Bloat Problem Solved
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Oracle Layer eliminates agent context bloat. Agents query live truth instead of carrying stale context. Reduces prompt bloat and drift.
+Tags: oracle, problem-solved
+--------------------------------------------------------------------------------
+
+REQ-0114
+Name: Institutional Knowledge Capture
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Main Oracle permanently accumulates patterns, failures, dependencies. Cross-project learning and risk identification.
+Tags: oracle, learning
+--------------------------------------------------------------------------------
+
+REQ-0115
+Name: Project Context Lifecycle
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Project Oracle lives during project execution, retires at ship, data archived to Main Oracle.
+Tags: oracle, lifecycle
+--------------------------------------------------------------------------------
+
+REQ-0116
+Name: Real-Time Session Monitoring
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Data Guy watches session activity: files touched, errors, decisions, task changes. Produces session summary.
+Tags: monitoring, session
+--------------------------------------------------------------------------------
+
+REQ-0117
+Name: Flash-Tier Model for Session Tracking
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Data Guy uses lightweight (flash-tier) model. Always-on, never expensive.
+Tags: cost-optimization, model-routing
+--------------------------------------------------------------------------------
+
+REQ-0118
+Name: Context Query Interface
+Project: DX Framework (PROJ-002)
+Status: active
+Description: Agents query Oracle with questions like 'What's my task?' 'What's the db schema?' 'What are project risks?' Get live answers.
+Tags: interface, query
+--------------------------------------------------------------------------------
+
+REQ-0119
+Name: Health Research Methodology
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Evidence-based when available, exploratory when needed. Conventional + unconventional medicine equally welcome. Custom approach for Kevin's unique bio...
+Tags: health, methodology
+--------------------------------------------------------------------------------
+
+REQ-0120
+Name: Chronic Fatigue Investigation
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Investigate root causes of years of documented chronic fatigue. Link to genetic variants and metabolic pathways.
+Tags: health, research
+--------------------------------------------------------------------------------
+
+REQ-0121
+Name: Deep Stabilizer Muscle Pain Protocol
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Address upper back and shoulder deep stabilizer muscle pain. Develop targeted intervention protocol.
+Tags: health, pain
+--------------------------------------------------------------------------------
+
+REQ-0122
+Name: Legal Risk Monitoring
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Continuous monitoring for legal exposure. Proactive flag of issues before escalation. Regular briefing on contracts and business decisions.
+Tags: legal, risk
+--------------------------------------------------------------------------------
+
+REQ-0123
+Name: Expert Network Coordination
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Dirty Bird maintains established network of medical, forensic, and IT/security experts. Coordinates specialist engagement.
+Tags: legal, coordination
+--------------------------------------------------------------------------------
+
+REQ-0124
+Name: Sub-Agent Legal Structure
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Dirty Bird coordinates sub-agents: In-House Counsel, Contract Review Specialist, IP Attorney, Compliance Officer. On-demand specialist team.
+Tags: legal, organization
+--------------------------------------------------------------------------------
+
+REQ-0125
+Name: IP Protection & Trademark Monitoring
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Manage IP protection (trademarks, copyrights, patents) and conduct status monitoring.
+Tags: legal, ip
+--------------------------------------------------------------------------------
+
+REQ-0126
+Name: Business Structure Optimization
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Assess and optimize business structure for legal, tax, and regulatory efficiency.
+Tags: legal, business
+--------------------------------------------------------------------------------
+
+REQ-0127
+Name: Litigation Risk Assessment
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Detect and assess malpractice and liability threats. Escalate litigation risk above threshold to board.
+Tags: legal, litigation
+--------------------------------------------------------------------------------
+
+REQ-0128
+Name: Product Ownership & Roadmap Management
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: new
+Description: Dedicated Head of Product role to own customer-to-roadmap pipeline, including user research synthesis, feature prioritization, acceptance criteria, an...
+Tags: hiring, product, roadmap, post-MVP, capability-gap
+--------------------------------------------------------------------------------
+
+REQ-0129
+Name: Go-To-Market & Customer Acquisition
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: new
+Description: Head of Growth / GTM role to own first customer acquisition pipeline: outbound targeting, demo scheduling, objection handling, and onboarding handoff....
+Tags: hiring, GTM, sales, customer-acquisition, day-60-goal
+--------------------------------------------------------------------------------
+
+REQ-0130
+Name: Legal & Compliance Governance System
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: new
+Description: Dedicated legal and compliance function to own governance documentation, legal review of agent permissions, compliance posture, and trust-sensitive ac...
+Tags: compliance, legal, governance, risk, trust, ethics
+--------------------------------------------------------------------------------
+
+REQ-0131
+Name: Design & UX for Observability Interfaces
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: new
+Description: Dedicated UX/Design function for observability dashboard and governance UX \u2014 the primary trust interfaces with users. Ensures first impressions r...
+Tags: design, UX, observability, trust, interfaces
+--------------------------------------------------------------------------------
+
+REQ-0132
+Name: Contract Review & Legal Risk Assessment
+Project: Legal & Compliance Operations (PROJ-004)
+Status: new
+Description: Dirty Bird legal agent capability: comprehensive contract review, IP protection (trademarks, copyrights, patents), compliance monitoring, and risk ass...
+Tags: legal, contracts, IP, compliance, risk-assessment
+--------------------------------------------------------------------------------
+
+REQ-0133
+Name: Trial & Litigation Expertise
+Project: Legal & Compliance Operations (PROJ-004)
+Status: new
+Description: Dirty Bird agent specialization: first-chair jury trial experience in complex civil litigation, medical malpractice, negligence, and whistleblower pro...
+Tags: litigation, trial, malpractice, whistleblower, federal-law
+--------------------------------------------------------------------------------
+
+REQ-0134
+Name: Genetic Variant Analysis & Medical Research
+Project: Kevin's Health Research Project (PROJ-003)
+Status: new
+Description: Dr. Al capability: comprehensive genetic variant analysis including AMPD1, AGK pathways. Rhabdomyolysis root cause analysis, CK monitoring protocol de...
+Tags: genetics, research, rhabdomyolysis, metabolic-disease, precision-medicine
+--------------------------------------------------------------------------------
+
+REQ-0135
+Name: Supplement Stack Optimization & Nutrition Management
+Project: Kevin's Health Research Project (PROJ-003)
+Status: new
+Description: Dr. Al system: evidence-based supplement stack optimization for CK management and metabolic support. Coordinates with Nutritionist sub-agent for dieta...
+Tags: nutrition, supplements, health-optimization, CK-management
+--------------------------------------------------------------------------------
+
+REQ-0136
+Name: Multi-Disciplinary Health Team Coordination
+Project: Kevin's Health Research Project (PROJ-003)
+Status: new
+Description: Dr. Al capability: spawn and coordinate on-demand specialist agents (cardiologists, rheumatologists, naturopaths, psychedelic medicine, holistic pract...
+Tags: team-coordination, health-specialists, multidisciplinary, sub-agents
+--------------------------------------------------------------------------------
+
+REQ-0137
+Name: Real-time Agent Status Dashboard
+Project: Mission Control (PROJ-HC)
+Status: active
+Description: Display live status for all active agents including uptime, task queue depth, memory usage, and last heartbeat timestamp. Auto-refreshes every 5 secon...
+Tags: ui, real-time, monitoring
+--------------------------------------------------------------------------------
+
+REQ-0138
+Name: Agent Lifecycle Management
+Project: Mission Control (PROJ-HC)
+Status: complete
+Description: Ability to start, stop, pause, and restart agents from the control panel. Includes graceful shutdown with queue drain and emergency kill switch. Audit...
+Tags: core, agents, ops
+--------------------------------------------------------------------------------
+
+REQ-0139
+Name: Task Queue Visualization
+Project: Mission Control (PROJ-HC)
+Status: active
+Description: Visual representation of pending, in-progress, and completed tasks across all agents. Drag-and-drop prioritization. Filter by agent, status, priority,...
+Tags: ui, queue, drag-drop
+--------------------------------------------------------------------------------
+
+REQ-0140
+Name: System Health Alerts
+Project: Mission Control (PROJ-HC)
+Status: new
+Description: Configurable alert thresholds for CPU, memory, queue depth, and error rates. Supports email, Slack, and in-app notifications. Alert history with snooz...
+Tags: alerts, monitoring, notifications
+--------------------------------------------------------------------------------
+
+REQ-0141
+Name: Agent Performance Analytics
+Project: Mission Control (PROJ-HC)
+Status: new
+Description: Historical performance metrics per agent including task completion rates, average duration, error frequency, and cost per task. Exportable as CSV or P...
+Tags: analytics, reporting, metrics
+--------------------------------------------------------------------------------
+
+REQ-0142
+Name: Multi-environment Support
+Project: Mission Control (PROJ-HC)
+Status: abandoned
+Description: Switch between development, staging, and production environments from a single interface. Environment-specific configurations with guardrails preventi...
+Tags: env, ops
+--------------------------------------------------------------------------------
+
+REQ-0143
+Name: Unified Activity Feed
+Project: DX Dashboard (PROJ-DXD)
+Status: complete
+Description: Aggregated chronological feed showing all agent actions, code commits, deployments, and system events. Filterable by source, type, and time. Deep-link...
+Tags: feed, ui, core
+--------------------------------------------------------------------------------
+
+REQ-0144
+Name: Cost Attribution Dashboard
+Project: DX Dashboard (PROJ-DXD)
+Status: active
+Description: Break down API costs, compute costs, and token usage by project, agent, and task. Month-over-month comparison with budget forecasting. CSV export.
+Tags: costs, analytics, budget
+--------------------------------------------------------------------------------
+
+REQ-0145
+Name: Codebase Intelligence Panel
+Project: DX Dashboard (PROJ-DXD)
+Status: new
+Description: Visual map of codebase health: test coverage, tech debt score, dependency age, security audit status. Drill-down to file-level detail with change hist...
+Tags: code, intelligence, quality
+--------------------------------------------------------------------------------
+
+REQ-0146
+Name: Developer Velocity Metrics
+Project: DX Dashboard (PROJ-DXD)
+Status: active
+Description: Track lines changed, PRs merged, review turnaround, and deployment frequency. Team and individual views with customizable date ranges. Integration wit...
+Tags: metrics, github, velocity
+--------------------------------------------------------------------------------
+
+REQ-0147
+Name: Onboarding Flow
+Project: DX Dashboard (PROJ-DXD)
+Status: merged
+Description: Step-by-step onboarding for new team members. Auto-detects tools, configures integrations, and generates a personalized setup checklist. Progress pers...
+Tags: onboarding, ux
+--------------------------------------------------------------------------------
+
+REQ-0148
+Name: Notification Preferences
+Project: DX Dashboard (PROJ-DXD)
+Status: new
+Description: Granular notification settings per event type, per channel (email, Slack, SMS, push). Quiet hours, digest mode, and per-project overrides.
+Tags: notifications, settings, ux
+--------------------------------------------------------------------------------
+
+REQ-0149
+Name: Orchestration Engine
+Project: Central Command (PROJ-CC)
+Status: active
+Description: DAG-based task orchestration supporting parallel and sequential workflows. Visual workflow builder with conditional branching, retry logic, and timeou...
+Tags: core, orchestration, engine
+--------------------------------------------------------------------------------
+
+REQ-0150
+Name: Command History & Replay
+Project: Central Command (PROJ-CC)
+Status: complete
+Description: Full audit trail of all commands issued through the system. Point-in-time replay capability for debugging. Searchable with full-text and filter suppor...
+Tags: history, audit, debug
+--------------------------------------------------------------------------------
+
+REQ-0151
+Name: Permission Governance Layer
+Project: Central Command (PROJ-CC)
+Status: active
+Description: Role-based access control for command execution. Approval workflows for high-impact operations. Temporary elevated access with automatic expiry. SSO i...
+Tags: rbac, security, governance
+--------------------------------------------------------------------------------
+
+REQ-0152
+Name: Cross-Agent Communication Bus
+Project: Central Command (PROJ-CC)
+Status: active
+Description: Message broker enabling reliable inter-agent communication. Pub/sub and request/reply patterns. Message persistence, dead-letter queue, and replay.
+Tags: messaging, core, agents
+--------------------------------------------------------------------------------
+
+REQ-0153
+Name: Scenario Simulation Mode
+Project: Central Command (PROJ-CC)
+Status: new
+Description: Run commands in a sandboxed dry-run mode that predicts outcomes without executing. Shows diff of what would change. Critical for testing complex orche...
+Tags: simulation, testing, dry-run
+--------------------------------------------------------------------------------
+
+REQ-0154
+Name: Agent SDK Core
+Project: Agent World (PROJ-AW)
+Status: complete
+Description: Base SDK providing lifecycle hooks, memory interfaces, tool registration, and communication primitives. TypeScript and Python. Comprehensive documenta...
+Tags: sdk, core, typescript, python
+--------------------------------------------------------------------------------
+
+REQ-0155
+Name: Memory Management System
+Project: Agent World (PROJ-AW)
+Status: active
+Description: Tiered memory: short-term (context window), working (session), long-term (persistent). Automatic summarization and compression. Vector search for sema...
+Tags: memory, vector, core
+--------------------------------------------------------------------------------
+
+REQ-0156
+Name: Tool Plugin Architecture
+Project: Agent World (PROJ-AW)
+Status: active
+Description: Extensible tool system allowing agents to discover and use external capabilities. Tool versioning, capability declarations, and sandboxed execution. M...
+Tags: tools, plugins, marketplace
+--------------------------------------------------------------------------------
+
+REQ-0157
+Name: Agent Testing Framework
+Project: Agent World (PROJ-AW)
+Status: complete
+Description: Unit and integration testing for agent behaviors. Mock tool responses, scenario injection, and behavioral assertions. CI/CD integration with GitHub Ac...
+Tags: testing, ci-cd, quality
+--------------------------------------------------------------------------------
+
+REQ-0158
+Name: Multi-Modal Input Support
+Project: Agent World (PROJ-AW)
+Status: new
+Description: Enable agents to process images, audio, and documents alongside text. Standardized input adapters with preprocessing pipelines. Format conversion util...
+Tags: multi-modal, vision, audio
+--------------------------------------------------------------------------------
+
+REQ-0159
+Name: Agent Marketplace
+Project: Agent World (PROJ-AW)
+Status: new
+Description: Publish, discover, and deploy pre-built agents. Versioning, ratings, usage stats. One-click deployment with configuration templates.
+Tags: marketplace, distribution, community
+--------------------------------------------------------------------------------
+
+REQ-0160
+Name: Contextual Conversation Memory
+Project: Discord Brain (PROJ-DB)
+Status: complete
+Description: Remember user preferences, ongoing projects, and past conversations per Discord user/server. Context persists across sessions with configurable retent...
+Tags: memory, conversation, context
+--------------------------------------------------------------------------------
+
+REQ-0161
+Name: Slash Command Framework
+Project: Discord Brain (PROJ-DB)
+Status: complete
+Description: Extensible slash command system with auto-complete, parameter validation, and ephemeral/public responses. Command groups, permissions, and usage analy...
+Tags: slash-commands, discord, ux
+--------------------------------------------------------------------------------
+
+REQ-0162
+Name: Knowledge Base Integration
+Project: Discord Brain (PROJ-DB)
+Status: active
+Description: Index and query internal documentation, Notion pages, and GitHub wikis. RAG pipeline for accurate, cited responses. Auto-sync on document updates.
+Tags: rag, knowledge, search
+--------------------------------------------------------------------------------
+
+REQ-0163
+Name: Automated Meeting Summaries
+Project: Discord Brain (PROJ-DB)
+Status: new
+Description: Join voice channels, transcribe conversations, and post structured summaries with action items and decisions to designated channels. Speaker identific...
+Tags: voice, transcription, meetings
+--------------------------------------------------------------------------------
+
+REQ-0164
+Name: Multi-Server Governance
+Project: Discord Brain (PROJ-DB)
+Status: abandoned
+Description: Manage bot permissions and behaviors across multiple Discord servers from a single admin interface. Per-server feature flags and usage quotas.
+Tags: governance, admin, multi-server
+--------------------------------------------------------------------------------
+
+REQ-0165
+Name: API Gateway Core
+Project: AAPIMP (PROJ-API)
+Status: complete
+Description: Central gateway for routing, rate limiting, authentication, and caching external API calls. Circuit breakers, retry logic, and failover. OpenAPI spec ...
+Tags: gateway, core, routing
+--------------------------------------------------------------------------------
+
+REQ-0166
+Name: Credential Vault
+Project: AAPIMP (PROJ-API)
+Status: active
+Description: Secure storage for API keys, OAuth tokens, and secrets. Automatic rotation policies, expiry alerts, and audit trail. Envelope encryption with KMS.
+Tags: security, vault, credentials
+--------------------------------------------------------------------------------
+
+REQ-0167
+Name: Webhook Manager
+Project: AAPIMP (PROJ-API)
+Status: active
+Description: Register, test, and monitor inbound webhooks. Payload validation, retry with exponential backoff, dead-letter queue. Visual event inspector.
+Tags: webhooks, events, integration
+--------------------------------------------------------------------------------
+
+REQ-0168
+Name: API Transformation Pipeline
+Project: AAPIMP (PROJ-API)
+Status: new
+Description: Visual pipeline builder for transforming request/response payloads. JSONata expressions, field mapping, and conditional routing. Reusable transformati...
+Tags: transformation, pipeline, no-code
+--------------------------------------------------------------------------------
+
+REQ-0169
+Name: Usage Analytics & Billing
+Project: AAPIMP (PROJ-API)
+Status: new
+Description: Detailed API usage metrics per endpoint, consumer, and time period. Cost attribution, anomaly detection, and quota enforcement with soft and hard limi...
+Tags: analytics, billing, quota
+--------------------------------------------------------------------------------
+
+REQ-0170
+Name: API Version Management
+Project: AAPIMP (PROJ-API)
+Status: merged
+Description: Manage multiple API versions with deprecation timelines and migration guides. Automated compatibility checks between versions. Consumer notification s...
+Tags: versioning, deprecation
+--------------------------------------------------------------------------------
+
+REQ-0171
+Name: Head of Product Role
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Hire a product-minded analyst to own the product roadmap, customer feedback synthesis, and feature specifications. Will own the full sales assist and ...
+Tags: hiring, product-management, roadmap, strategic-gap, high-priority
+--------------------------------------------------------------------------------
+
+REQ-0172
+Name: Head of Growth/GTM Role
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Hire SDR/AE hybrid to own first customer acquisition pipeline: outbound targeting, demo scheduling, objection handling, and initial onboarding handoff...
+Tags: hiring, go-to-market, sales, customer-acquisition, medium-priority
+--------------------------------------------------------------------------------
+
+REQ-0173
+Name: Product Ownership Void Gap
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Current gap: no one owns customer-to-roadmap pipeline. CEO handles strategy; FE handles execution. Missing: user research synthesis, feature prioritiz...
+Tags: gap-analysis, product-management, organizational-structure, blocker
+--------------------------------------------------------------------------------
+
+REQ-0174
+Name: No GTM / First Customer Path Gap
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Success metric is a paying customer by Day 60, but company has zero GTM capacity: no outbound, no demos, no pipeline. Pipeline takes 4-6 weeks to buil...
+Tags: gap-analysis, go-to-market, sales, timeline-critical
+--------------------------------------------------------------------------------
+
+REQ-0175
+Name: Ethical & Legal Compliance Unowned Gap
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Company mission explicitly names 'ethical and legal automation' but no one owns governance documentation, legal review of agent permissions, or compli...
+Tags: gap-analysis, governance, legal-compliance, risk, trust
+--------------------------------------------------------------------------------
+
+REQ-0176
+Name: No Design/UX Voice Gap
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: active
+Description: Observability dashboard and governance UX are primary trust interfaces with users. First impressions set by how well humans can read agent actions and...
+Tags: gap-analysis, ux-design, observability, user-experience
+--------------------------------------------------------------------------------
+
+REQ-0177
+Name: Agent Budget Allocation Policy
+Project: BACA - Agentic Project Management Platform (PROJ-001)
+Status: blocked
+Description: Agent monthly budgets currently set to $0. Board must establish per-role budget caps before approving Head of Product and Head of Growth hires. Both n...
+Tags: budget, policy, governance, open-question
+--------------------------------------------------------------------------------
+
+REQ-0178
+Name: Rhabdomyolysis Root Cause Analysis
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Dr. Al must conduct comprehensive analysis of Kevin's rhabdomyolysis episodes (Aug 2025 CK >22,000, Jan 2024 CK ~10,000) including risk assessment, pr...
+Tags: medical-research, rhabdomyolysis, genetic-analysis, health-optimization
+--------------------------------------------------------------------------------
+
+REQ-0179
+Name: Genetic Variant Analysis - AMPD1 & AGK
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Deep genomic research into Kevin's pathogenic variants (AGK c.445A>G p.Ile149Val, AGK c.764C>T p.Thr255Met, AMPD1 c.133C>T p.Gln45*) including metabol...
+Tags: genetic-research, genomics, metabolic-disease, variant-analysis
+--------------------------------------------------------------------------------
+
+REQ-0180
+Name: Supplement Stack Optimization
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Identify and optimize supplement protocols to support Kevin's metabolic condition, manage CK elevation, support energy metabolism, and complement medi...
+Tags: supplements, nutrition, health-optimization, metabolic-support
+--------------------------------------------------------------------------------
+
+REQ-0181
+Name: CK Monitoring Protocol Development
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Create comprehensive CK (creatine kinase) monitoring and management protocol including test frequency, threshold triggers, interventions, and integrat...
+Tags: biomarker-monitoring, clinical-protocol, preventive-medicine
+--------------------------------------------------------------------------------
+
+REQ-0182
+Name: Weekly Health Status Review
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Conduct weekly health briefings with Kevin covering research findings, biomarker trends, supplement efficacy, symptom patterns, and treatment recommen...
+Tags: patient-engagement, health-monitoring, ongoing-care
+--------------------------------------------------------------------------------
+
+REQ-0183
+Name: Multi-Specialist Health Team Coordination
+Project: Kevin's Health Research Project (PROJ-003)
+Status: active
+Description: Coordinate specialist consultations including core team (Neurologist, Geneticist, Nutritionist) and on-demand specialists (Cardiologist, Rheumatologis...
+Tags: specialist-coordination, multidisciplinary-care, care-management
+--------------------------------------------------------------------------------
+
+REQ-0184
+Name: Medical Malpractice & Negligence Litigation Support
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Provide litigation support for medical malpractice cases including standards of care analysis, deviation identification, causation proof, and expert w...
+Tags: litigation, medical-law, legal-defense, trial-expertise
+--------------------------------------------------------------------------------
+
+REQ-0185
+Name: Federal Whistleblower Protection & OSC Complaint Support
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Handle Whistleblower Protection Act (WPA) and Office of Special Counsel (OSC) complaint processes, federal retaliation claims, protected disclosure li...
+Tags: whistleblower-law, federal-compliance, retaliation-protection, regulatory-advocacy
+--------------------------------------------------------------------------------
+
+REQ-0186
+Name: Data Breach & Privacy Litigation
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Manage data breach and privacy litigation involving FISMA, Privacy Act, federal data protection standards, unauthorized access claims, and system-leve...
+Tags: data-privacy, federal-law, cybersecurity-litigation, compliance
+--------------------------------------------------------------------------------
+
+REQ-0187
+Name: Regulatory & Compliance Violation Analysis
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Analyze regulatory compliance violations including IRM, Treasury regulations, internal control frameworks, systemic failures vs. isolated incidents, a...
+Tags: regulatory-compliance, government-regulation, compliance-monitoring
+--------------------------------------------------------------------------------
+
+REQ-0188
+Name: Evidence Preservation & Case Timeline Reconstruction
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Manage evidence preservation, spoliation arguments, timeline reconstruction across systems/emails/personnel, and documentation strategy for airtight c...
+Tags: evidence-management, litigation-support, case-preparation
+--------------------------------------------------------------------------------
+
+REQ-0189
+Name: Expert Witness Strategy & Network
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Coordinate expert witness strategy including established network of medical, forensic, and IT/security experts; dismantling opposing expert opinions; ...
+Tags: expert-witnesses, litigation-strategy, case-management
+--------------------------------------------------------------------------------
+
+REQ-0190
+Name: Government Defense & Federal Court Navigation
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Navigate federal court procedures, sovereign immunity limitations, jurisdictional strategy, and litigation against federal agencies and institutional ...
+Tags: federal-litigation, government-law, administrative-law
+--------------------------------------------------------------------------------
+
+REQ-0191
+Name: Contract Review & Drafting
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Comprehensive contract review, drafting, risk mitigation, and negotiation support across all business agreements.
+Tags: contract-law, risk-management, legal-drafting
+--------------------------------------------------------------------------------
+
+REQ-0192
+Name: Intellectual Property Protection
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: IP protection strategy including trademarks, copyrights, patents, licensing agreements, and enforcement actions.
+Tags: intellectual-property, ip-law, trademark-patent, licensing
+--------------------------------------------------------------------------------
+
+REQ-0193
+Name: Continuous Compliance Monitoring
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Ongoing monitoring of regulatory changes, compliance gaps, tax obligations, labor law updates, and business license/permit requirements with proactive...
+Tags: compliance-monitoring, regulatory-watch, risk-assessment
+--------------------------------------------------------------------------------
+
+REQ-0194
+Name: Legal Risk Assessment & Threat Detection
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Identify malpractice liability threats, legal exposure from business decisions, litigation risk assessment, and proactive risk mitigation recommendati...
+Tags: risk-management, legal-strategy, threat-detection
+--------------------------------------------------------------------------------
+
+REQ-0195
+Name: Business Structure Optimization
+Project: Legal & Compliance Operations (PROJ-004)
+Status: active
+Description: Provide recommendations for business entity structure, tax optimization, liability protection, governance setup, and organizational changes to support...
+Tags: business-structure, tax-planning, governance, liability-protection
+--------------------------------------------------------------------------------
