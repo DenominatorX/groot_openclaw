@@ -130,21 +130,159 @@
 /* SOL countdown urgency pulse */
 .sol-critical { animation: solPulse 2s ease-in-out infinite; }
 
-/* Print enhancements */
+/* ============================================================
+   PRINT — Attorney-Ready Layout
+   Lane v. Kayani & Rosario — Medical Negligence
+   ============================================================ */
+
+@page {
+  size: letter;
+  margin: 1in 0.75in 1in 0.75in;
+}
+
+@page :first {
+  margin-top: 0.75in;
+}
+
 @media print {
-  body { background: white !important; color: #111 !important; font-size: 11pt; }
-  .no-print, aside, nav, button { display: none !important; }
+  /* Reset dark mode */
+  body {
+    background: white !important;
+    color: #111827 !important;
+    font-size: 10.5pt;
+    font-family: 'Inter', Georgia, serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide chrome */
+  .no-print,
+  aside,
+  nav,
+  button,
+  .ca-no-print,
+  [class*="topbar"],
+  [class*="sidebar"] { display: none !important; }
+
   main { overflow: visible !important; }
-  .card { background: white !important; border: 1px solid #d1d5db !important; box-shadow: none !important; }
-  .card-red { background: #fff5f5 !important; border: 1px solid #fca5a5 !important; }
+
+  /* Print header — injected before content */
+  main::before {
+    content: "Lane v. Kayani & Rosario  ·  Medical Negligence Case Dashboard  ·  CONFIDENTIAL – ATTORNEY-CLIENT PRIVILEGE";
+    display: block;
+    font-size: 8pt;
+    color: #6b7280;
+    border-bottom: 2px solid #1e3a5f;
+    padding-bottom: 6pt;
+    margin-bottom: 18pt;
+    letter-spacing: 0.02em;
+  }
+
+  /* Cards */
+  .card {
+    background: white !important;
+    border: 1px solid #d1d5db !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+  .card-red {
+    background: #fff8f8 !important;
+    border: 1px solid #fca5a5 !important;
+  }
+  .card-green {
+    background: #f0fdf4 !important;
+    border: 1px solid #86efac !important;
+  }
+
+  /* Page breaks */
   .print-break { page-break-before: always; break-before: page; }
-  h1 { font-size: 18pt; color: #1e3a5f; }
-  h2 { font-size: 13pt; color: #334155; margin-top: 16pt; }
-  .text-red-300, .text-red-400 { color: #dc2626 !important; }
-  .text-orange-300, .text-orange-400 { color: #ea580c !important; }
-  .text-green-300, .text-green-400 { color: #16a34a !important; }
-  .text-slate-400, .text-slate-500 { color: #475569 !important; }
-  .bg-slate-800\/50, .bg-slate-800\/60, .bg-slate-900\/80 { background: #f8fafc !important; }
-  .border-slate-700, .border-slate-800 { border-color: #e2e8f0 !important; }
+  .print-avoid-break { break-inside: avoid; }
+
+  /* Typography */
+  h1 { font-size: 16pt; color: #1e3a5f !important; margin-bottom: 6pt; }
+  h2 { font-size: 12pt; color: #334155 !important; margin-top: 14pt; margin-bottom: 6pt; }
+  h3 { font-size: 10.5pt; color: #334155 !important; }
+  p  { line-height: 1.5; }
+
+  /* Color overrides for print */
+  .text-white,
+  .text-slate-200,
+  .text-slate-300 { color: #111827 !important; }
+
+  .text-red-300,
+  .text-red-400 { color: #dc2626 !important; }
+  .text-orange-300,
+  .text-orange-400 { color: #ea580c !important; }
+  .text-green-300,
+  .text-green-400 { color: #16a34a !important; }
+  .text-yellow-300,
+  .text-yellow-400 { color: #b45309 !important; }
+  .text-blue-300,
+  .text-blue-400 { color: #1d4ed8 !important; }
+  .text-slate-400,
+  .text-slate-500 { color: #6b7280 !important; }
+  .text-slate-600 { color: #9ca3af !important; }
+
+  /* Background overrides */
+  .bg-slate-950,
+  .bg-slate-900,
+  [class*="bg-slate-8"],
+  [class*="bg-slate-9"] { background: white !important; }
+
+  [class*="bg-red-9"],
+  [class*="bg-red-950"] { background: #fff8f8 !important; }
+  [class*="bg-green-9"],
+  [class*="bg-green-950"] { background: #f0fdf4 !important; }
+  [class*="bg-orange-9"],
+  [class*="bg-orange-950"] { background: #fff7ed !important; }
+  [class*="bg-amber-9"],
+  [class*="bg-amber-950"] { background: #fffbeb !important; }
+
+  /* Border overrides */
+  .border-slate-700,
+  .border-slate-800 { border-color: #e2e8f0 !important; }
+  .border-red-900,
+  .border-red-700 { border-color: #fca5a5 !important; }
+  .border-green-900,
+  .border-green-700 { border-color: #86efac !important; }
+
+  /* Tables */
+  table { border-collapse: collapse; width: 100%; }
+  th { background: #f1f5f9 !important; color: #374151 !important; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.05em; padding: 6pt 8pt; border-bottom: 2px solid #cbd5e1; }
+  td { padding: 5pt 8pt; border-bottom: 1px solid #f1f5f9; font-size: 9.5pt; color: #374151 !important; }
+  tr:nth-child(even) td { background: #f9fafb; }
+  tr.bg-red-950\/20 td { background: #fff5f5 !important; }
+
+  /* Monospace */
+  .mono, [class*="font-mono"] { font-family: 'Courier New', Courier, monospace; }
+
+  /* SOL countdown large numbers */
+  [class*="text-5xl"],
+  [class*="text-4xl"] { font-size: 24pt !important; }
+
+  /* Grid layouts — linearize on print */
+  .grid { display: block !important; }
+  .grid > * { margin-bottom: 12pt; }
+
+  /* Flex — allow wrapping */
+  .flex { flex-wrap: wrap; }
+
+  /* Animations — stop them */
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Charts — ensure visible */
+  .recharts-wrapper { overflow: visible !important; }
+
+  /* Footer on every page */
+  @page {
+    @bottom-center {
+      content: "Lane v. Kayani & Rosario  ·  CONFIDENTIAL  ·  Page " counter(page) " of " counter(pages);
+      font-size: 8pt;
+      color: #9ca3af;
+    }
+  }
 }
 
