@@ -8,22 +8,42 @@ function daysUntil(dateStr) {
   return Math.ceil((target - today) / (1000 * 60 * 60 * 24))
 }
 
-function SOLCountdown({ deadline, label }) {
+function SOLCountdown({ deadline, startDate, label }) {
   const days = daysUntil(deadline)
+  const totalDays = startDate ? Math.ceil((new Date(deadline) - new Date(startDate)) / (1000 * 60 * 60 * 24)) : 730
+  const elapsed = totalDays - days
+  const pctElapsed = Math.min(100, Math.max(0, (elapsed / totalDays) * 100))
+  const pctRemaining = 100 - pctElapsed
+
   const color = days < 180 ? 'red' : days < 365 ? 'orange' : 'green'
   const colorMap = {
-    red:    { ring: 'border-red-500',    text: 'text-red-400',    bg: 'bg-red-900/30' },
-    orange: { ring: 'border-orange-500', text: 'text-orange-400', bg: 'bg-orange-900/30' },
-    green:  { ring: 'border-green-500',  text: 'text-green-400',  bg: 'bg-green-900/30' },
+    red:    { ring: 'border-red-600',    text: 'text-red-300',    bg: 'bg-red-950/40',    bar: '#ef4444', track: '#7f1d1d40' },
+    orange: { ring: 'border-orange-600', text: 'text-orange-300', bg: 'bg-orange-950/40', bar: '#f97316', track: '#7c2d1240' },
+    green:  { ring: 'border-green-700',  text: 'text-green-300',  bg: 'bg-green-950/40',  bar: '#22c55e', track: '#14532d40' },
   }
   const c = colorMap[color]
 
   return (
-    <div className={`rounded-xl border-2 ${c.ring} ${c.bg} p-5 flex flex-col items-center`}>
-      <div className={`text-5xl font-bold tabular-nums ${c.text}`}>{days.toLocaleString()}</div>
-      <div className="text-slate-300 text-sm mt-1">days remaining</div>
-      <div className="text-slate-400 text-xs mt-2 text-center">{label}</div>
-      <div className="text-slate-500 text-xs mt-1">{new Date(deadline).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
+    <div className={`rounded-2xl border ${c.ring} ${c.bg} p-5 flex flex-col items-center`}>
+      <div className="text-slate-400 text-[10px] uppercase tracking-widest mb-2 font-semibold">{label}</div>
+      <div className={`text-5xl font-black tabular-nums leading-none ${c.text}`}>{days.toLocaleString()}</div>
+      <div className="text-slate-400 text-sm mt-1 mb-4">days remaining</div>
+
+      {/* Progress bar */}
+      <div className="w-full mb-3">
+        <div className="relative h-2.5 rounded-full overflow-hidden" style={{ background: c.track }}>
+          <div
+            className="absolute left-0 top-0 h-full rounded-full transition-all duration-1000"
+            style={{ width: `${pctElapsed}%`, background: c.bar, opacity: 0.7 }}
+          />
+        </div>
+        <div className="flex justify-between text-[10px] mt-1">
+          <span className="text-slate-600">{pctElapsed.toFixed(0)}% elapsed</span>
+          <span style={{ color: c.bar }}>{pctRemaining.toFixed(0)}% remaining</span>
+        </div>
+      </div>
+
+      <div className="text-slate-500 text-xs">{new Date(deadline).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</div>
     </div>
   )
 }
@@ -51,15 +71,18 @@ export default function LegalStatusPanel() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
         <SOLCountdown
           deadline={sol.primarySOLDeadline}
-          label="Primary SOL — Dr. Kayani (Aug 6, 2027)"
+          startDate="2025-08-06"
+          label="Primary SOL — Dr. Kayani"
         />
         <SOLCountdown
           deadline={sol.discoverySOLDeadline}
-          label="Discovery SOL — Dr. Rosario (Nov 6, 2027)"
+          startDate="2025-11-06"
+          label="Discovery SOL — Dr. Rosario"
         />
         <SOLCountdown
           deadline={preSuitNotice.latestSendDate}
-          label="Latest Pre-Suit Notice Date (90 days before primary SOL)"
+          startDate="2025-08-06"
+          label="Pre-Suit Notice Deadline"
         />
       </div>
 
