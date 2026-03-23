@@ -1,0 +1,187 @@
+{
+  "_comment": "All providers in this case. negligenceStatus: 'defendant' | 'supporting' | 'neutral'. Update role, dateRange, or notes as needed.",
+  "providers": [
+    {
+      "id": "kayani",
+      "name": "Dr. Imran Kayani",
+      "title": "MD",
+      "specialty": "Primary Care Physician",
+      "organization": "Florida Medical Clinic (FMC)",
+      "dateRange": "Feb 2010 – Present",
+      "negligenceStatus": "defendant",
+      "allegation": "15-year failure to monitor CK or investigate metabolic causes; failure to disclose Jan 2024 rhabdo history to pain management (Dr. Kamath), directly causing catastrophic Aug 2025 event.",
+      "keyFacts": [
+        "Jan 19, 2024: Ordered 44 labs — omitted CK despite clear indication",
+        "Feb 13, 2024: Acknowledged rhabdo episode — NO referral, NO counseling",
+        "Jul 29, 2025: Ordered 82 labs — omitted CK again",
+        "NEVER informed Dr. Kamath of Jan 2024 rhabdomyolysis history",
+        "Aug 5, 2025: Saw patient at FPLOL physical while hospitalization was imminent"
+      ]
+    },
+    {
+      "id": "rosario",
+      "name": "Dr. Michael Rosario-Prieto",
+      "title": "MD",
+      "specialty": "Neurology",
+      "organization": "BayCare Neurology / Bayare Neurology Group",
+      "dateRange": "Sep 2025 – Oct 2025",
+      "negligenceStatus": "defendant",
+      "allegation": "48-day delay in submitting prior authorization for Invitae Metabolic Myopathy Panel (Sep 9 – Oct 28, 2025), violating Fla. Stat. §627.42392. Directly prevented timely diagnosis at critical employment juncture.",
+      "keyFacts": [
+        "Sep 9, 2025: Ordered Invitae panel — stated it was 'critical for diagnosis'",
+        "Sep 11, 2025: PA submission delayed despite fax to Invitae",
+        "Oct 28, 2025: PA finally submitted — 48 days after order",
+        "Patient under active RIF notice (Oct 10, 2025) during entire delay",
+        "Repeatedly told patient to 'hold off' on testing"
+      ]
+    },
+    {
+      "id": "kamath",
+      "name": "Dr. Dilip Kamath",
+      "title": "MD",
+      "specialty": "Pain Management",
+      "organization": "Florida Medical Clinic (FMC)",
+      "dateRange": "Feb 2025 – Jan 2026",
+      "negligenceStatus": "neutral",
+      "allegation": "None — victim of Dr. Kayani's communication failure. Performed RFA in good faith without rhabdo history.",
+      "keyFacts": [
+        "Feb 17, 2025: New patient evaluation",
+        "Apr 18 & Jun 4, 2025: Bilateral facet medial branch nerve blocks (90%+ relief)",
+        "Jul 18, 2025: RFA procedure — NO metabolic precautions (never informed of rhabdo)",
+        "Aug 27, 2025: Told patient there was 'no relation to metabolic myopathy' — later abandoned care",
+        "Jan 12, 2026: Pain mgmt appointment cancelled — abandonment of care"
+      ]
+    },
+    {
+      "id": "gonzalez",
+      "name": "Dr. Gonzalez-Paoli",
+      "title": "MD",
+      "specialty": "Rheumatology",
+      "organization": "Florida Medical Clinic (FMC)",
+      "dateRange": "Aug 2025 – Oct 2025",
+      "negligenceStatus": "supporting",
+      "allegation": null,
+      "keyFacts": [
+        "Aug 29, 2025: Post-rhabdo Autoimmune Workup — CK 92 (recovery confirmed)",
+        "Sep 24, 2025: Recommended avoiding all exercise; referred to St. Pete Neuromuscular Neurology",
+        "Sep 26, 2025: Negative MSA autoimmune panel — transferred metabolic evaluation to Neurology",
+        "Oct 6, 2025: Confirmed recurrent CPK elevation with possible metabolic myopathy"
+      ]
+    },
+    {
+      "id": "lee",
+      "name": "Dr. Cha Lee",
+      "title": "MD",
+      "specialty": "Primary Care Physician (New PCP)",
+      "organization": "AdventHealth",
+      "dateRange": "Oct 2025 – Present",
+      "negligenceStatus": "supporting",
+      "allegation": null,
+      "keyFacts": [
+        "Oct 29, 2025: Comprehensive new patient workup — immediate referrals to genetics, neurology, CT",
+        "Nov 10, 2025: Ordered full labs including metabolic panel",
+        "Actively coordinating Mayo Clinic referral"
+      ]
+    },
+    {
+      "id": "centers",
+      "name": "Brandi Jo Centers",
+      "title": "APRN",
+      "specialty": "Neurology / Brain and Stroke Center",
+      "organization": "AdventHealth",
+      "dateRange": "Nov 2025 – Present",
+      "negligenceStatus": "supporting",
+      "allegation": null,
+      "keyFacts": [
+        "Nov 4, 2025: Confirmed probable metabolic/mitochondrial myopathy",
+        "Ordered MRI Brain, MR Angio, and nerve conduction study",
+        "Feb 11, 2026: Neuromuscular follow-up"
+      ]
+    },
+    {
+      "id": "pantol",
+      "name": "Dr. Gabriel Pantol",
+      "title": "MD",
+      "specialty": "Neuromuscular Neurology",
+      "organization": "AdventHealth – Brain and Stroke Center",
+      "dateRange": "Nov 2025 – Present",
+      "negligenceStatus": "supporting",
+      "allegation": null,
+      "keyFacts": [
+        "Nov 11, 2025: EMG/Nerve Conduction Study — normal, confirms metabolic (not structural) cause",
+        "This definitively rules out structural causes — critical for legal argument"
+      ]
+    },
+    {
+      "id": "sivaram",
+      "name": "Dr. Sivaram Rajan",
+      "title": "MD",
+      "specialty": "Internal Medicine / Hospitalist",
+      "organization": "AdventHealth (Hospital)",
+      "dateRange": "Jan 2024",
+      "negligenceStatus": "neutral",
+      "allegation": null,
+      "keyFacts": [
+        "Jan 25, 2024: Admitted Kevin for first rhabdomyolysis episode",
+        "Managed hospitalization with IV hydration"
+      ]
+    },
+    {
+      "id": "kaipu",
+      "name": "Dr. Somasekhar Reddy Kaipu",
+      "title": "MD",
+      "specialty": "Internal Medicine / Hospitalist",
+      "organization": "AdventHealth (Hospital)",
+      "dateRange": "Aug 2025",
+      "negligenceStatus": "neutral",
+      "allegation": null,
+      "keyFacts": [
+        "Aug 5-8, 2025: Admitted for second (catastrophic) rhabdomyolysis",
+        "Jan 26, 2024: Also treated during first episode",
+        "Discharge advised: avoid strenuous activity, CK recheck in 1 week"
+      ]
+    },
+    {
+      "id": "hawkins",
+      "name": "Dr. Patrick M. Hawkins",
+      "title": "MD",
+      "specialty": "Radiology",
+      "organization": "Florida Medical Clinic, P.A.",
+      "dateRange": "2012, 2025",
+      "negligenceStatus": "neutral",
+      "allegation": null,
+      "keyFacts": [
+        "Feb 26, 2025: Multiple spine MRIs confirming degenerative changes",
+        "Oct 2012: Prior spine imaging"
+      ]
+    },
+    {
+      "id": "blanchard",
+      "name": "Latisha Blanchard",
+      "title": "PMHNP",
+      "specialty": "Psychiatry / Psychology",
+      "organization": "Kinsler Psychology",
+      "dateRange": "2024–2025",
+      "negligenceStatus": "neutral",
+      "allegation": null,
+      "keyFacts": [
+        "Oct 20, 2025: Reported severe mental stress due to job termination, confirmed metabolic myopathy suspicion",
+        "Monitoring psychiatric medications (Sertraline, Bupropion, Adderall)"
+      ]
+    },
+    {
+      "id": "mayo",
+      "name": "Mayo Clinic Genetics",
+      "title": "",
+      "specialty": "Clinical Biochemical Genetics / Mitochondrial Medicine",
+      "organization": "Mayo Clinic – Mitochondrial Medicine & Undiagnosed Diseases Program",
+      "dateRange": "Feb 2026 – Present",
+      "negligenceStatus": "supporting",
+      "allegation": null,
+      "keyFacts": [
+        "Feb 24, 2026: Consultation for advanced testing and variant correlation",
+        "Will move VUS findings to definitive genetic etiology — final medical support for permanent disability"
+      ]
+    }
+  ]
+}

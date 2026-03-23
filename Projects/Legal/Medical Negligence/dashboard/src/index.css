@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0f172a;
+  --bg-surface: #1e293b;
+  --bg-surface-2: #334155;
+  --text-primary: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --border: #334155;
+  --navy: #1e3a5f;
+  --red: #dc2626;
+  --red-bright: #ef4444;
+  --green: #16a34a;
+  --green-bright: #22c55e;
+  --gold: #f59e0b;
+  --orange: #f97316;
+}
+
+@layer base {
+  html, body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  * { box-sizing: border-box; }
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg-primary); }
+  ::-webkit-scrollbar-thumb { background: var(--bg-surface-2); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #475569; }
+}
+
+@layer utilities {
+  .status-critical { @apply bg-red-900/60 text-red-300 border border-red-700; }
+  .status-high     { @apply bg-orange-900/60 text-orange-300 border border-orange-700; }
+  .status-medium   { @apply bg-yellow-900/60 text-yellow-300 border border-yellow-700; }
+  .status-low      { @apply bg-slate-800 text-slate-400 border border-slate-600; }
+  .status-milestone{ @apply bg-blue-900/60 text-blue-300 border border-blue-700; }
+
+  .mono {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-feature-settings: 'tnum';
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium;
+  }
+  .badge-defendant { @apply bg-red-950/60 text-red-300 border border-red-800/60; }
+  .badge-supporting { @apply bg-green-950/60 text-green-300 border border-green-800/60; }
+  .badge-neutral { @apply bg-slate-800/60 text-slate-400 border border-slate-700/60; }
+  .badge-obtained { @apply bg-green-950/60 text-green-300 border border-green-800/60; }
+  .badge-pending { @apply bg-amber-950/60 text-amber-300 border border-amber-800/60; }
+  .badge-needed { @apply bg-red-950/60 text-red-300 border border-red-800/60; }
+  .badge-filed { @apply bg-blue-950/60 text-blue-300 border border-blue-800/60; }
+
+  .card {
+    @apply bg-slate-800/50 border border-slate-700 rounded-lg;
+  }
+  .card-red {
+    @apply bg-red-950/20 border border-red-900/60 rounded-lg;
+  }
+  .card-green {
+    @apply bg-green-950/20 border border-green-900/60 rounded-lg;
+  }
+}
+
+/* Print */
+@media print {
+  body { background: white !important; color: black !important; }
+  .no-print { display: none !important; }
+  .card { background: white !important; border: 1px solid #e5e7eb !important; }
+  .print-break { page-break-before: always; }
+}
+
+/* Animations */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.3); }
+  50% { box-shadow: 0 0 0 8px rgba(239,68,68,0); }
+}
+.animate-slide-up { animation: slideUp 0.35s ease-out both; }
+.animate-fade-in { animation: fadeIn 0.35s ease-out both; }
+.animate-pulse-glow { animation: pulseGlow 2s ease-in-out infinite; }
+
+/* Custom recharts tooltip */
+.recharts-tooltip-wrapper { z-index: 9999; }
+

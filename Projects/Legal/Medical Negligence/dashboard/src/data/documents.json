@@ -1,0 +1,275 @@
+{
+  "_comment": "Document index for Kevin Lane case. Add new documents by appending to the 'documents' array. status: 'filed' | 'obtained' | 'pending' | 'needed'. category: 'Medical Records' | 'Correspondence' | 'Diagnostics' | 'Genetic Testing' | 'Employment' | 'Legal'.",
+  "documents": [
+    {
+      "id": "1.1",
+      "filename": "1.1_INTAKE_CONSULTATION_11-18-2025",
+      "title": "Medical Malpractice Intake Consultation",
+      "category": "Legal",
+      "date": "2025-11-18",
+      "source": "Kevin Lane (Self-Prepared)",
+      "status": "obtained",
+      "notes": "Attorney-ready overview. Dual-defendant analysis. Economic damages $650K–$1.3M."
+    },
+    {
+      "id": "1.2",
+      "filename": "1.2_EMPLOYMENT_FURLOUGH_10-10-2025",
+      "title": "Employment Furlough Notice",
+      "category": "Employment",
+      "date": "2025-10-10",
+      "source": "Federal Government / CPOS",
+      "status": "obtained",
+      "notes": "Furlough notice during active medical crisis."
+    },
+    {
+      "id": "1.3",
+      "filename": "1.3_EMPLOYMENT_RIF_NOTICE_10-10-2025",
+      "title": "Reduction-in-Force (RIF) Notice",
+      "category": "Employment",
+      "date": "2025-10-10",
+      "source": "Federal Government / CPOS",
+      "status": "obtained",
+      "notes": "Issued same day as furlough. Critical for damages — Dr. Rosario's delay prevented accommodation paperwork."
+    },
+    {
+      "id": "1.4",
+      "filename": "1.4_INSURANCE_CLAIMS_FEPBLUE",
+      "title": "FEP Blue Insurance Claims",
+      "category": "Medical Records",
+      "date": "2025-11-18",
+      "source": "FEP Blue",
+      "status": "obtained",
+      "notes": "Full itemized insurance claims."
+    },
+    {
+      "id": "1.5",
+      "filename": "1.5_MEDICAL_NEGLIGENCE_ANALYSIS_11-18-2025",
+      "title": "Medical Negligence Analysis",
+      "category": "Legal",
+      "date": "2025-11-18",
+      "source": "Kevin Lane (Self-Prepared)",
+      "status": "obtained",
+      "notes": "Detailed analysis with standard of care violations and supporting literature."
+    },
+    {
+      "id": "list",
+      "filename": "LIstOfProviders",
+      "title": "List of Providers",
+      "category": "Legal",
+      "date": "2025-11-18",
+      "source": "Kevin Lane (Self-Prepared)",
+      "status": "obtained",
+      "notes": "All providers with roles and date ranges."
+    },
+    {
+      "id": "2.01",
+      "filename": "2.01_PA_TIMELINE_INVITAE_LBCORP_10-28-2025",
+      "title": "PA Timeline — Invitae/Labcorp",
+      "category": "Correspondence",
+      "date": "2025-10-28",
+      "source": "Kevin Lane",
+      "status": "obtained",
+      "notes": "48-day delay documentation."
+    },
+    {
+      "id": "2.04",
+      "filename": "2.04_VOICEMAILS_BAYCARE_NEUROLOGY",
+      "title": "Voicemails — BayCare Neurology",
+      "category": "Correspondence",
+      "date": "2025-10-06",
+      "source": "BayCare Neurology",
+      "status": "obtained",
+      "notes": "3 voicemails documenting PA delay and runaround (9/23, 10/2, 10/6)."
+    },
+    {
+      "id": "2.11",
+      "filename": "2.11_DRGONZALEZ_NOTES_TO_DRKAYANI_08_29_2025",
+      "title": "Dr. Gonzalez Notes to Dr. Kayani",
+      "category": "Correspondence",
+      "date": "2025-08-29",
+      "source": "Dr. Gonzalez-Paoli (Rheumatology)",
+      "status": "obtained",
+      "notes": "Post-rhabdo rheumatology consultation notes sent to PCP."
+    },
+    {
+      "id": "3.1",
+      "filename": "3.1_LABS_TIMELINE_COMPILATION",
+      "title": "Labs Timeline Compilation (through 11-18-2025)",
+      "category": "Diagnostics",
+      "date": "2025-11-18",
+      "source": "FMC / AdventHealth",
+      "status": "obtained",
+      "notes": "Complete chronological lab history with provider notes."
+    },
+    {
+      "id": "3.2.01",
+      "filename": "3.2.01_LABS_FULL_HISTORY_2010_2025",
+      "title": "Full Lab History 2010–2025",
+      "category": "Diagnostics",
+      "date": "2025-11-17",
+      "source": "Florida Medical Clinic",
+      "status": "obtained",
+      "notes": "Complete lab history in PDF and Excel."
+    },
+    {
+      "id": "3.2.05",
+      "filename": "3.2.05_LABS_CREATINE_KINASE_RHABDO",
+      "title": "CK / Rhabdomyolysis Lab Results (Jan 2024 – Aug 2025)",
+      "category": "Diagnostics",
+      "date": "2025-08-08",
+      "source": "AdventHealth",
+      "status": "obtained",
+      "notes": "All CK values from both rhabdo episodes. Key evidence."
+    },
+    {
+      "id": "3.2.07",
+      "filename": "3.2.07_LABS_MYOSITIS_EXTENDED_08_29_2025",
+      "title": "Extended Myositis Panel",
+      "category": "Diagnostics",
+      "date": "2025-08-29",
+      "source": "Quest Diagnostics",
+      "status": "obtained",
+      "notes": "MSA Panel — negative for inflammatory myositis. Supports metabolic cause."
+    },
+    {
+      "id": "3.7",
+      "filename": "3.7_LAB_PSYCH_CMP_10-21-2025",
+      "title": "Psych Labs — CMP",
+      "category": "Diagnostics",
+      "date": "2025-10-21",
+      "source": "Quest Diagnostics",
+      "status": "obtained",
+      "notes": "CMP ordered by Kinsler Psychology. Mildly elevated creatinine 1.31, elevated plasma lactate 2.3."
+    },
+    {
+      "id": "3.9",
+      "filename": "3.9_GENETIC_TESTING_INVITAE_11_6_2025_RQ7553840",
+      "title": "Invitae Genetic Results — RQ7553840",
+      "category": "Genetic Testing",
+      "date": "2025-11-06",
+      "source": "Invitae/Labcorp",
+      "status": "obtained",
+      "notes": "Rhabdomyolysis and Metabolic Myopathy Panel. Two rare VUS in AGK gene + truncating VUS in AMPD1 (~94% enzyme function loss)."
+    },
+    {
+      "id": "3.9.1",
+      "filename": "3.9.1_A_INVITAE_COMPLETE_RQ7553840",
+      "title": "Invitae Complete Results (Excel)",
+      "category": "Genetic Testing",
+      "date": "2025-11-06",
+      "source": "Invitae/Labcorp",
+      "status": "obtained",
+      "notes": "Full spreadsheet of genetic variants."
+    },
+    {
+      "id": "4.1.18",
+      "filename": "4.1.18_FMC_DRKAYANI_CHRONOLOGY_08_05_2025",
+      "title": "Dr. Kayani Chart — Aug 5, 2025 (Day of Crisis)",
+      "category": "Medical Records",
+      "date": "2025-08-05",
+      "source": "Florida Medical Clinic",
+      "status": "obtained",
+      "notes": "FPLOL physical on day patient was hospitalized. Critical record."
+    },
+    {
+      "id": "4.7.01",
+      "filename": "4.7.01_DRGONZALEZ_RHEUM_CHRONOLOGY_08_29_2025",
+      "title": "Dr. Gonzalez Rheumatology Notes",
+      "category": "Medical Records",
+      "date": "2025-08-29",
+      "source": "FMC Rheumatology",
+      "status": "obtained",
+      "notes": "Post-rhabdo rheumatology evaluation. CK 92 — documented recovery."
+    },
+    {
+      "id": "5.1",
+      "filename": "5.1_BAYCARE_DRROSARIO_CONSULT_09-09-2025",
+      "title": "Dr. Rosario Neurology Consult",
+      "category": "Medical Records",
+      "date": "2025-09-09",
+      "source": "BayCare Neurology",
+      "status": "obtained",
+      "notes": "Initial neurology consult. Invitae panel ordered as 'critical.' Start of 48-day PA delay."
+    },
+    {
+      "id": "6.1",
+      "filename": "6.1_AH_DRLEE_AVS_10-29-2025",
+      "title": "Dr. Lee New Patient Visit Summary",
+      "category": "Medical Records",
+      "date": "2025-10-29",
+      "source": "AdventHealth",
+      "status": "obtained",
+      "notes": "New PCP establishing comprehensive care. Referrals to genetics, neurology, CT."
+    },
+    {
+      "id": "6.8a",
+      "filename": "6.8_AH_DRPANTOL_EMG_AFTERVISITSUMMARY_11-11-2025",
+      "title": "EMG After Visit Summary",
+      "category": "Diagnostics",
+      "date": "2025-11-11",
+      "source": "AdventHealth – Brain and Stroke Center",
+      "status": "obtained",
+      "notes": "Normal EMG/NCS. Confirms metabolic (not structural) cause."
+    },
+    {
+      "id": "6.8b",
+      "filename": "6.8_AH_EFRAINAGUILAR_MR_BRAIN_WO_IV_CONTRAST_11-11-2025",
+      "title": "MRI Brain — Normal",
+      "category": "Diagnostics",
+      "date": "2025-11-11",
+      "source": "AdventHealth West Florida Imaging",
+      "status": "obtained",
+      "notes": "Normal. Rules out structural/neurological cause."
+    },
+    {
+      "id": "rif_post",
+      "filename": "CPOS_POST_RIF_CONCERNS_1-2-2026",
+      "title": "Post-RIF Employment Concerns",
+      "category": "Employment",
+      "date": "2026-01-02",
+      "source": "Kevin Lane",
+      "status": "obtained",
+      "notes": "Documentation of ongoing employment impact post-RIF."
+    },
+    {
+      "id": "mayo_pending",
+      "filename": "MAYO_CLINIC_GENETICS_REPORT",
+      "title": "Mayo Clinic Genetics Report",
+      "category": "Genetic Testing",
+      "date": null,
+      "source": "Mayo Clinic",
+      "status": "pending",
+      "notes": "Awaiting results from Feb 24, 2026 consultation. Will confirm VUS to definitive etiology."
+    },
+    {
+      "id": "expert_needed",
+      "filename": "EXPERT_WITNESS_METABOLIC_MEDICINE",
+      "title": "Expert Witness — Metabolic Medicine",
+      "category": "Legal",
+      "date": null,
+      "source": "TBD",
+      "status": "needed",
+      "notes": "Need metabolic medicine expert to testify on standard of care for CK monitoring."
+    },
+    {
+      "id": "expert_needed2",
+      "filename": "EXPERT_WITNESS_NEUROLOGY_PA",
+      "title": "Expert Witness — Neurology / PA Process",
+      "category": "Legal",
+      "date": null,
+      "source": "TBD",
+      "status": "needed",
+      "notes": "Need neurology expert to testify on Fla. Stat. §627.42392 PA submission obligations."
+    },
+    {
+      "id": "damages_econ",
+      "filename": "ECONOMIC_DAMAGES_EXPERT_REPORT",
+      "title": "Economic Damages Expert Report",
+      "category": "Legal",
+      "date": null,
+      "source": "TBD",
+      "status": "needed",
+      "notes": "Formal economist report on FERS delta, wage loss, future medical expenses."
+    }
+  ]
+}

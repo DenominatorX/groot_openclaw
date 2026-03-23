@@ -1,0 +1,86 @@
+{
+  "_comment": "Damages calculator configuration. Update dollar amounts as new information becomes available. All amounts in USD.",
+  "plaintiff": "Kevin Lane",
+  "caseCaption": "Lane v. Florida Medical Clinic / Dr. Kayani & BayCare Neurology / Dr. Rosario",
+  "asOfDate": "2025-11-18",
+
+  "economicDamages": {
+    "pastLostWages": {
+      "label": "Past Lost Wages & Use-or-Lose Annual Leave (2024–2025)",
+      "description": "Documented lost wages and forfeited annual leave during extended medical leave periods following both rhabdomyolysis episodes.",
+      "lowEstimate": 25000,
+      "highEstimate": 45000,
+      "documented": true,
+      "notes": "Includes extended medical leave 2024 and 2025, forfeited annual leave due to RIF and medical absences."
+    },
+    "futureReducedEarningCapacity": {
+      "label": "Future Reduced Earning Capacity",
+      "description": "Permanent partial diminution in earning capacity and promotion potential due to chronic fatigue, exercise intolerance, and metabolic instability requiring accommodations.",
+      "lowEstimate": 150000,
+      "highEstimate": 350000,
+      "documented": false,
+      "notes": "31-year federal career projected. Reduced ability to pursue promotions, higher-grade positions, or non-desk work."
+    },
+    "fersDelta": {
+      "label": "FERS Retirement Delta (Early Disability vs. Full Retirement)",
+      "description": "Increased probability of earlier FERS disability retirement vs. working to full retirement age (62). Delta between disability annuity and full retirement annuity × years of reduced service.",
+      "lowEstimate": 200000,
+      "highEstimate": 500000,
+      "documented": false,
+      "notes": "Based on 31-year federal service. FERS disability annuity is ~60% of high-3 in first year, 40% thereafter. Full retirement would have been significantly higher."
+    },
+    "futureMedicalExpenses": {
+      "label": "Future Medical Expenses",
+      "description": "Ongoing monitoring (CK, metabolic panels), supplements, genetic testing (Mayo Clinic), potential reduced work schedule, specialist visits.",
+      "lowEstimate": 75000,
+      "highEstimate": 200000,
+      "documented": false,
+      "notes": "Includes regular CK monitoring every 3-6 months, mitochondrial supplements, Mayo Clinic ongoing care, neurology follow-ups."
+    },
+    "pastMedicalExpenses": {
+      "label": "Past Medical Expenses (Out-of-Pocket)",
+      "description": "Out-of-pocket medical costs not covered by FEP Blue for rhabdo hospitalizations, specialist visits, genetic testing.",
+      "lowEstimate": 8000,
+      "highEstimate": 15000,
+      "documented": true,
+      "notes": "Invitae panel ~$4,000 without insurance. ER copays, specialist copays."
+    }
+  },
+
+  "nonEconomicDamages": {
+    "physicalPainAndSuffering": {
+      "label": "Physical Pain & Suffering",
+      "description": "Permanent muscle and cellular injury, chronic weakness, exercise intolerance, chronic pain since Aug 2025.",
+      "severityScale": 8,
+      "notes": "Near-fatal twice. Ongoing daily pain rated 9/10 at times."
+    },
+    "mentalEmotionalDistress": {
+      "label": "Severe Emotional Distress",
+      "description": "Documented severe mental stress from job termination, permanent disability diagnosis, financial uncertainty.",
+      "severityScale": 8,
+      "notes": "Confirmed by Kinsler Psychology (Oct 20, 2025). Medications adjusted."
+    },
+    "lossOfEnjoymentOfLife": {
+      "label": "Loss of Enjoyment of Life",
+      "description": "Unable to exercise, physically impaired, permanently reduced functional capacity at age 44.",
+      "severityScale": 7,
+      "notes": "Exercise intolerance is permanent. Previously active federal employee."
+    },
+    "lossOfConsortium": {
+      "label": "Loss of Consortium",
+      "description": "Impact on marital relationship due to permanent disability, chronic pain, emotional distress.",
+      "severityScale": 6,
+      "notes": "Wife present as witness at 9/2/2025 follow-up — aware of ongoing impact."
+    }
+  },
+
+  "totalEstimates": {
+    "economicLow": 458000,
+    "economicHigh": 1110000,
+    "nonEconomicLow": 200000,
+    "nonEconomicHigh": 500000,
+    "grandTotalLow": 658000,
+    "grandTotalHigh": 1610000,
+    "intakeQuotedRange": "$650,000 – $1,300,000"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "_comment": "Legal status and SOL tracking. UPDATE these fields as the case progresses. solDeadline is the primary injury date + 2 years (Florida medical malpractice SOL).",
+  "plaintiff": "Kevin Lane",
+  "defendants": [
+    {
+      "id": "kayani",
+      "name": "Dr. Imran Kayani / Florida Medical Clinic",
+      "allegation": "Medical negligence — failure to monitor CK, failure to disclose rhabdo history to pain management",
+      "statute": "Fla. Stat. §766.102"
+    },
+    {
+      "id": "rosario",
+      "name": "Dr. Michael Rosario-Prieto / BayCare Neurology",
+      "allegation": "Medical negligence — 48-day delay in PA submission for urgently needed genetic testing",
+      "statute": "Fla. Stat. §766.102 and §627.42392"
+    }
+  ],
+
+  "sol": {
+    "primaryInjuryDate": "2025-08-06",
+    "primarySOLDeadline": "2027-08-06",
+    "discoveryInjuryDate": "2025-11-06",
+    "discoverySOLDeadline": "2027-11-06",
+    "solBasis": "Florida 2-year medical malpractice SOL (Fla. Stat. §95.11(4)(b)). Runs from primary injury (Aug 6, 2025) and discovery (Nov 6, 2025 — Invitae results).",
+    "notes": "Use the LATER deadline (Nov 6, 2027) to be safe. Pre-suit notice required 90 days before filing."
+  },
+
+  "preSuitNotice": {
+    "status": "not_sent",
+    "requiredDaysBefore": 90,
+    "notes": "Florida requires pre-suit notice to defendant(s) at least 90 days before filing. Must be sent before the SOL deadline minus 90 days.",
+    "latestSendDate": "2027-05-08"
+  },
+
+  "counselEngagement": {
+    "status": "seeking",
+    "notes": "Intake consultation prepared Nov 18, 2025. Actively seeking experienced medical malpractice counsel.",
+    "targetCounselType": "Florida medical malpractice — permanent injury, federal employment impact"
+  },
+
+  "nextActions": [
+    {
+      "id": "na1",
+      "action": "Obtain counsel — medical malpractice attorney",
+      "priority": "critical",
+      "dueDate": null,
+      "status": "pending",
+      "notes": "Case is attorney-ready. All records organized."
+    },
+    {
+      "id": "na2",
+      "action": "Await Mayo Clinic Genetics results",
+      "priority": "high",
+      "dueDate": "2026-04-01",
+      "status": "in_progress",
+      "notes": "Consultation Feb 24, 2026. Results will confirm VUS to definitive genetic etiology."
+    },
+    {
+      "id": "na3",
+      "action": "Send pre-suit notice to both defendants",
+      "priority": "high",
+      "dueDate": "2027-05-08",
+      "status": "pending",
+      "notes": "Must be sent at least 90 days before SOL deadline. Requires counsel."
+    },
+    {
+      "id": "na4",
+      "action": "Request medical records from BayCare — full PA submission log",
+      "priority": "high",
+      "dueDate": null,
+      "status": "pending",
+      "notes": "Obtain complete prior authorization submission records to prove 48-day delay."
+    },
+    {
+      "id": "na5",
+      "action": "Retain expert witness — metabolic medicine / mitochondrial disease",
+      "priority": "high",
+      "dueDate": null,
+      "status": "pending",
+      "notes": "Need expert on standard of care for CK monitoring in patients with metabolic history."
+    },
+    {
+      "id": "na6",
+      "action": "Retain economic damages expert",
+      "priority": "medium",
+      "dueDate": null,
+      "status": "pending",
+      "notes": "Formal present-value calculation of FERS delta, lost earning capacity."
+    },
+    {
+      "id": "na7",
+      "action": "Compile complete Dr. Kayani chart — all pain management referrals",
+      "priority": "medium",
+      "dueDate": null,
+      "status": "in_progress",
+      "notes": "Confirm that Dr. Kayani's referral to Dr. Kamath contained no rhabdo history."
+    },
+    {
+      "id": "na8",
+      "action": "FERS disability retirement application (if warranted)",
+      "priority": "medium",
+      "dueDate": null,
+      "status": "pending",
+      "notes": "May be needed depending on Mayo Clinic findings and accommodation outcome."
+    }
+  ],
+
+  "keyLegalDates": [
+    { "date": "2025-08-06", "label": "Primary Injury Date (SOL Start — Kayani)", "type": "critical" },
+    { "date": "2025-11-06", "label": "Discovery Date (SOL Start — Rosario / Invitae Results)", "type": "critical" },
+    { "date": "2027-05-08", "label": "Latest Pre-Suit Notice Date (90 days before SOL)", "type": "deadline" },
+    { "date": "2027-08-06", "label": "Primary SOL Deadline", "type": "deadline" },
+    { "date": "2027-11-06", "label": "Discovery SOL Deadline (use this)", "type": "deadline" }
+  ]
+}

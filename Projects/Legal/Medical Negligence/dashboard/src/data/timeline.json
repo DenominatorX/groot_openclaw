@@ -1,0 +1,376 @@
+{
+  "_comment": "Medical timeline events for Kevin Lane. Add new events in chronological order. eventType: 'visit' | 'lab' | 'procedure' | 'hospitalization' | 'legal' | 'communication' | 'milestone'. legalSignificance: 'critical' | 'high' | 'medium' | 'low' | null.",
+  "events": [
+    {
+      "id": "t001",
+      "date": "2010-02-16",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "visit",
+      "title": "New Patient — Flu/Body Aches",
+      "summary": "Flu-like symptoms, body aches, fatigue, urinary frequency. No CK or metabolic evaluation.",
+      "legalSignificance": "low"
+    },
+    {
+      "id": "t002",
+      "date": "2010-02-23",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "visit",
+      "title": "Kidney Stone Symptoms",
+      "summary": "Severe left side pain, frequent urination. Microscopic blood in urine. Kidney stone protocol initiated.",
+      "legalSignificance": "low"
+    },
+    {
+      "id": "t003",
+      "date": "2011-10-03",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "visit",
+      "title": "Headaches/Migraines — Elevated BP",
+      "summary": "Headaches/migraines worsening ×2 months. Elevated BP 100 mg TABS ordered.",
+      "legalSignificance": "low"
+    },
+    {
+      "id": "t004",
+      "date": "2012-09-17",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "visit",
+      "title": "Back Pain / Scoliosis Imaging",
+      "summary": "Lower/upper back pain daily since 3/2012. Elevated BP. MRI ordered. X-ray: mild levoscoliosis, Cobb angle 12°.",
+      "legalSignificance": "low"
+    },
+    {
+      "id": "t005",
+      "date": "2013-06-03",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "lab",
+      "title": "Labs — High LDL, Low Albumin",
+      "summary": "CBC, CMP, lipid, A1C ordered. High LDL (121), low albumin (0.20), high globulin (6.8), low A/G ratio (0.0). No CK ordered.",
+      "legalSignificance": "low"
+    },
+    {
+      "id": "t006",
+      "date": "2023-07-21",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "visit",
+      "title": "Annual Physical — No CK Ordered",
+      "summary": "43 yo male. Low back pain, anxiety, depression, ADHD. HLD elevated. Mentioned rhabdomyolysis history in notes. No CK ordered. No metabolic evaluation.",
+      "legalSignificance": "high",
+      "details": "Patient had exercise-related myalgias. Dr. Kayani documented 'low back pain stable' without ordering CK or metabolic workup despite this being the standard of care for patients with prior rhabdo history."
+    },
+    {
+      "id": "t007",
+      "date": "2024-01-19",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "lab",
+      "title": "44 Labs Ordered — CK Omitted",
+      "summary": "Comprehensive lab panel ordered. CK intentionally or negligently omitted despite patient's symptom history. Patient hospitalized 6 days later with CK 7,696 U/L.",
+      "legalSignificance": "critical",
+      "details": "Standard of care required CK monitoring. Dr. Kayani ordered 44 labs but not CK. Six days later, patient presented to ER with first near-fatal rhabdomyolysis episode."
+    },
+    {
+      "id": "t008",
+      "date": "2024-01-25",
+      "provider": "Dr. Somasekhar Kaipu",
+      "organization": "AdventHealth Hospital",
+      "eventType": "hospitalization",
+      "title": "FIRST RHABDOMYOLYSIS — Hospitalized",
+      "summary": "Acute non-traumatic rhabdomyolysis. CK >10,000 U/L on admission. 23-hour observation minimum. CK peak 7,696+ U/L.",
+      "legalSignificance": "critical",
+      "details": "Exercise recovery challenges with intense workout sessions noted in records. First near-fatal episode."
+    },
+    {
+      "id": "t009",
+      "date": "2024-01-26",
+      "provider": "Dr. Somasekhar Kaipu",
+      "organization": "AdventHealth Hospital",
+      "eventType": "hospitalization",
+      "title": "Hospital Discharge — First Rhabdo",
+      "summary": "Discharged with advice: avoid strenuous activity, CK recheck in 1 week, aggressive hydration. No specialist referral for underlying metabolic cause.",
+      "legalSignificance": "medium"
+    },
+    {
+      "id": "t010",
+      "date": "2024-02-13",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "visit",
+      "title": "Post-Rhabdo Follow-up — No Referral",
+      "summary": "Patient reported rhabdomyolysis episode (Jan 25-26). CK normalized. Dr. Kayani acknowledged episode — NO preventive counseling or referral. NEVER disclosed to pain management.",
+      "legalSignificance": "critical",
+      "details": "This is the critical breach. Dr. Kayani knew of the Jan 2024 rhabdo but never communicated it to Dr. Kamath (pain management), who later performed the RFA procedure that triggered the second catastrophic event."
+    },
+    {
+      "id": "t011",
+      "date": "2024-07-23",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "lab",
+      "title": "Labs — Normal CK 95 U/L",
+      "summary": "CK 95 (normal). Comprehensive metabolic panel, CBC, lipids, PSA, urinalysis. No acute concerns noted. No metabolic myopathy investigation initiated.",
+      "legalSignificance": "medium",
+      "details": "CK was within normal limits but patient was between episodes. No metabolic evaluation ordered despite prior rhabdo history."
+    },
+    {
+      "id": "t012",
+      "date": "2024-07-30",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "visit",
+      "title": "Annual Physical — Rhabdo History Mentioned",
+      "summary": "Dr. Kayani noted rhabdomyolysis history in chart. Elevated LDL 125, high Vitamin B12 (1113 pg/mL). No CK monitoring plan established.",
+      "legalSignificance": "high"
+    },
+    {
+      "id": "t013",
+      "date": "2025-02-17",
+      "provider": "Dr. Dilip Kamath",
+      "organization": "FMC Pain Management",
+      "eventType": "visit",
+      "title": "Pain Mgmt New Patient — Dr. Kamath",
+      "summary": "Initial pain evaluation (9/10 pain). Scheduled MRIs, initiated Lidocaine patch trial. No rhabdo history in referral from Dr. Kayani.",
+      "legalSignificance": "high",
+      "details": "Dr. Kamath began treating without knowledge of rhabdomyolysis history — a direct result of Dr. Kayani's failure to disclose."
+    },
+    {
+      "id": "t014",
+      "date": "2025-02-26",
+      "provider": "Dr. Patrick Hawkins",
+      "organization": "FMC Radiology",
+      "eventType": "procedure",
+      "title": "Spine MRIs (Cervical & Lumbar)",
+      "summary": "MRI confirmed degenerative changes: disc bulge L5-S1, new mild left neural foraminal stenosis at C3-4. Baseline for pain management.",
+      "legalSignificance": "low"
+    },
+    {
+      "id": "t015",
+      "date": "2025-04-18",
+      "provider": "Dr. Dilip Kamath",
+      "organization": "FMC Pain Management",
+      "eventType": "procedure",
+      "title": "Bilateral Facet Medial Branch Nerve Block #1",
+      "summary": "Bilateral L3-4, L4-5, L5-S1. 90% relief for 24 hours. No CK check. No rhabdo precautions.",
+      "legalSignificance": "medium"
+    },
+    {
+      "id": "t016",
+      "date": "2025-06-04",
+      "provider": "Dr. Dilip Kamath",
+      "organization": "FMC Pain Management",
+      "eventType": "procedure",
+      "title": "Bilateral Facet Medial Branch Nerve Block #2",
+      "summary": ">80% relief reported. Confirmed candidacy for RFA. No metabolic precautions.",
+      "legalSignificance": "medium"
+    },
+    {
+      "id": "t017",
+      "date": "2025-07-18",
+      "provider": "Dr. Dilip Kamath",
+      "organization": "FMC Pain Management",
+      "eventType": "procedure",
+      "title": "RADIOFREQUENCY ABLATION (RFA) — Critical Negligence Trigger",
+      "summary": "Bilateral RFA L3-4, L4-5, L5-S1 facet medial branch nerves. 95% relief reported. NO metabolic precautions. NO CK monitoring. Dr. Kamath had NO knowledge of Jan 2024 rhabdo.",
+      "legalSignificance": "critical",
+      "details": "RFA is a known high-risk intervention in patients with metabolic/mitochondrial disorders. Pre-procedure CK screening and metabolic stabilization are required per published literature. Dr. Kayani's failure to disclose the rhabdo history directly caused this procedure to be performed without necessary precautions."
+    },
+    {
+      "id": "t018",
+      "date": "2025-07-29",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "lab",
+      "title": "82 Labs Ordered — CK Omitted Again",
+      "summary": "82 labs collected — CK again omitted. Patient hospitalized 7 days later with CK >22,052 U/L.",
+      "legalSignificance": "critical",
+      "details": "Second instance of CK omission following a prior rhabdo episode. Patient was hospitalized exactly one week later with the catastrophic second event."
+    },
+    {
+      "id": "t019",
+      "date": "2025-08-05",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "visit",
+      "title": "FPLOL Physical — Imminent Crisis",
+      "summary": "FPLOL follow-up during which CK was noted at >22,052 U/L (critical). Patient rushed to hospital.",
+      "legalSignificance": "critical"
+    },
+    {
+      "id": "t020",
+      "date": "2025-08-06",
+      "provider": "ER / Hospital",
+      "organization": "AdventHealth Hospital",
+      "eventType": "hospitalization",
+      "title": "SECOND CATASTROPHIC RHABDOMYOLYSIS",
+      "summary": "CK >22,000 U/L. Aldolase 153. AST/ALT elevated. UA 1+ blood → myoglobinuria. Emergency hospitalization. Permanent muscle and cellular injury.",
+      "legalSignificance": "critical",
+      "details": "This is the primary injury date (SOL runs from Aug 6, 2025). Directly caused by: (1) Dr. Kayani's failure to disclose prior rhabdo to Dr. Kamath, enabling the RFA procedure; (2) ongoing failure to monitor CK."
+    },
+    {
+      "id": "t021",
+      "date": "2025-08-13",
+      "provider": "Dr. Imran Kayani",
+      "organization": "FMC",
+      "eventType": "visit",
+      "title": "Post-Hospital Follow-up",
+      "summary": "Post-hospital follow-up. Wife present as witness. Rheumatology referral documented. Continued failure to address underlying metabolic cause.",
+      "legalSignificance": "high"
+    },
+    {
+      "id": "t022",
+      "date": "2025-08-27",
+      "provider": "Dr. Dilip Kamath",
+      "organization": "FMC Pain Management",
+      "eventType": "visit",
+      "title": "Pain Mgmt — 'No Relation to Metabolic Myopathy'",
+      "summary": "Dr. Kamath stated 'no relation to metabolic myopathy.' Patient worsening diffuse pain. Prescribed tramadol, lidocaine. Referred for medical marijuana.",
+      "legalSignificance": "medium"
+    },
+    {
+      "id": "t023",
+      "date": "2025-08-29",
+      "provider": "Dr. Gonzalez-Paoli",
+      "organization": "FMC Rheumatology",
+      "eventType": "visit",
+      "title": "Rheumatology — CK 92, Documented Recovery",
+      "summary": "Post-rhabdo autoimmune workup. CK 92 U/L (recovery). Negative MSA Panel. Recommended avoiding all exercise.",
+      "legalSignificance": "medium"
+    },
+    {
+      "id": "t024",
+      "date": "2025-09-09",
+      "provider": "Dr. Michael Rosario-Prieto",
+      "organization": "BayCare Neurology",
+      "eventType": "visit",
+      "title": "Neurology — Invitae Panel Ordered",
+      "summary": "Dr. Rosario suspected metabolic/mitochondrial myopathy. Ordered Invitae Metabolic Myopathy Panel — stated it was 'critical for diagnosis and management.'",
+      "legalSignificance": "critical",
+      "details": "This is the start of the 48-day PA delay by Dr. Rosario's office (Sep 9 – Oct 28, 2025)."
+    },
+    {
+      "id": "t025",
+      "date": "2025-09-11",
+      "provider": "Dr. Michael Rosario-Prieto",
+      "organization": "BayCare Neurology",
+      "eventType": "communication",
+      "title": "PA Submission Implied But Delayed",
+      "summary": "Office faxed order to Invitae. PA submission implied delayed — office told patient 'insurance information faxed.' Kit mailed but PA not submitted.",
+      "legalSignificance": "critical"
+    },
+    {
+      "id": "t026",
+      "date": "2025-10-10",
+      "provider": "Federal Government",
+      "organization": "CPOS",
+      "eventType": "legal",
+      "title": "Reduction-in-Force (RIF) Notice Issued",
+      "summary": "RIF notice issued to Kevin Lane. This is the critical employment event that Dr. Rosario's delay prevented adequate response to — no formal medical documentation or accommodations possible.",
+      "legalSignificance": "critical"
+    },
+    {
+      "id": "t027",
+      "date": "2025-10-28",
+      "provider": "Dr. Michael Rosario-Prieto",
+      "organization": "BayCare Neurology",
+      "eventType": "legal",
+      "title": "PA Finally Submitted — 48 Days Late",
+      "summary": "Prior authorization submitted 48 days after order. Patient was under active RIF notice and had been denied timely diagnosis. Violates Fla. Stat. §627.42392.",
+      "legalSignificance": "critical"
+    },
+    {
+      "id": "t028",
+      "date": "2025-10-29",
+      "provider": "Dr. Cha Lee",
+      "organization": "AdventHealth",
+      "eventType": "visit",
+      "title": "New PCP — Comprehensive Workup",
+      "summary": "New patient consultation. Immediate comprehensive labs and referrals to genetics, neurology, CT scan. Scheduled due to changing doctors after abandonment.",
+      "legalSignificance": "medium"
+    },
+    {
+      "id": "t029",
+      "date": "2025-10-30",
+      "provider": "Invitae/Labcorp Genetics",
+      "organization": "Invitae",
+      "eventType": "lab",
+      "title": "Genetic Sample Sent via FedEx",
+      "summary": "Patient sent sample via FedEx — 'Cannot wait for prior authorization any longer — too urgent.'",
+      "legalSignificance": "high"
+    },
+    {
+      "id": "t030",
+      "date": "2025-11-04",
+      "provider": "Brandi Centers, APRN",
+      "organization": "AdventHealth – Brain and Stroke Center",
+      "eventType": "visit",
+      "title": "Neurology — Probable Mitochondrial Myopathy",
+      "summary": "Confirmed probable metabolic/mitochondrial myopathy. Ordered MRI Brain WO Contrast, MR Angio Brain WO Contrast, and nerve conduction study.",
+      "legalSignificance": "high"
+    },
+    {
+      "id": "t031",
+      "date": "2025-11-06",
+      "provider": "Invitae/Labcorp Genetics",
+      "organization": "Invitae",
+      "eventType": "milestone",
+      "title": "INVITAE RESULTS — Mitochondrial Dysfunction Confirmed",
+      "summary": "RQ7553840: Two rare VUS in AGK gene (mitochondrial lipid metabolism) + truncating VUS in AMPD1 gene (~94% loss of enzyme function). Scientific proof of underlying metabolic dysfunction.",
+      "legalSignificance": "critical",
+      "details": "This confirms the vulnerability that Dr. Kayani failed to screen for. AGK variants affect mitochondrial lipid metabolism; AMPD1 truncating mutation causes ~94% loss of enzyme function — directly explaining recurrent rhabdomyolysis."
+    },
+    {
+      "id": "t032",
+      "date": "2025-11-11",
+      "provider": "Dr. Gabriel Pantol",
+      "organization": "AdventHealth – Brain and Stroke Center",
+      "eventType": "procedure",
+      "title": "EMG/NCS — Normal, Confirms Metabolic Cause",
+      "summary": "EMG/Nerve Conduction Study entirely normal. No inflammatory myopathy, mononeuropathy, or myotonic discharges. Definitively rules out structural cause — permanent functional impairment is metabolic.",
+      "legalSignificance": "high"
+    },
+    {
+      "id": "t033",
+      "date": "2025-11-11",
+      "provider": "AdventHealth Imaging",
+      "organization": "AdventHealth",
+      "eventType": "procedure",
+      "title": "MRI Brain & MR Angio — Normal",
+      "summary": "MRI Brain WO IV Contrast and MR Angio Head WO Contrast — both normal. Definitively rules out structural or neurological causes for symptoms.",
+      "legalSignificance": "high"
+    },
+    {
+      "id": "t034",
+      "date": "2025-11-18",
+      "provider": "Kevin Lane",
+      "organization": "Self",
+      "eventType": "legal",
+      "title": "Medical Malpractice Intake Consultation Prepared",
+      "summary": "Attorney-ready intake consultation prepared documenting dual-defendant case. Economic damages range: $650,000–$1,300,000.",
+      "legalSignificance": "milestone"
+    },
+    {
+      "id": "t035",
+      "date": "2026-01-12",
+      "provider": "Dr. Dilip Kamath",
+      "organization": "FMC Pain Management",
+      "eventType": "legal",
+      "title": "Pain Mgmt Appointment Cancelled — Abandonment",
+      "summary": "Dr. Kamath's office cancelled final pain management follow-up. Will cancel due to abandonment of care — documented in chart.",
+      "legalSignificance": "medium"
+    },
+    {
+      "id": "t036",
+      "date": "2026-02-24",
+      "provider": "Mayo Clinic Genetics",
+      "organization": "Mayo Clinic",
+      "eventType": "milestone",
+      "title": "Mayo Clinic Genetics Consultation Scheduled",
+      "summary": "Consultation with Clinical Biochemical Geneticist for advanced testing and variant correlation. Necessary to move VUS findings to definitive genetic etiology — final medical support for permanent disability.",
+      "legalSignificance": "critical"
+    }
+  ]
+}

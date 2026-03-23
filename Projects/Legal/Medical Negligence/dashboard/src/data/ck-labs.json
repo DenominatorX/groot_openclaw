@@ -1,0 +1,33 @@
+{
+  "_comment": "CK (Creatine Kinase) lab values for Kevin Lane. Normal range: 35–232 U/L. Update by adding new entries to the 'values' array.",
+  "normalRange": { "low": 35, "high": 232 },
+  "thresholds": {
+    "normal":   { "max": 200,   "label": "Normal",  "color": "#22c55e" },
+    "elevated": { "max": 1000,  "label": "Elevated", "color": "#f59e0b" },
+    "danger":   { "max": 10000, "label": "Danger",  "color": "#f97316" },
+    "crisis":   { "label": "Crisis",  "color": "#ef4444" }
+  },
+  "values": [
+    { "date": "2024-01-25", "value": 7696,  "note": "First Rhabdo — admitted same day. CK ordered at hospital, NOT by Dr. Kayani.", "event": "hospitalization" },
+    { "date": "2024-01-26", "value": 7056,  "note": "Hospital day 2 — declining.", "event": "hospitalization" },
+    { "date": "2024-01-26", "value": 7206,  "note": "Hospital day 2 — second draw.", "event": "hospitalization" },
+    { "date": "2024-01-26", "value": 6440,  "note": "Hospital day 2 — third draw (declining).", "event": "hospitalization" },
+    { "date": "2024-07-23", "value": 95,    "note": "Normal CK. Dr. Kayani follow-up — NO metabolic workup initiated, NO referral for underlying cause.", "event": "office_visit" },
+    { "date": "2025-08-05", "value": 22052, "note": "Pre-hospital draw — Critical. RFA procedure (7/18/2025) performed by Dr. Kamath with NO knowledge of prior rhabdo.", "event": "pre_crisis" },
+    { "date": "2025-08-06", "value": 21672, "note": "Hospital admission — Second Catastrophic Rhabdo.", "event": "hospitalization" },
+    { "date": "2025-08-06", "value": 22000, "note": "Hospital peak — CK >22,000 U/L.", "event": "hospitalization" },
+    { "date": "2025-08-06", "value": 19987, "note": "Hospital day 1 — third draw.", "event": "hospitalization" },
+    { "date": "2025-08-07", "value": 17971, "note": "Hospital day 2 — declining with aggressive IV hydration.", "event": "hospitalization" },
+    { "date": "2025-08-07", "value": 16833, "note": "Hospital day 2 — second draw.", "event": "hospitalization" },
+    { "date": "2025-08-07", "value": 15627, "note": "Hospital day 2 — third draw.", "event": "hospitalization" },
+    { "date": "2025-08-08", "value": 11367, "note": "Hospital day 3.", "event": "hospitalization" },
+    { "date": "2025-08-08", "value": 7497,  "note": "Hospital day 3.", "event": "hospitalization" },
+    { "date": "2025-08-08", "value": 6091,  "note": "Hospital day 3 — still critical.", "event": "hospitalization" },
+    { "date": "2025-08-29", "value": 92,    "note": "Post-hospital: Rheumatology visit (Dr. Gonzalez). Documented recovery.", "event": "office_visit" },
+    { "date": "2025-10-21", "value": 110,   "note": "Psych labs (Kinsler Psychology). CK within range but patient symptomatic.", "event": "office_visit" },
+    { "date": "2025-11-11", "value": 80,    "note": "Pre-EMG baseline. EMG/NCS normal — confirms metabolic (not structural) cause.", "event": "office_visit" }
+  ],
+  "keyProcedures": [
+    { "date": "2025-07-18", "label": "RFA Procedure (Dr. Kamath)", "note": "Performed with NO knowledge of Jan 2024 rhabdo — directly caused second event" }
+  ]
+}

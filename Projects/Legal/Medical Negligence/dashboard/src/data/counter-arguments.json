@@ -1,0 +1,224 @@
+{
+  "claims": [
+    {
+      "id": "claim-1",
+      "title": "Communication Failure — Kayani to Kamath",
+      "defendant": "Dr. Imran Kayani / Florida Medical Clinic",
+      "ourStrength": "high",
+      "counters": [
+        {
+          "rank": "strongest",
+          "label": "Independent Duty / Shared EMR Severs Causation",
+          "summary": "Dr. Kamath had independent duty to review the chart. Shared EMR access may satisfy disclosure obligation. Intervening negligence doctrine points to Kamath.",
+          "legalBasis": "Intervening negligence; Restatement (Third) of Torts §34",
+          "threatLevel": "high",
+          "ourRebuttal": "Non-delegable duty under Fla. Stat. §766.102. Kayani initiated referral; patient is a layperson who cannot assess RFA risk."
+        },
+        {
+          "rank": 2,
+          "label": "No Peer Standard Mandates Cross-Provider Disclosure for RFA",
+          "summary": "Defense expert will testify U.S. Army CPG is military/specialty guidance, not civilian PCP standard. No universal requirement to call the proceduralist.",
+          "legalBasis": "Standard of care — clinical judgment defense",
+          "threatLevel": "medium",
+          "ourRebuttal": "Published RFA/rhabdo literature + same-system referral created heightened duty."
+        },
+        {
+          "rank": 3,
+          "label": "Patient's Own Disclosure Obligation",
+          "summary": "Kevin knew about his 2024 hospitalization. Florida comparative fault: jury can reduce damages if Kevin didn't tell Kamath himself.",
+          "legalBasis": "Fla. Stat. §768.81 — pure comparative fault",
+          "threatLevel": "medium",
+          "ourRebuttal": "Layperson cannot assess procedural risk. Non-delegable physician duty."
+        },
+        {
+          "rank": 4,
+          "label": "Same-System Referral Standard — No Verbal Disclosure Required",
+          "summary": "Within FMC multi-specialty group, shared record is the standard. No obligation for a separate verbal or written disclosure.",
+          "legalBasis": "Internal referral standards; clinical judgment",
+          "threatLevel": "low",
+          "ourRebuttal": "Shared EMR doesn't mean Kamath actually reviewed it. No evidence he did."
+        }
+      ]
+    },
+    {
+      "id": "claim-2",
+      "title": "14-Year Diagnostic Failure — CK Never Ordered",
+      "defendant": "Dr. Imran Kayani / Florida Medical Clinic",
+      "ourStrength": "high",
+      "counters": [
+        {
+          "rank": "strongest",
+          "label": "Mayo Full Genome Negative — No Diagnosable Condition Existed",
+          "summary": "Mayo Clinic ran full genome sequencing. No genetic findings related to rhabdomyolysis. VUS in AGK/AMPD1 are not pathogenic. Defense calls Mayo geneticist: no underlying condition to diagnose.",
+          "legalBasis": "No duty without foreseeable harm; causation failure",
+          "threatLevel": "critical",
+          "ourRebuttal": "Clinical diagnosis doesn't require genetic confirmation. Two rhabdo episodes = clinical pattern. Dr. Al review may identify what Mayo missed."
+        },
+        {
+          "rank": 2,
+          "label": "CK Omission Was Clinically Reasonable — Retrospective Bias",
+          "summary": "Fatigue and myalgia are ubiquitous. PCP standard doesn't require CK on every such patient. Defense expert testifies omission was within standard of care.",
+          "legalBasis": "Clinical judgment defense; hindsight bias argument",
+          "threatLevel": "high",
+          "ourRebuttal": "Pattern of symptoms + nephrolithiasis + recurrent myalgia = specific indicators, not generic complaints."
+        },
+        {
+          "rank": 3,
+          "label": "Causation Gap — Positive CK Wouldn't Have Prevented the Events",
+          "summary": "Even if CK was drawn Jan 19, the 6-day timeline is too compressed to prevent Jan 25 hospitalization. Same for Jul 29 / Aug 6 sequence.",
+          "legalBasis": "But-for causation; lost chance doctrine",
+          "threatLevel": "high",
+          "ourRebuttal": "Earlier detection = metabolic referral = protocols in place = RFA performed differently or not at all."
+        },
+        {
+          "rank": 4,
+          "label": "Nephrolithiasis Is Not a CK Trigger in General Practice",
+          "summary": "Defense nephrologist/urologist testifies kidney stones are managed as their own condition, not a metabolic myopathy screening trigger.",
+          "legalBasis": "Standard of care — specialty guideline vs. PCP practice",
+          "threatLevel": "medium",
+          "ourRebuttal": "Combination of symptoms (fatigue + myalgia + nephrolithiasis + exercise intolerance) together triggers MMS screening guidelines."
+        }
+      ]
+    },
+    {
+      "id": "claim-3",
+      "title": "Post-Crisis Monitoring Failure",
+      "defendant": "Dr. Imran Kayani / Florida Medical Clinic",
+      "ourStrength": "medium",
+      "counters": [
+        {
+          "rank": "strongest",
+          "label": "Reasonable Reliance on Specialist Continuity of Care",
+          "summary": "With rheumatology, neurology, and pain management active, PCP is entitled to rely on specialists for specialized monitoring. Multi-specialist care reduces PCP's individual monitoring duty.",
+          "legalBasis": "Division of labor in multi-specialty care; specialist reliance doctrine",
+          "threatLevel": "high",
+          "ourRebuttal": "Kayani never transferred monitoring responsibility. No documented handoff. He remained PCP of record."
+        },
+        {
+          "rank": 2,
+          "label": "Aug 2025 Event Not Caused by Monitoring Gap",
+          "summary": "RFA was the trigger, not the absence of CK monitoring. Even with regular CK draws, the July 18 RFA still happens without communication of the 2024 rhabdo.",
+          "legalBasis": "Proximate cause — intervening trigger",
+          "threatLevel": "high",
+          "ourRebuttal": "Proper monitoring triggers metabolic referral which triggers pre-RFA CK screening and risk assessment."
+        },
+        {
+          "rank": 3,
+          "label": "Rheumatology Directive Was Advisory, Not a Binding Order",
+          "summary": "Consult recommendations are advisory. Kayani retained clinical discretion to determine pace and sequence of follow-up. Patient was clinically stable.",
+          "legalBasis": "Clinical autonomy; advisory vs. binding directives",
+          "threatLevel": "medium",
+          "ourRebuttal": "PCP of record has non-delegable duty to implement specialist recommendations or document clinical rationale for deviation."
+        },
+        {
+          "rank": 4,
+          "label": "Patient Failed to Advocate for Testing",
+          "summary": "Kevin could have requested CK testing at any September 2025 visit. Comparative fault for failure to advocate for own monitoring.",
+          "legalBasis": "Comparative fault — Fla. Stat. §768.81",
+          "threatLevel": "low",
+          "ourRebuttal": "Physician has superior knowledge. Patient relies on physician to implement appropriate monitoring protocols."
+        }
+      ]
+    },
+    {
+      "id": "claim-4",
+      "title": "48-Day Prior Authorization Delay",
+      "defendant": "Dr. Michael Rosario / BayCare Neurology",
+      "ourStrength": "medium",
+      "counters": [
+        {
+          "rank": "strongest",
+          "label": "Statutory Liability Falls on the Insurer, Not the Physician",
+          "summary": "Fla. Stat. §627.42392 electronic submission mandate governs insurers processing PAs. Rosario's office submitted; insurer controlled processing. Delay may be FEPBLUE's statutory violation, not Rosario's.",
+          "legalBasis": "Fla. Stat. §627.42392 — scope of application",
+          "threatLevel": "high",
+          "ourRebuttal": "Staff instructed Kevin to 'hold off' — delay began at submission stage, not processing. Paper trail shows non-submission, not insurer delay."
+        },
+        {
+          "rank": 2,
+          "label": "VUS Results Are Non-Actionable — No Physical Harm from Delay",
+          "summary": "Results returned two VUS — not pathogenic. VUS don't change treatment plans or support definitive accommodation requests. Earlier results = same outcome.",
+          "legalBasis": "Causation — no harm without actionable result",
+          "threatLevel": "critical",
+          "ourRebuttal": "Economic harm from RIF/accommodations timing is separate from treatment plan. Even VUS documentation supports workplace accommodation under ADA/Rehabilitation Act."
+        },
+        {
+          "rank": 3,
+          "label": "RIF Employment Damages Are Too Speculative to Recover",
+          "summary": "Causation chain (delay → late results → no accommodation → RIF harm) is entirely speculative. Summary judgment motion likely on this damages theory.",
+          "legalBasis": "Speculative damages; reasonable certainty requirement",
+          "threatLevel": "high",
+          "ourRebuttal": "Timeline correlation + documented patient contacts + staff 'hold off' instruction creates sufficient factual dispute for jury."
+        },
+        {
+          "rank": 4,
+          "label": "'Hold Off' Instruction Is a Credibility Dispute",
+          "summary": "Kevin's recollection of a phone call vs. staff records. Without recording or written evidence, this is he-said-she-said. Juries discount uncorroborated patient testimony.",
+          "legalBasis": "Credibility; evidence sufficiency",
+          "threatLevel": "medium",
+          "ourRebuttal": "Portal messages and call timeline corroborate pattern. Multiple contacts + 48-day gap speaks for itself."
+        }
+      ]
+    },
+    {
+      "id": "claim-5",
+      "title": "Permanent Injury / Damages",
+      "defendant": "Both Defendants",
+      "ourStrength": "medium",
+      "counters": [
+        {
+          "rank": "strongest",
+          "label": "No Objective Evidence of Permanent Injury",
+          "summary": "EMG normal. MRI/MRA normal. Mayo genome negative. CK normalized. Autoimmune panels negative. Dr. Pantol said 'probable,' not confirmed. Florida requires proof of permanent injury to reasonable medical certainty.",
+          "legalBasis": "Permanent injury standard; reasonable medical certainty",
+          "threatLevel": "critical",
+          "ourRebuttal": "Muscle biopsy and functional testing at Mayo pending. Clinical confirmation from multiple treating providers. Functional impairment documented by patient."
+        },
+        {
+          "rank": 2,
+          "label": "Pre-Existing Condition / Inevitable Harm",
+          "summary": "If Kevin has recurrent idiopathic rhabdomyolysis (unknown cause), another episode was inevitable regardless of these doctors' actions. Harm was not caused by negligence — it was caused by the underlying condition.",
+          "legalBasis": "Pre-existing condition; inevitable harm doctrine",
+          "threatLevel": "high",
+          "ourRebuttal": "Predisposition ≠ inevitable severity. Manageable with proper protocols. The negligence converted manageable into catastrophic."
+        },
+        {
+          "rank": 3,
+          "label": "Economic Damages Are Speculative — No Expert Foundation",
+          "summary": "$650K–$1.3M estimate is Kevin's own calculation. No forensic economist, no vocational expert, no actuarial FERS analysis. Defense Daubert challenge will exclude ungrounded figures.",
+          "legalBasis": "Daubert challenge; speculative damages",
+          "threatLevel": "high",
+          "ourRebuttal": "Retain forensic economist and vocational expert as part of litigation prep. Figures are conservative based on documented earnings and career trajectory."
+        },
+        {
+          "rank": 4,
+          "label": "Failure to Mitigate — Kevin Is Working",
+          "summary": "Kevin returned to duty November 13, 2025. If earning capacity is impaired, he must prove it — not just assert future risk. Employment undermines catastrophic impairment narrative.",
+          "legalBasis": "Mitigation duty; speculative future damages",
+          "threatLevel": "medium",
+          "ourRebuttal": "Working ≠ fully recovered. Reduced capacity, accommodation needs, and elevated disability risk are present even while employed."
+        }
+      ]
+    }
+  ],
+  "overarchingDefenses": [
+    {
+      "id": "od-1",
+      "label": "Perfect Storm / Coincidence Theory",
+      "summary": "RFA-induced rhabdo is rare. 18-day gap is circumstantial. Informed consent for RFA likely listed rhabdo as a risk.",
+      "threatLevel": "medium"
+    },
+    {
+      "id": "od-2",
+      "label": "Mayo Expert Dominates the Expert Battle",
+      "summary": "Defense has full-genome sequencing from Mayo Clinic (negative). Kevin has 'probable' diagnoses from treating physicians without diagnostic confirmation.",
+      "threatLevel": "critical"
+    },
+    {
+      "id": "od-3",
+      "label": "No Confirmed Diagnosis = No Manageable Condition = No Negligence",
+      "summary": "Core theory requires confirmed underlying condition. Without it, defense files summary judgment motion.",
+      "threatLevel": "critical"
+    }
+  ]
+}
