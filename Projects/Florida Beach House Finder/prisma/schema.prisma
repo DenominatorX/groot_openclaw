@@ -1,0 +1,83 @@
+// Prisma schema for Florida Beach House Finder (EchoHome v1.0)
+// BRD Section 4.1.2 — Listing data model
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Listing {
+  id     String @id @default(cuid())
+
+  // Source
+  source    String // "zillow" | "redfin" | "realtor" | "claude"
+  sourceId  String // unique ID on source platform
+  sourceUrl String // deep link back to source listing
+
+  // Property address
+  address String
+  city    String
+  state   String @default("FL")
+  zip     String
+
+  // Region (one of 8 FL coastal regions)
+  region String // Panhandle | NE Florida | Space Coast | Treasure Coast | Gold Coast | Gulf Coast | Tampa Bay | Keys
+
+  // Financials
+  price Int // asking price in USD
+
+  // Size
+  beds         Float
+  baths        Float
+  sqft         Int?
+  lotSizeSqft  Int?
+
+  // Features
+  hasPool   Boolean @default(false) // keyword match in description
+  poolReady Boolean @default(false) // lotSizeSqft >= 6000
+  hasParking Boolean @default(false)
+  yearBuilt  Int?
+
+  // Beach proximity (computed at ingest)
+  nearestBeach      String // beach name
+  beachDistanceMiles Float
+  beachProximity    String // "walkable" | "close" | "nearby" | "far"
+
+  // GPS
+  lat Float?
+  lng Float?
+
+  // Media + content
+  images      String @default("[]") // JSON array of image URLs
+  description String?
+
+  // Timestamps
+  listedAt  DateTime?
+  scrapedAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  // Soft delete / deactivation
+  isActive Boolean @default(true)
+
+  @@unique([source, sourceId])
+  @@index([region])
+  @@index([price])
+  @@index([beachProximity])
+  @@index([isActive])
+  @@index([scrapedAt])
+}
+
+model ScrapeRun {
+  id        String   @id @default(cuid())
+  source    String   // "zillow" | "redfin" | "realtor" | "claude"
+  status    String   // "running" | "done" | "error"
+  found     Int      @default(0)
+  saved     Int      @default(0)
+  error     String?
+  startedAt DateTime @default(now())
+  finishedAt DateTime?
+}

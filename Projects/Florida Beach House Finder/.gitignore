@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+.next/
+out/
+dist/
+
+# Environment (never commit)
+.env
+.env.local
+.env.*.local
+
+# Database files (local dev)
+*.db
+*.db-journal
+
+# Prisma migrations (generated)
+prisma/migrations/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
