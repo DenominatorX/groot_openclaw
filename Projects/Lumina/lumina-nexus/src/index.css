@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Instrument+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Instrument Sans', system-ui, sans-serif;
+  --gold: #c9a84c;
+  --gold-dim: #8a7533;
+  --bg: #0d0d0f;
+  --bg-card: #141418;
+  --bg-elevated: #1a1a20;
+  --bg-hover: #1f1f28;
+  --border: #2a2a35;
+  --border-light: #3a3a48;
+  --text-primary: #e8e4dd;
+  --text-secondary: #9a9690;
+  --text-muted: #5a5854;
+  --messianic: #c9a84c;
+  --accent-red: #8b3a3a;
+  --accent-blue: #3a4a6a;
+  --accent-green: #2a5a3a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { transform: translateX(20px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.fade-in  { animation: fadeIn .25s ease both; }
+.slide-in { animation: slideIn .2s ease both; }
+.spin     { animation: spin 1s linear infinite; }
