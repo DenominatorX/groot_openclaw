@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C96A;
+    --gold-dark: #A07830;
+  }
+
+  body {
+    @apply bg-zinc-950 text-zinc-100 font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply bg-gold hover:bg-gold-light text-zinc-950 font-sans font-medium px-4 py-2 rounded-lg transition-colors;
+  }
+  .btn-ghost {
+    @apply text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800 px-3 py-2 rounded-lg transition-colors;
+  }
+  .card {
+    @apply bg-zinc-900 border border-zinc-800 rounded-xl;
+  }
+  .verse-text {
+    @apply font-serif text-lg leading-relaxed;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #52525b; }
+
+/* Theme variants */
+.theme-light {
+  --bg: #f8f7f2;
+  --surface: #ffffff;
+  --border: #e5e4e0;
+  --text-primary: #1c1917;
+  --text-secondary: #57534e;
+}
+.theme-dark {
+  --bg: #09090b;
+  --surface: #18181b;
+  --border: #27272a;
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+}
+.theme-grey {
+  --bg: #1c1c1e;
+  --surface: #2c2c2e;
+  --border: #3a3a3c;
+  --text-primary: #f5f5f7;
+  --text-secondary: #98989e;
+}
