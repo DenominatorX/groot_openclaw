@@ -1,0 +1,36 @@
+name = "denominatorx-worker"
+main = "worker/src/index.js"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# ── Environment Variables ───────────────────────────────────────────────────
+# Set JWT_SECRET via: wrangler secret put JWT_SECRET
+# (never commit secrets to this file)
+
+# ── D1 Database ─────────────────────────────────────────────────────────────
+[[d1_databases]]
+binding  = "DB"
+database_name = "denominatorx-db"
+database_id   = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# ── KV Namespace (session blocklist / cache) ────────────────────────────────
+[[kv_namespaces]]
+binding    = "SESSIONS"
+id         = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+preview_id = "REPLACE_WITH_YOUR_KV_PREVIEW_NAMESPACE_ID"
+
+# ── Cloudflare Pages (static frontend) ─────────────────────────────────────
+# Pages is configured separately in the Cloudflare dashboard or via:
+#   wrangler pages deploy apps/portal/dist --project-name denominatorx-portal
+#
+# Build command for Pages:   npm run build:portal
+# Build output directory:    apps/portal/dist
+# Root path:                 /
+#
+# Routes for sub-apps (add _routes.json or configure Functions):
+#   /lumina/* → lumina-app
+#   /nexus/*  → lumina-nexus
+
+# ── Production environment overrides ────────────────────────────────────────
+[env.production]
+name = "denominatorx-worker"

@@ -1,0 +1,16 @@
+{
+  "name": "denominatorx-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/portal",
+    "worker"
+  ],
+  "scripts": {
+    "dev:portal": "npm --workspace=apps/portal run dev",
+    "build:portal": "npm --workspace=apps/portal run build",
+    "dev:worker": "npm --workspace=worker run dev",
+    "deploy:worker": "npm --workspace=worker run deploy",
+    "build:all": "npm --workspace=apps/portal run build"
+  }
+}

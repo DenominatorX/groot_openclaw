@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0f1117;
+  --bg-card: #161b27;
+  --bg-elevated: #1e2535;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #f0f0f0;
+  --text-secondary: #b0b8cc;
+  --text-muted: #6b7585;
+  --gold: #d4af37;
+  --gold-dim: rgba(212, 175, 55, 0.15);
+  --gold-border: rgba(212, 175, 55, 0.3);
+  --error: #e85555;
+  --error-dim: rgba(232, 85, 85, 0.12);
+  --success: #4caf7d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--bg-elevated) inset;
+  -webkit-text-fill-color: var(--text);
+  transition: background-color 5000s ease-in-out 0s;
+}
