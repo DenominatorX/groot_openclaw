@@ -1,4 +1,4 @@
-import { BookOpen, GitBranch, Bell, User, LogOut, ChevronRight } from 'lucide-react'
+import { BookOpen, GitBranch, Bell, User, LogOut, ChevronRight, Home } from 'lucide-react'
 import AppCard from './AppCard'
 
 const APPS = [
@@ -19,6 +19,15 @@ const APPS = [
     color: '#7c9ef0',
     badge: 'Active',
     path: '/nexus',
+  },
+  {
+    id: 'beach',
+    name: 'EchoHome',
+    description: 'Florida beach house finder. Search 3+ bed / 2+ bath properties under $400K near sandy beaches.',
+    icon: Home,
+    color: '#38bdf8',
+    badge: 'Active',
+    path: '/apps/beach',
   },
 ]
 
