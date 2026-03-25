@@ -9,6 +9,7 @@ import goalRoutes from "./routes/goals.js";
 import labelRoutes from "./routes/labels.js";
 import dashboardRoutes from "./routes/dashboard.js";
 import webhookRoutes from "./routes/webhooks.js";
+import runRoutes from "./routes/runs.js";
 import { errorHandler } from "./lib/error-handler.js";
 
 export function createApp() {
@@ -32,6 +33,7 @@ export function createApp() {
   app.use("/api", labelRoutes);
   app.use("/api", dashboardRoutes);
   app.use("/api", webhookRoutes);
+  app.use("/api", runRoutes);
 
   // 404
   app.use((_req, res) => {
